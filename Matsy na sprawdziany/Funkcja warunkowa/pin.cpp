@@ -1,23 +1,23 @@
-#include <iostream>
+#include <iostream> //Prosta biblioteka do obsługi wejścia/wyjścia
 
-using namespace std;
+using namespace std; //Przestrzeń nazw, aby nie pisać ciągle std::
 
-int main()
+int pin, podanypin; //Deklaracja zmiennych
+
+int main() //Główna funkcja programu
 {
-    int pin, podanypin;
+    pin = 2137; //Przypisanie wartości do zmiennej
 
-    pin = 2137;
+    cout << "Podaj pin: "; //Wypisanie tekstu na ekran
+    cin >> podanypin; //Pobranie wartości od użytkownika
 
-    cout << "Podaj pin: ";
-    cin >> podanypin;
-
-    if (pin == podanypin)
+    if (pin == podanypin) //Sprawdzenie warunku
     {
-        cout << "Pin poprawny";
+        cout << "Pin poprawny"; 
     }
-    else
+    else //Jeśli warunek nie jest spełniony
     {
         cout << "Pin niepoprawny";
     }
-    return 0;
+    return 0; //Zakończenie programu
 }
