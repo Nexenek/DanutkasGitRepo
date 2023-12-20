@@ -6,7 +6,7 @@ Prolly dodam Git'a na komputer szkolny i będę go synchronizował go z tym repo
 also póki co tu są matsy na sprawdziany i kartkówki.
 
 # Spis treści
-Matsy na sprawdziany
+Matsy na sprawdziany:
 - Funkcja Warunkowa
 
 koniec.
