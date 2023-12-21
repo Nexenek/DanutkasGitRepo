@@ -11,5 +11,6 @@ also póki co tu są matsy na sprawdziany i kartkówki.
 - haslo.cpp
 - pin.cpp
 - starszymlodszy.cpp
+- euklides.cpp
 
 koniec.
