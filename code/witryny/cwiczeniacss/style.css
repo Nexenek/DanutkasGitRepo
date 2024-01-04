@@ -1,0 +1,37 @@
+#banner {
+    background-color: purple;
+    height: 110px;
+    text-align: center;
+}
+
+#lewo {
+    background-color: pink;
+    height: 550px;
+    width: 28%;
+    float: left;
+}
+
+#srodek {
+    background-color: #00d4ff;
+    height: 550px;
+    width: 44%;
+    float: left;
+}
+
+#prawo {
+    background-color: #ff3cfc;
+    height: 550px;
+    width: 28%;
+    float: right;
+}
+#stopka{
+    background-color: green;
+    height: 200px;
+    width: 100%;
+    float: left;
+	clear: both;
+}
+
+h1 {
+	text-align: center;
+}

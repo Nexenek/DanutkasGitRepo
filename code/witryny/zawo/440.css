@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6 {
+	color: blue;
+}
+
+p {
+	color: green
+}
+
+div p{
+	color: yellow
+}
+
+p * span {
+	color: purple;
+}
+
+p > span{
+	color: red;
+}

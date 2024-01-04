@@ -1,0 +1,68 @@
+<!DOCtype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona oparta na blokach</title>
+    <link rel="stylesheet" type="text/css" href="blok.css">
+</head>
+<body>
+    <div id="banner">
+		<img src="csshtml.png">
+    </div>
+    <div id="lewy">
+		<h2>Zagadnienia informatyki obejmują m.in.</h2>
+		<ol>
+			<li>Programowanie
+				<ul>
+					<li>C++</li>
+					<li>JavaScript</li>
+					<li>Python</li>
+					<li>Java</li>
+					<li>Rust</li>
+					<li>C#</li>
+					<li>Asembly</li>
+				</ul></li>
+			<li>Sprzęt komputerowy</li>
+			<li>Zagadanienia sieciowe</li>
+			<li>Aplikacje internetowe</li>
+    </div>
+    <div id="srodkowy">
+		<table border="2">
+			<tr><th>Lekarz</th><th>Dni</th><th>Godziny</th></tr>
+			<tr><td>Marian Pa?dzioch</td><td>sob. niedz.</td><td>6:30 - 9:20</td></tr>
+			<tr><td>Twoja Mama</td><td>Nigdy</td><td>Zawsze</td></tr>
+			<tr><td>Nikt</td><td>Nie tac nas na</td><td>Lekarza</td></tr>
+		</table>
+		<h2>Typy pól</h2>
+		<ul>
+			<li>type="text" - pole tekstowe<input type="text"></li>
+			<li>type="checkbox" - pole zaznaczenia opcji<input type="checkbox"></li>
+			<li>type="radio" - pole wyboru<input type="radio"></li>
+			<li>type="password" - pole hasla<input type="password"></li>
+			<li>type="file" - pole dołączania do formularzu pliku<input type="file"></li>
+			<li>type="submit" - przycisk (prześlij)<button type="submit"></li>
+			<li>type="reset" - przycisk (czyszczenie formluarza)<button type="reset" value="Czyść"></li>
+			<li>type="hidden" - niewidoczne na stronei<input type="hidden"></li>
+			<li>type="color - przycisk wyboru koloru<input type="color"></li>
+			<li>Pole wielowierszowe <textarea cols="15" rows="2"></textarea></li>
+			<li>type="select" <select><option>coś</option></select></li>
+		</ul>
+	</div>
+    <div id="prawy">
+		<h1>Połączenia i odnośniki na stronie www.</h1>
+		<a href="tabele.html" target="blank">
+			Tabele
+		</a><br>
+		<a href="https://orange.pl" target="blank">
+			<img src="data:image/png;base64,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">
+		</a> <br>
+		<a href="https://egzamin-informatyk.pl/inf02-inf03-ee08-ee09-testy-arkusze-praktyczne/" target="blank">
+			Imo rel egzamin
+		</a>
+    </div>
+    <div id="stopka">
+        <p>Autor strony: Uczen 2TI</p>
+		<img src="https://media.pinatafarm.com/protected/328C475E-F05A-44AB-8608-52799BB902D5/d7c221aa-9e0e-4252-81c7-000239c0dd6b-1669980616459-pfarm-with-png-watermarked.webp">
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aplikacje internetowe teoria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Proste algorytmy</h1>
+    <h2>Definicja algorytmu</h2>
+    <p>Algorytm to zestaw ściśle określonych czynności prowadzących do wykonania pewnego zadania. Określa sposób rozwiązywania problemu i ma zastosowanie w różnych dziedzinach. Języki programowania to narzędzia, które bardzo dobrze nadają się do zapisu algorytmów.</p>
+    <h2>Zapis algorytmu w wybranym języku programowania nazywamy <i>implementacją algorytmu.</i></h2>
+    <h3>Schematy blokowe algorytmu (tzw. bloczki)</h3>
+    <table border="2">
+        <tr>
+            <th>nazwa bloku</th>
+            <th>opis</th>
+            <th>wygląd</th>
+        </tr>
+        <tr>
+            <td>Początek algorytmu</td>
+            <td>Rozpoczęcie algorytmu, wychodzi z niego tylko jedno połączenie, występuje w algorytmie tylko raz.</td>
+            <td><img src="start.png"></td>
+        </tr>
+        <tr>
+            <td>Koniec algorytmu</td>
+            <td>Wchodzi do niego jedno połączenie, może być ich wiele w algorytmie</td>
+            <td><img src="koniec.png"></td>
+        </tr>
+        <tr>
+            <td>Wprowadź (a)</td>
+            <td>Wprowadzanie danych, jedno połączenie wchodzące i wychodzące, schemat może zawierać wiele takich bloków.</td>
+            <td><img src="wprowadźa.png"></td>
+        </tr>
+        <tr>
+            <td>Wprowadź (P)</td>
+            <td>Wyprowadzenie wyników, jedno połączenie wchodzące i wychodzące, schemat może zawierać wiele takich bloków.</td>
+            <td><img src="wprowadźp.png"></td>
+        </tr>
+        <tr>
+            <td>Blok operacyjny</td>
+            <td>Wykonywanie operacji - posiada jedno połączenie wchodzące i jedno wychodzące, w jednym bloku można wykonwać wiele operacji. Schemat może zawierać wiele takich bloków.</td>
+            <td><img src="blokoperacyjny.png"></td>
+        </tr>
+        <tr>
+            <td>Blok decyzyjny lub warunkowy</td>
+            <td>Podejmowanie decyzji - sprawdzanie warunków. Posiada jedno połączenie wchodzące i 2 wychodzące - Tak gdy warunek jest spełniony i Nie gdy warunek nie jest spełniony. Schemat może posiadać wiele takich bloków.</td>
+            <td><img src="blokdecyzyjnylubwarunkowy.png"></td>
+        </tr>
+        <tr>
+            <td>Łącznik</td>
+            <td>Łącznik stosujemy gdy schemat występuje w kilku częściach. Numer umieszczony w bloku powinien być taki sam na obu łączonych przez nas częściach.</td>
+            <td><img src="łącznik.png"></td>
+        </tr>
+        <tr>
+            <td>Połączenie</td>
+            <td>Połączenie bloków. Linia prosta lub łamana zakończona strzałką. Może łączyć bloki oraz dochodzić do innych połączeń.</td>
+            <td><img src="polaczenie.png"></td>
+        </tr>
+        <tr>
+            <td>Program</td>
+            <td>Symbol ten oznacza podłączenie podprogramu.</td>
+            <td><img src="program.png"></td>
+        </tr>
+        <tr>
+            <td>Łącznik międzystronnicowy</td>
+            <td>Służy do połączenia schematu jeśli nie miesci się na jednej stronie.</td>
+            <td><img src="łącznik międzysytonnicowy.png"></td>
+        </tr>
+    </table>
+    <h1>OBLICZANIE POLA TRÓJKĄTA JAVASCRIPT, UwU~</h1>
+    <script>
+var a=prompt("Podaj wartość a",a);
+var b=prompt("Podaj wartość h",b);
+p=(a*b)/2
+document.write(p);
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    background-color: gray;
+}
+#banner {
+    background-color: red;
+    height: 150px;
+    text-align: center;
+}
+
+#lewy {
+    background-color: green;
+    height: 500px;
+    width: 30%;
+    float: left;
+}
+
+#srodkowy {
+    background-color: blue;
+    height: 500px;
+    width: 40%;
+    float: left;
+}
+
+#prawy {
+    background-color: yellow;
+    height: 500px;
+    width: 30%;
+    float: right;
+}
+#stopka{
+    background-color: aqua;
+    height: 200px;
+    width: 100%;
+    float: left;
+}
+
+p {
+    text-align: center;
+    border: 5px dashed green;
+	font-size: 50px;
+}
+
+h1{
+    background-color: blueviolet;
+    color: white;
+}
+
+#srodkowy img {
+	max-height: 100%;
+	
+}
+
+#lewy img {
+	max-width: 100%;
+}
+
+#banner img {
+	padding-right: 995px;
+	padding-top: 5px;
+}
+
+h2 {
+	color: white;
+}
+
+ol {
+	color: white;
+}
+
+table {
+	color: white;
+	border: 2;
+	margin: 40px 35px 40px 35px;
+}
+
+a:link {
+	color: #df34ae;
+	background-color: #fd43ea;
+}
+
+a:visited {
+	color: #fffff;
+	background-color: gray;
+}
+
+a:hover {
+	color: red;
+	background-color: green;
+}
+
+a:active {
+	color: green;
+	background-color: red;
+}
+
+h2 {
+	margin-bottom: -15px;
+	margin-top: -7px;
+}
+
+li {
+	padding-top: -20px;
+	font-size: 15px;
+	color: white;
+}
+table {
+	margin-bottom: 1px;
+}
