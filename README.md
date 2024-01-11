@@ -28,3 +28,6 @@ Repozytorium Danutki z dokładnym objaśnieniem kodu na GitHubie, o które nikt 
 - index.html
 #### witryny
 - index.html
+
+# Dokumentacja z dokładnymi opisami
+https://danutkasgitrepo.readthedocs.io
