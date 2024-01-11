@@ -23,3 +23,8 @@ Repozytorium Danutki z dokładnym objaśnieniem kodu na GitHubie, o które nikt 
 - Łączenie komórek
 - Tabelkowa
 - Zawo
+### Notatki - notatki z lekcji
+#### aplikacje
+- index.html
+#### witryny
+- index.html
