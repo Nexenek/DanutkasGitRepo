@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aniketa - formularze</title>
+        <!--Specjalnie dla was zawsze dodaje CSS'a z dark mode'm - szanuje wasze oczy <3-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Aniketa osobowa</h1>
+        <form>
+			<table>
+				<tr><td>Podaj swoje imie: </td> 
+				<td><input type="text"></td></tr>
+				<tr><td>Podaj swoje nazwisko:</td> 
+                    <td><input type="text"></td></tr>
+                <tr><td>Podaj mail:</td>
+                    <td><input type="mail"></td>
+                <tr><td>Wykształcenie:</td>
+                    <td><input type="radio" name="opcja">Podstawowe<br>
+                        <input type="radio" name="opcja">średnie<br>
+                        <input type="radio" name="opcja">Wyższe</td></tr>
+                <tr><td>Jakie znasz języki:</td>
+                <td><input type="checkbox">Angielski<br>
+                <input type="checkbox">Niemiecki<br>
+                <input type="checkbox">Hiszpański</td></tr>
+                <tr><td>Podaj datę urodzin:</td>
+                <td><input type="date"></td></tr>
+                <tr><td>Z jakiego wojewodztwa pochodzisz:</td>
+                <td><select>
+                    <option>Wielkopolskie</option>
+                    <option>Swietokrzyskie</option>
+                    <option>Dolnośląskie</option>
+                    <option>Mazowieckie</option>
+                    <option>Małopolskie</option>
+                </select></td></tr>
+                <tr><td>Jak podoba Ci się twoja klasa:</td>
+                <td><textarea rows="9" cols="60"></textarea></td></tr>
+                <tr><td>Hasło:</td>
+                <td><input type="password"></td></tr>
+                <tr><td>wślij ten plik:</td>
+                <td><input type="file" size="30"></td></tr>
+                <tr><td><input type="reset"></td>
+                <td><input type="submit"></td></tr>
+            </table>
+        </form>
+    </body>
+</html>
