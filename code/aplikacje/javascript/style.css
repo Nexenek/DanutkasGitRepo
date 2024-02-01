@@ -1,7 +1,8 @@
 body {
 	background-color: black;
+	color: white;
 }
 
-h1, h2, h3, h4, h5, li, i{
+h1, h2, h3, h4, h5, li, i, p{
 	color: white;
 }
