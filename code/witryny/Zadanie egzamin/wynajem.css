@@ -1,11 +1,42 @@
 #baner {
     background-color: blue;
+    color: white;
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: -38px;
+    display: flex; 
+    align-items: center;
 }
 
 #panel_lewy {
-    background-color: lightblue;
+    float: left;
+    width: 60%;
+    height: 550px;
+    background-color: #A1BAC2;
+}
+
+#panel_lewy table td {
+    margin: 20px;
+    padding: 30px;
+    border: 3px solid blue;
 }
 
 #panel_prawy {
+    float: right;
+    width: 40%;
+    height: 550px;
+    background-color: #AD7D00;
+    border-collapse: collapse;
+}
 
+button {
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid brown;
+    background-color: orange;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
 }

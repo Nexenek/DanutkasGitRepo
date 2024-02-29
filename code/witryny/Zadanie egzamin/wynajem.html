@@ -7,8 +7,8 @@
 </head>
 <body>
     <div id="baner">
-        <img src="projekt.png">
-        <h1>Autor strony: 37427348230432472389</h1>
+        <img src="projekt.png" style="flex: none;">
+        <h1 style="margin-left: 20px;">Autor strony: 37427348230432472389</h1>
     </div>
     <div id="panel_lewy">
         <h1>Wynajem mieszkań</h1>
@@ -49,7 +49,8 @@
                 <td>Jestem Studentem</td>
                 <td><input type="checkbox" id="student"></td>
             </tr>
-            <tr><td><input type="submit" id="licz" value="licz"></td></tr>
+            <script src="script.js"></script>
+            <tr><td><button onclick="licz()">LICZ</button></td><td><p id="wynik"></p></td></tr>
         </table>
     </div>
 </body>
