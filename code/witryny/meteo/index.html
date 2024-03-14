@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Stacja meteo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="banner">
+        <h1>Stacja meteo</h1>
+    </div>
+    <div id="lewy">
+        <h2>Dokumentacja wyników zapytań w bazie meteo</h2>
+        <table>
+            <tr>
+                <td><img src="kw1.png"></td>
+                <td><img src="kw2.png"></td>
+            </tr>
+            <tr>
+                <td><img src="kw3.png"></td>
+                <td><img src="kw4.png"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="prawy">
+        <h2>Zamiana jednostek temperatury</h2>
+        Temperatura w stopniach <sup>o</sup>C<br>
+        <input type="text" id="temp"><br>
+        Zamień na:<br>
+        <input type="submit" value="Kelviny" onclick="zamien_kelviny()"><input type="submit" value="Fahrenheity" onclick="zamien_farenheity()"><br>
+        <p id="wynik"></p>
+        <script src="script.js"></script>
+        <h2>Do pobrania</h2>
+        <ul>
+            <li><a href="kwerendy.txt">kwerendy</a></li>
+            <li><a href="meteo.sql">Eksport mySQL</a></li>
+        </ul>
+    </div>
+    <div id="stopka">
+        <p>PESEL AUTORA STRONY: 0000000000000</p>
+    </div>
+</body>
+</html>

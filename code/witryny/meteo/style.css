@@ -1,0 +1,33 @@
+a {
+    color: yellow;
+}
+
+#banner {
+    background-color: #4a7684;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+#lewy {
+    width: 65%;
+    height: 500px;
+    float: left;
+}
+
+#prawy {
+    background-color: #4a7684;
+    width: 35%;
+    height: 500px;
+    float: right;
+}
+
+#stopka {
+    background-color: #4a7684;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    clear: both;
+}
