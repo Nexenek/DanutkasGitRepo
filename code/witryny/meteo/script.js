@@ -3,7 +3,7 @@ function zamien_kelviny(){
     var temp = parseInt(document.getElementById('temp').value);
     var kel = temp + 273.15;
 
-    wynik.innerHTML = kel + " <sup>o</sup>K";
+    wynik.innerHTML = "Temperatura w stopniach kelwina wynosi: " + kel + " <sup>o</sup>K";
 }
 
 function zamien_farenheity(){
@@ -11,5 +11,5 @@ function zamien_farenheity(){
     var temp = parseInt(document.getElementById('temp').value);
     var far = ((temp * 1.8) + 32);
  
-    wynik.innerHTML = far + " <sup>o</sup>";
+    wynik.innerHTML = "Temperatura w stopniach farenheita wynosi: " + far + " <sup>o</sup>";
 }
