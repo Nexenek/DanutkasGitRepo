@@ -9,7 +9,7 @@ function zamien_kelviny(){
 function zamien_farenheity(){
     var wynik = document.getElementById('wynik');
     var temp = parseInt(document.getElementById('temp').value);
-    var far = ((temp * 9) / 5) + 32;
+    var far = ((temp * 1.8) + 32);
  
-    wynik.innerHTML = far + " <sup>o</sup>F";
+    wynik.innerHTML = far + " <sup>o</sup>";
 }
