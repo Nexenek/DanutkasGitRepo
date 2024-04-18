@@ -1,0 +1,40 @@
+/* Styl CSS */
+
+/* Baner, stopka, panel prawy */
+#baner, #stopka, #prawy {
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Linki */
+a {
+  color: yellow;
+}
+
+/* Baner */
+#baner {
+  background-color: #4A7684;
+}
+
+/* Stopka */
+#stopka {
+  background-color: #4A7684;
+  clear: both;
+}
+
+/* Panel prawy */
+#prawy {
+  background-color: #4A7684;
+  width: 35%;
+  height: 500px;
+  float: right;
+}
+
+/* Panel lewy */
+#lewy {
+  width: 65%;
+  height: 500px;
+  float: left;
+}
