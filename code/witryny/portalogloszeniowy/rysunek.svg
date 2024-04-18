@@ -9,6 +9,9 @@
    id="svg5"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    sodipodi:docname="rysunek.svg"
+   inkscape:export-filename="grafika.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +29,7 @@
      showgrid="false"
      inkscape:zoom="0.5946522"
      inkscape:cx="443.95699"
-     inkscape:cy="591.94265"
+     inkscape:cy="726.47507"
      inkscape:window-width="1280"
      inkscape:window-height="961"
      inkscape:window-x="-8"
@@ -35,6 +38,12 @@
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
+    <rect
+       x="178.25546"
+       y="260.65657"
+       width="390.14402"
+       height="53.812968"
+       id="rect308" />
     <rect
        x="176.5738"
        y="798.78625"
@@ -109,7 +118,7 @@
        style="font-size:18px;font-family:ARIAL;-inkscape-font-specification:ARIAL;white-space:pre;shape-inside:url(#rect676);fill:#ffffff"><tspan
          x="154.71289"
          y="825.09053"
-         id="tspan857">Famtazy J.Slowacki</tspan></text>
+         id="tspan489">Famtazy J.Slowacki</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(-9.4576831e-4,-0.39117256,0.36982088,-9.2105363e-4,-221.89628,251.56072)"
@@ -117,8 +126,18 @@
        style="font-size:18px;font-family:ARIAL;-inkscape-font-specification:ARIAL;white-space:pre;shape-inside:url(#rect784);fill:#ffffff"><tspan
          x="176.57422"
          y="815.00069"
-         id="tspan861"><tspan
+         id="tspan493"><tspan
            style="fill:#280b0b"
-           id="tspan859">Carrie S king</tspan></tspan></text>
+           id="tspan491">Carrie S king</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.10693985,-0.33879825,0.2921422,0.1240185,-13.08934,211.54407)"
+       id="text306"
+       style="font-size:18px;font-family:ARIAL;-inkscape-font-specification:ARIAL;white-space:pre;shape-inside:url(#rect308);fill:#280b0b"><tspan
+         x="178.25586"
+         y="276.86983"
+         id="tspan497"><tspan
+           style="fill:#ececec"
+           id="tspan495">Obiecaj mi H.Coben</tspan></tspan></text>
   </g>
 </svg>
