@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="rysunek.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.5946522"
+     inkscape:cx="443.95699"
+     inkscape:cy="591.94265"
+     inkscape:window-width="1280"
+     inkscape:window-height="961"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="176.5738"
+       y="798.78625"
+       width="319.5145"
+       height="151.34897"
+       id="rect784" />
+    <rect
+       x="154.71228"
+       y="808.87618"
+       width="454.04692"
+       height="100.89932"
+       id="rect676" />
+  </defs>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;stroke-width:0.160427"
+       id="rect234"
+       width="109.45473"
+       height="11.123446"
+       x="47.60836"
+       y="186.87393" />
+    <rect
+       style="fill:#008000;stroke-width:0.31785"
+       id="rect396"
+       width="8.4538212"
+       height="56.507118"
+       x="62.291313"
+       y="130.36681" />
+    <rect
+       style="fill:#ff6600;stroke-width:0.21367"
+       id="rect398"
+       width="6.6740694"
+       height="48.053299"
+       x="73.859695"
+       y="138.82063" />
+    <rect
+       style="fill:#0000ff;stroke-width:0.264583"
+       id="rect452"
+       width="7.5639434"
+       height="58.286865"
+       x="134.38495"
+       y="91.525124"
+       transform="rotate(18.165959)" />
+    <rect
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="rect558"
+       width="6.6740723"
+       height="28.476036"
+       x="97.886345"
+       y="157.95297" />
+    <rect
+       style="fill:#0000ff;stroke-width:0.264583"
+       id="rect560"
+       width="14.682953"
+       height="54.282429"
+       x="115.23893"
+       y="132.59151" />
+    <rect
+       style="fill:#2b0000;stroke-width:0.264583"
+       id="rect562"
+       width="9.7886343"
+       height="40.934292"
+       x="137.04089"
+       y="145.93965" />
+    <text
+       xml:space="preserve"
+       transform="matrix(-0.00408631,-0.30740715,0.42790175,-0.00463739,-226.94181,236.41762)"
+       id="text674"
+       style="font-size:18px;font-family:ARIAL;-inkscape-font-specification:ARIAL;white-space:pre;shape-inside:url(#rect676);fill:#ffffff"><tspan
+         x="154.71289"
+         y="825.09053"
+         id="tspan857">Famtazy J.Slowacki</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(-9.4576831e-4,-0.39117256,0.36982088,-9.2105363e-4,-221.89628,251.56072)"
+       id="text782"
+       style="font-size:18px;font-family:ARIAL;-inkscape-font-specification:ARIAL;white-space:pre;shape-inside:url(#rect784);fill:#ffffff"><tspan
+         x="176.57422"
+         y="815.00069"
+         id="tspan861"><tspan
+           style="fill:#280b0b"
+           id="tspan859">Carrie S king</tspan></tspan></text>
+  </g>
+</svg>
