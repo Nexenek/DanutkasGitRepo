@@ -32,8 +32,10 @@
     <div id="srodkowy">
         <h2>Policz koszt ogłoszenia</h2><br>
         Ilość ogłoszeń: <input type="number" id="ogloszenia"><br>
-        Jestem stałym klientem <input type="checkbox"><br>
-        <input type="button" value="Kalkulacja" id="kalkulacja">
+        Jestem stałym klientem <input type="checkbox" id="staly"><br>
+        <input type="button" value="Kalkulacja" id="kalkulacja" onclick="kalkulacja()"><br>
+        <p id="wynik"></p>
+        <script src="kalkulacja.js"></script>
     </div>
     <div id="prawy">
         <h2>Znajdujesz się na stronie portalu ogłoszeniowego</h2>
