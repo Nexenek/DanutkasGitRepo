@@ -4,6 +4,11 @@ function kalkulacja() {
     var wynik = document.getElementById("wynik");
     var koszt = 0;
 
+    if (ogloszenia == "") {
+        alert("Wpisz poprawna wartosc!");
+        return;
+    }
+
     if (ogloszenia > 40) {
         koszt = parseInt(ogloszenia) * 2;
     } else {
