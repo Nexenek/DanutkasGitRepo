@@ -9,6 +9,11 @@ function kalkulacja() {
         return;
     }
 
+    if (ogloszenia < 0) {
+        alert("Wpisz poprawna wartość!");
+        return;
+    }
+
     if (ogloszenia > 40) {
         koszt = parseInt(ogloszenia) * 2;
     } else {
