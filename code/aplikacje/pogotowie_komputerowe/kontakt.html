@@ -3,8 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Komputery</title>
+    <link rel="stylesheet" type="text/css" href="styl.css">
+    <link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
-    
+    <div id="baner">
+        <img src="animacja.gif" alt="Pogotowie komputerowe">
+    </div>
+    <div id="menu">
+        <a href="index.html"> Strona Główna</a>
+        <a href="kontakt.html"> Kontakt</a>
+    </div>
+    <div id="lewy">
+
+    </div>
+    <div id="srodek">
+        <h2>Kontakt</h2>
+        <form>
+            <table>
+                <tr><td>Imię: </td><td><input type="text"></td></tr>
+                <tr><td>Nazwisko: </td><td><input type="text"></td></tr>
+                <tr><td>E-mail: </td><td><input type="email"</td></tr>
+                <tr><td>Zgłoszenie: </td><td>
+                        <select>
+                            <option>naprawa komputerów</option>
+                            <option>odzyskiwanie danych</option>
+                            <option>wirusy</option>
+                            <option>konfiguracja LAN</option>
+                        </select>
+                </td></tr>
+                <tr><td></td><td>
+                    <input type="checkbox" checked>Wyślij kopię wiadomości
+                </td></tr>
+                <tr><td></td><td><input type="reset" value="Czyść"><input type="submit" value="Wyślij" onclick="script()"></td></tr>
+            </table>
+        </form>
+    </div>
+    <div id="prawy">
+
+    </div>
+    <div id="stopka">
+        Autor: <em>xxxxxxxxxx</em>
+    </div>
 </body>
 </html>
