@@ -34,7 +34,16 @@ body {
     color: white;
     text-align: right;
     padding: 10px;
+    clear: both;
 }
-ol li {
+ul li {
     text-align: left;
+}
+input[type="button"], input[type="reset"] {
+    background-color: #00838F;
+    color: white;
+}
+
+input[type="button"]:hover, input[type="reset"]:hover {
+    color: #80DEEA;
 }

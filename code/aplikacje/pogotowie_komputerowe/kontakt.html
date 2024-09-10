@@ -22,11 +22,11 @@
             <h2>Kontakt</h2>
             <form>
                 <table>
-                    <tr><td>Imię: </td><td><input type="text"></td></tr>
-                    <tr><td>Nazwisko: </td><td><input type="text"></td></tr>
-                    <tr><td>E-mail: </td><td><input type="email"</td></tr>
+                    <tr><td>Imię: </td><td><input type="text" id="imie"></td></tr>
+                    <tr><td>Nazwisko: </td><td><input type="text" id="nazwisko"></td></tr>
+                    <tr><td>E-mail: </td><td><input type="email" id="mail"></td></tr>
                     <tr><td>Zgłoszenie: </td><td>
-                            <select>
+                            <select id="zgloszenie">
                                 <option>naprawa komputerów</option>
                                 <option>odzyskiwanie danych</option>
                                 <option>wirusy</option>
@@ -36,15 +36,28 @@
                     <tr><td></td><td>
                         <input type="checkbox" checked>Wyślij kopię wiadomości
                     </td></tr>
-                    <tr><td></td><td><input type="reset" value="Czyść"><input type="submit" value="Wyślij" onclick="script()"></td></tr>
+                    <tr><td></td><td><input type="reset" value="Czyść"><input type="button" value="Wyślij" onclick="script()"></td></tr>
                 </table>
             </form>
+            <hr>
+            <p id="podglad"></p>
+            <script>
+                function script(){
+                    var imie = document.getElementById("imie").value;
+                    var nazwisko = document.getElementById("nazwisko").value;
+                    var mail = document.getElementById("mail").value;
+                    var zgloszenie = document.getElementById("zgloszenie").value;
+                    var podglad = document.getElementById("podglad");
+
+                    podglad.innerText = imie + " " + nazwisko + "\n" + mail.toLowerCase() + "\nUsługa: " + zgloszenie;
+                }
+            </script>
         </div>
         <div id="prawy">
         
         </div>
         <div id="stopka">
-            Autor: <em>xxxxxxxxxx</em>
+            Autor: <em>Łajcior 2115</em>
         </div>
     </div>
 </body>
