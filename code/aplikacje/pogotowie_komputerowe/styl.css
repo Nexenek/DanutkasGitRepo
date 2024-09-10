@@ -5,6 +5,12 @@ body {
     width: 95%;
     margin: auto;
 }
+
+#container {
+    width: 95%;
+    margin: auto;
+}
+
 #baner {
     background-color: #00838F;
     height: 200px;
@@ -21,6 +27,7 @@ body {
 #lewy, #prawy, #srodek {
     height: 350px;
     width: 33%;
+    float: left;
 }
 #stopka {
     background-color: #006064;

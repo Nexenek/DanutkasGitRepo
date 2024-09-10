@@ -1,5 +1,5 @@
 # Danutka's GitHub repository
-Repozytorium Danutki z dokładnym objaśnieniem kodu na GitHubie, o które nikt nie pytał a każdy potrzebował.
+Repozytorium Pani Danutki z dokładnym objaśnieniem kodu na GitHubie, o które nikt nie pytał a każdy potrzebował.
 
 # Spis treści
 ### Matsy na sprawdziany:
