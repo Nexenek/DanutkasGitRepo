@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <header>
+        <h1>Formularz rejestracyjny konferencji <em>Nasze Kwiaty</em></h1>
+    </header>
+    <main>
+        <div id="lewy">
+            <h2>Dane osobowe</h2>
+            <input type="text" placeholder="Wpisz imię..." required><br>
+            <input type="text" placeholder="Wpisz nazwisko..." required><br>
+            <input type="button" onclick="wyswietl()" value="Następna karta">
+        </div>
+        <div id="srodek">
+            <h2>Dane kontaktowe</h2>
+            <input type="email" placeholder="Twój e-mail..."><br>
+            <input type="tel" placeholder="Twój numer telefonu..."><br>
+            <input type="button" onclick="wyswietl()" value="Następna karta">
+        </div>
+        <div id="prawy">
+            <h2>Hasło do logwania</h2>
+            <input type="password" placeholder="Podaj hasło"><br>
+            <input type="password" placeholder="Powtórz hasło"><br>
+            <input type="button" onclick="zatwierdz()" value="Zatwierdź">
+        </div>
+    </main>
+    <footer id="stopka1">
+        <video src="motyl.mp4" controls ></video>
+    </footer>
+    <footer id="stopka2">
+        <h3>Plan konferencji”</h3>
+        <table>
+            <tr>
+                <th>9:00 - 12:00</th>
+                <th>Pielęgnacja roślin</th>
+            </tr>
+            <tr>
+                <th>13:00 - 15:00</th>
+                <th>Targi kwiatowe</th>
+            </tr>
+        </table>
+    </footer>
+    <footer id="stopka3">
+        <a href="https://kwiaty.pl/">
+            <p>Internetowa kwiaciarnia</p>
+        </a>    
+    </footer>
+    <footer id="stopka4">
+        <p>Formularz wykonał: Twój stary</p>
+    </footer>
+</body>
+</html>
