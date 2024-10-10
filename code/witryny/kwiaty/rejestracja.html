@@ -12,22 +12,35 @@
     <main>
         <div id="lewy">
             <h2>Dane osobowe</h2>
-            <input type="text   " placeholder="Wpisz imię..." required><br>
+            <input type="text" placeholder="Wpisz imię..." required><br>
             <input type="text" placeholder="Wpisz nazwisko..." required><br>
-            <button onclick="wyswietl()">Następna karta</button>
+            <button onclick="pokaz1()">Następna karta</button>
         </div>
         <div id="srodek">
             <h2>Dane kontaktowe</h2>
             <input type="email" placeholder="Twój e-mail..." required><br>
             <input type="tel" placeholder="Twój numer telefonu..." required><br>
-            <button onclick="wyswietl()">Następna karta</button>
+            <button onclick="pokaz2()">Następna karta</button>
         </div>
         <div id="prawy">
             <h2>Hasło do logwania</h2>
             <input type="password" placeholder="Podaj hasło"><br>
             <input type="password" placeholder="Powtórz hasło"><br>
-            <button onclick="zatwierdz()">Następna karta</button>
+            <button onclick="pokaz3()">Następna karta</button>
         </div>
+        <script type="text/javascript">
+            function pokaz1() {
+                document.querySelector("#lewy").style.visibility = "hidden";
+                document.querySelector("#srodek").style.visibility = "visible";
+            }
+            function pokaz2() {
+                document.querySelector("#srodek").style.visibility = "hidden";
+                document.querySelector("#prawy").style.visibility = "visible";
+            }
+            function pokaz3() {
+                document.getElementById("prawy").style.display = "none";
+            }
+        </script>
     </main>
     <footer id="stopka1">
         <video src="motyl.mp4" controls></video>

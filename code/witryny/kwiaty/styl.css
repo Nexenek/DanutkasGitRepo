@@ -36,11 +36,11 @@ main {
 }
 
 #srodek {
-    display: none;
+    visibility: hidden;
 }
 
 #prawy {
-    display: none;
+    visibility: hidden;
 }
 
 p {
