@@ -12,8 +12,8 @@
     <main>
         <div id="lewy">
             <h2>Dane osobowe</h2>
-            <input type="text" placeholder="Wpisz imię..." required><br>
-            <input type="text" placeholder="Wpisz nazwisko..." required><br>
+            <input type="text" id="imie" placeholder="Wpisz imię..." required><br>
+            <input type="text" id="nazwisko" placeholder="Wpisz nazwisko..." required><br>
             <button onclick="pokaz1()">Następna karta</button>
         </div>
         <div id="srodek">
@@ -24,8 +24,8 @@
         </div>
         <div id="prawy">
             <h2>Hasło do logwania</h2>
-            <input type="password" placeholder="Podaj hasło"><br>
-            <input type="password" placeholder="Powtórz hasło"><br>
+            <input type="password" id="haslo" placeholder="Podaj hasło"><br>
+            <input type="password" id="phaslo" placeholder="Powtórz hasło"><br>
             <button onclick="pokaz3()">Następna karta</button>
         </div>
         <script type="text/javascript">
@@ -38,7 +38,14 @@
                 document.querySelector("#prawy").style.visibility = "visible";
             }
             function pokaz3() {
-                document.getElementById("prawy").style.display = "none";
+                let imie = document.getElementById("imie")
+                let nazwisko = document.getElementById("nazwisko")
+                let haslo = document.getElementById("haslo")
+                let phaslo = document.getElementById("phaslo")
+                console.log("Witaj " + imie.value + " " + nazwisko.value)
+                if (haslo.value !== phaslo.value) {
+                    alert("Podane hasła różnią się");
+                }
             }
         </script>
     </main>
