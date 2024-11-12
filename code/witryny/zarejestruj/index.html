@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep-rejestracja</title>
+    <link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <aside id="boczny">
+<img src="obraz.png" alt="promocje">
+<h2>sprawdź promocje</h2>
+<table>
+    <tr><th>Co?</th><th>Ile taniej?</th></tr>
+    <tr><td>ubrania</td><td>15%</td></tr>
+    <tr><td>buty</td><td>25%</td></tr>
+
+</table>
+    </aside>
+    <header>
+<h1>Zarejestruj sie w sklepie</h1>
+    </header>
+    <main>
+<button onclick="klient()">Klient</button>
+<button onclick="adres()">Adres</button>
+<button onclick="kontakt()">Kontakt</button>
+        <div id="main1">
+            <p>Imię</p>
+            <input type="text" placeholder="Wpisz dane..." id="Imie">
+            <p>Nazwisko</p>
+            <input type="text" id="Nazwisko">
+            <p>Data urodzenia</p>
+            <input type="date" id="data">
+        </div>
+        <div id="main2">
+            <p>Ulica</p>
+            <input type="text" id="ulica">
+            <p>Numer</p>
+            <input type="number" id="numer">
+            <p>Miasto</p>
+            <input type="text" id="miasto">
+        </div>
+        <div id="main3">
+            <p>Numer komórkowy</p>
+            <input type="tel" id="telefon"><br>
+            <input type="checkbox" id="rodo">Akceptuję rodo<br>
+            <button onclick="zatwierdz()">zatwierdź dane</button>
+
+            
+        </div>
+    </main>
+
+    <div id="postep">
+        <div></div>
+    </div>
+    <footer>
+        <h4>Rejestracja do skepu wykonał: 7421982424</h4>
+    </footer>
+</body>
+</html>
