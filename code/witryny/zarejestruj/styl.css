@@ -53,7 +53,7 @@ main>div {
 }
 
 #main2, #main3 {
-    visibility: hidden;
+    display: none;
 }
 
 #postep {
