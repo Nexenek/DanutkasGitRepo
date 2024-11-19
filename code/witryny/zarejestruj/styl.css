@@ -57,6 +57,13 @@ main>div {
 }
 
 #postep {
+    background-color: lightgray;
+    width: 73%;
+    margin-bottom: 10px;
+    float: right;
+}
+
+#postep div{
     background-color: navy;
     width: 4%;
     height: 30px;
