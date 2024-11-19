@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasz zespół</title>
+    <link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+    <header id="baner1">
+        <img src="logo.png" alt="logo firmy">
+    </header>
+
+    <header id="baner2">
+        <h1>Nasz zespół</h1>
+    </header>
+
+    <main>
+        <div id="karta1" class="karta">
+            <img src="osoba1.jpg" alt="Dyrektor">
+            <h2>Krzysztof Dobromilski</h2>
+            <h3>Dyrektor</h3>
+            <p>Firma logistyczna była jego marzeniem. Zrealizował je 10 lat temu. Nasza firma prosperuje dzięki Krzysztofowi</p>
+            <p>telefon: 111222333</p>
+            <h5><a href="mailto:Krzysztof.Dobromilski@firma.pl">Kontakt</a></h5>
+        </div>
+
+        <div id="karta2" class="karta">
+            <img src="osoba2.jpg" alt="Kierownik logistyków">
+            <h2>Joanna Trojanowska</h2>
+            <h3>Kierownik logistyków</h3>
+            <p>Od początku firmy z nami. Wie jak zorganizować pracę swoich logistyków aby wszystko było na czas</p>
+            <p>telefon: 222333444</p>
+            <h5><a href="mailto:Joanna.Trojanowska@firma.pl">Kontakt</a></h5>
+        </div>
+
+        <div id="karta3" class="karta">
+            <img src="osoba3.jpg" alt="Kadry">
+            <h2>Ewa Nowak</h2>
+            <h3>Księgowość i kadry</h3>
+            <p>Od lat finanse powierzamy niezawodnej Ewie. Twardą ręką trzyma kasę i dba o wszystkich pracowników</p>
+            <p>telefon: 333444555</p>
+            <h5><a href="mailto:Ewa.Nowak@firma.pl">Kontakt</a></h5>
+        </div>
+    </main>
+
+    <blockquote>
+        <script type="text/javascript">
+            function cytat1(){
+                let cytat1=document.querySelector('#cytat1').style.display="none";
+                let cytat2=document.querySelector('#cytat2').style.display="block";
+            }
+            function cytat2(){
+                let cytat2=document.querySelector('#cytat2').style.display="none";
+                let cytat3=document.querySelector('#cytat3').style.display="block";
+            }
+            function cytat3(){
+                let cytat3=document.querySelector('#cytat3').style.display="none";
+                let cytat1=document.querySelector('#cytat1').style.display="block";
+            }
+        </script>
+
+        <cite onclick="cytat1()" id="cytat1">"Każdego dnia stawiam sobie nieosiągalne wyzwania i próbuję je wykonać"
+        <p>- Krzysztof</p></cite>
+        <cite onclick="cytat2()" id="cytat2">"Nie bój się porażek, im więcej ich rozwiążesz, tym szybciej osiągniesz cel"
+        <p>- Joanna</p></cite>
+        <cite onclick="cytat3()" id="cytat3">"Niezadowolony pracownik jest dla mnie źródłem nauki"
+        <p>- Ewa</p></cite>
+    </blockquote>
+
+    <footer>
+        <p>stronę wykonał: 03405213769</p>
+    </footer>
+</body>
+</html>
