@@ -38,7 +38,6 @@ function aktualizujPostep() {
     }
     document.querySelector("#postep>div").style.width = postepWartosc + "%";
 }
-
-document.querySelectorAll('input[type="text"], input[type="date"], input[type="number"], input[type="tel"]').forEach(input => {
-    input.addEventListener('blur', aktualizujPostep);
-})
+// Pani znowu próbuje optymalizowac kod... NIE IDZIE JEJ I TO BARDZO
+// WRĘCZ IDZIE JEJ W DRUGĄ STRONE
+// No cóż teraz wszystko robicie ręcznie!
