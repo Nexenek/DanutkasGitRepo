@@ -37,8 +37,6 @@ function aktualizujPostep() {
         postepWartosc += 12;
     }
     document.querySelector("#postep>div").style.width = postepWartosc + "%";
-
-
 }
 
 document.querySelectorAll('input[type="text"], input[type="date"], input[type="number"], input[type="tel"]').forEach(input => {
