@@ -38,6 +38,25 @@ function aktualizujPostep() {
     }
     document.querySelector("#postep>div").style.width = postepWartosc + "%";
 }
+
 // Pani znowu próbuje optymalizowac kod... NIE IDZIE JEJ I TO BARDZO
 // WRĘCZ IDZIE JEJ W DRUGĄ STRONE
 // No cóż teraz wszystko robicie ręcznie!
+
+function zatwierdz() {
+    // Aby było optymalniej - bo wartość się nie zmienia, powinno być const - ale nie mieliśmy const
+    // const imie = document.getElementById("imie").value;
+    let imie = document.getElementById("Imie").value;
+    let nazwisko = document.getElementById("Nazwisko").value;
+    let data = document.getElementById("data").value;
+    let ulica = document.getElementById("ulica").value;
+    let numer = document.getElementById("numer").value;
+    let miasto = document.getElementById("miasto").value;
+    let telefon = document.getElementById("telefon").value;
+    let rodo = document.getElementById("rodo").checked;
+    
+    // optymalniej
+    // console.log(`${imie}, ${nazwisko}, ${data}, ${ulica}, ${numer}, ${miasto}, ${telefon}, ${rodo}`);
+
+    console.log(imie + ", " + nazwisko + ", " + data + ", " + ulica + ", " + numer + ", " + miasto + ", " + telefon + ", " + rodo);
+}
