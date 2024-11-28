@@ -25,10 +25,6 @@ function kontakt() {
     aktywujZakladke("main3");
 }
 
-function zatwierdz() {
-    // pass
-}
-
 let postepWartosc = 0;
 function aktualizujPostep() {
     if (postepWartosc >= 100) {
