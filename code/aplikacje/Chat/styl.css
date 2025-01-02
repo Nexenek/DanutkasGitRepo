@@ -1,0 +1,81 @@
+* {
+    font-family: Garamond;
+}
+
+header {
+    background-color: Tomato;
+    color: white;
+    text-align: center;
+    width: 80%;
+    height: 80px;
+}
+
+main {
+    width: 80%;
+    height: 600px;
+    float: right;
+}
+
+aside {
+    background-color: coral;
+    width: 20%;
+    height: 680px;
+    float: right;
+}
+
+footer {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    clear: both;
+}
+
+img {
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+
+#blok-chatu {
+    border: 1px solid tomato;
+    margin: 15px;
+    height: 470px;
+    overflow-y: scroll;
+    float: left;
+}
+
+#wypowiedz-jolanta, #wypowiedz-krzysztof {
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    margin: 2%;
+    padding: 3px;
+}
+
+#wypowiedz-jolanta {
+    background-color: #eee;
+    text-align: left;
+}
+
+#wypowiedz-jolanta img {
+    float: left;
+}
+
+#wypowiedz-krzysztof {
+    background-color: #ccc;
+    text-align: right;
+}
+
+#wypowiedz-krzysztof img {
+    float: right;
+}
+
+button {
+    background-color: tomato;
+    border: 1px solid darkred;
+    padding: 5px;
+    font: bold;
+}
+
+input {
+    width: 500px;
+}
