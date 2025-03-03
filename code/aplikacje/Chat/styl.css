@@ -11,6 +11,7 @@ header {
 }
 
 main {
+    float: right;
     width: 80%;
     height: 600px;
     float: right;
@@ -73,7 +74,7 @@ button {
     background-color: tomato;
     border: 1px solid darkred;
     padding: 5px;
-    font: bold;
+    font-weight: bold;
 }
 
 input {
