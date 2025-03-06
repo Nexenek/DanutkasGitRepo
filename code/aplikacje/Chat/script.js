@@ -65,4 +65,7 @@ function generuj() {
     // Wpierdzielamy div'a do div'a bloku chatu
     var chatContainer = document.getElementById("blok-chatu");
     chatContainer.appendChild(nowaWiadomosc);
+    
+    // Scrolluj do dołu
+    chatContainer.scrollTop = chatContainer.scrollHeight;
 }
