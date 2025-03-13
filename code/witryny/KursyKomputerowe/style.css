@@ -6,7 +6,7 @@ body {
 	background-color: #EAEAEA;
 }
 
-header, footer {
+nav, footer {
 	background-color: #625B5B;
 	color: white;
 	padding: 20px;
@@ -26,7 +26,7 @@ a {
 	text-decoration: none;
 }
 
-header a {
+nav a {
 	font-weight: bold;
 	background-color: #EAEAEA;
 	color: #625B5B;
@@ -35,7 +35,7 @@ header a {
 	border-radius: 20px;
 }
 
-header a:hover {
+nav a:hover {
 	background-color: #625B5B;
 	color: #EAEAEA;
 	border: 1px solid #EAEAEA;
