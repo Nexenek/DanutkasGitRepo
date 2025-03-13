@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Kursy komputerowe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="baner.png" alt="Kursy komputerowe">
+    </header>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="raty.html">Koszt rat</a>
+        <a href="https://moje-szkolenia.pl/">Nasz partner</a>
+    </nav>
+    <main>
+        <h3>Oblicz miesięczną ratę</h3>
+        <label><input type="checkbox">Kurs React.js</label><br>
+        <label><input type="checkbox">Kurs JavaScript</label><br>
+        <label>Liczba rat: <input type="number" id="liczbaRat"></label><br>
+        <label>Miasto: <select id="miasto">
+            <option value="Warszawa">Warszawa</option>
+            <option value="Katowice">Katowice</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select></label><br>
+        <input type="button" value="Oblicz" onclick="oblicz()">
+        <p id="wynik"></p>
+    </main>
+    <footer>
+        Autor strony: Twój stary pijany
+    </footer>
+</body>
+</html>
