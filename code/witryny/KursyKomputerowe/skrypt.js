@@ -1,6 +1,6 @@
 function oblicz(){
     let miasto = document.getElementById("miasto").value;
-    let liczbaRat = document.getElementById("liczbaRat").value;
+    let liczbaRat = parseInt(document.getElementById("liczbaRat").value);
     let kursjs  = document.getElementById("kursjs").checked;
     let kursreact = document.getElementById("kursreact").checked;
     
