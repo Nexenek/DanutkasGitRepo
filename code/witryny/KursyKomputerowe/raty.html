@@ -16,17 +16,20 @@
     </nav>
     <main>
         <h3>Oblicz miesięczną ratę</h3>
-        <label><input type="checkbox">Kurs React.js</label><br>
-        <label><input type="checkbox">Kurs JavaScript</label><br>
-        <label>Liczba rat: <input type="number" id="liczbaRat"></label><br>
-        <label>Miasto: <select id="miasto">
+        <label><input type="checkbox" id="kursreact" class="kontrolki">Kurs React.js</label><br>
+        <label><input type="checkbox" id="kursjs" class="kontrolki">Kurs JavaScript</label><br>
+        <label>Liczba rat: <input type="number" id="liczbaRat" class="kontrolki"></label><br>
+        <label>Miasto: <select id="miasto" class="kontrolki">
             <option value="Warszawa">Warszawa</option>
             <option value="Katowice">Katowice</option>
             <option value="Gdańsk">Gdańsk</option>
         </select></label><br>
-        <input type="button" value="Oblicz" onclick="oblicz()">
+        <input type="button" value="Oblicz" class="kontrolki" onclick="oblicz()">
         <p id="wynik"></p>
     </main>
+    <!--SKRYPT AUUU-->
+    <script type="text/javascript" src="skrypt.js"></script>
+    <!--SKRYPT AUUU-->
     <footer>
         Autor strony: Twój stary pijany
     </footer>
