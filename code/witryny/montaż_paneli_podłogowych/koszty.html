@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Montaż paneli podłogowych</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="montaz_paneli.png" alt="firma usługowa">
+    </header>
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="koszty.html">Kalkulator kosztów</a>
+    </nav>
+    <main>
+        <h1>Kalkulator kosztów montażu</h1>
+        <label>Szerokość pomieszczenia [m]: <input id="szerokosc" type="number"></label>
+        <label>Długość pomieszczenia [m]: <input id="dlugosc" type="number"></label>
+        <p>Typ panelu</p>
+        <div>
+            <label><input type="radio" id="laminowane" name="typ_panelu"> Panele laminowane</label><br>
+            <label><input type="radio" id="winyl" name="typ_panelu"> Panele winylowe</label><br>
+            <label><input type="radio" id="deska" name="typ_panelu"> Deska podłogowa</label>
+        </div>
+        <button onclick="oblicz()">Oblicz</button>
+        <p id="wynik"></p>
+        <script type="text/javascript" src="script.js"></script>
+    </main>
+    <footer>
+        <h5>Autor strony: 37427348230432472389</h5>
+    </footer>
+</body>
+</html>
+
