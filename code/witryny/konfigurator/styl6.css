@@ -1,0 +1,67 @@
+body {
+    font-family: Georgia, serif;
+}
+
+#lewy {
+    background-color: Maroon;
+    color: white;
+    height: 600px;
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#prawy {
+    background-color: Maroon;
+    color: white;
+    height: 600px;
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 10px;
+}
+
+#stopka {
+    clear: both;
+    background-color: DimGray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#prawy .prawy-flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+#prawy img {
+    padding: 10px;
+    border: 1px solid white;
+    max-width: 200px;
+    height: auto;
+}
+
+#prawy ul {
+    margin: 10px;
+    padding: 10px;
+}
+
+#prawy p {
+    margin: 10px;
+    padding: 10px;
+}
+
+button.bg-indigo {
+    background-color: Indigo;
+    color: white;
+}
+button.bg-steelblue {
+    background-color: SteelBlue;
+    color: white;
+}
+button.bg-olive {
+    background-color: Olive;
+    color: white;
+}

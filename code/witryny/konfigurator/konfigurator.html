@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Style w JavaScript</title>
+    <link rel="stylesheet" href="styl6.css">
+    <script src="skrypt.js" defer></script>
+</head>
+<body>
+    <section id="lewy">
+        <h1>Konfigurator stylu</h1>
+        <p>Podaj kolor tła<br>
+            <button id="btnIndigo" class="bg-indigo">Indigo</button>
+            <button id="btnSteelBlue" class="bg-steelblue">SteelBlue</button>
+            <button id="btnOlive" class="bg-olive">Olive</button>
+        </p>
+        <p>Podaj kolor czcionki<br>
+            <select id="fontColor">
+                <option value="White">White</option>
+                <option value="Tan">Tan</option>
+                <option value="Bisque">Bisque</option>
+                <option value="Plum">Plum</option>
+            </select>
+        </p>
+        <p>Podaj rozmiar czcionki w procentach, np. 200%<br>
+            <input type="text" id="fontSize" value="100%">
+        </p>
+        <p>Czy rysunek ma mieć ramkę?<br>
+            <input type="checkbox" id="borderCheck" checked> Rysuj ramkę
+        </p>
+        <p>Jaki jest typ punktora listy?<br>
+            <label><input type="radio" name="listType" value="disc" checked> dysk</label>
+            <label><input type="radio" name="listType" value="square"> kwadrat</label>
+            <label><input type="radio" name="listType" value="circle"> okrąg</label>
+        </p>
+    </section>
+    <section id="prawy">
+        <div class="prawy-flex">
+            <img id="gibraltar" src="gibraltar.jpg" alt="półwysep Gibraltar">
+            <ul id="lista">
+                <li>element 1</li>
+                <li>element 2</li>
+                <li>element 3</li>
+            </ul>
+        </div>
+        <p id="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, eu consectetur nisl nisi euismod nisi.
+        </p>
+    </section>
+    <footer id="stopka">
+        Autor: 12345678901
+    </footer>
+</body>
+</html>
