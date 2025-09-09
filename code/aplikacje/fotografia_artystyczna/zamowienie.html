@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fotografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fotografia artystyczna</h1>
+    </header>
+    <article>
+        <img src="1.jpg" alt="obraz do sprzedaży" title="1.jpg">
+        <img src="2.jpg" alt="obraz do sprzedaży" title="2.jpg">
+        <img src="3.jpg" alt="obraz do sprzedaży" title="3.jpg">
+        <img src="4.jpg" alt="obraz do sprzedaży" title="4.jpg">
+        <img src="5.jpg" alt="obraz do sprzedaży" title="5.jpg">
+        <img src="6.jpg" alt="obraz do sprzedaży" title="6.jpg">
+        <img src="7.jpg" alt="obraz do sprzedaży" title="7.jpg">
+        <img src="8.jpg" alt="obraz do sprzedaży" title="8.jpg">
+        <img src="9.jpg" alt="obraz do sprzedaży" title="9.jpg">
+        <img src="10.jpg" alt="obraz do sprzedaży" title="10.jpg">
+    </article>
+    <main>
+        <section id="lewy">
+            <h3>Zamówienie</h3>
+            <label for="wybor">Wybierz obraz:</label>
+            <input type="file" id="wybor" accept="image/jpeg"><br>
+            <label for="liczba">Liczba kopii:</label>
+            <input type="number" id="liczba"><br>
+            <label for="papier">Rodzaj papieru:</label>
+            <input type="radio" id="papier1" name="papier" value="błyszczący" checked>
+            <label for="papier1">Papier błyszczący</label>
+            <input type="radio" id="papier2" name="papier" value="matowy">
+            <label for="papier2">Papier matowy</label><br>
+            <button id="dodaj" onclick="dodajDoKoszyka()">Dodaj do koszyka</button>
+            <script src="script.js"></script>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="regulamin.html">Regulamin</a></li>
+                <li><a href="uslugi.html">Usługi</a></li>
+                <li><a href="https://pixabay.com">Zdjęcia</a></li>
+            </ul>
+        </nav>
+        <section id="prawy">
+            <h3>Koszyk</h3>
+            <div id="koszyk"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Autor strony: <i>389426374234</i></p>
+    </footer>
+</body>
+</html>
