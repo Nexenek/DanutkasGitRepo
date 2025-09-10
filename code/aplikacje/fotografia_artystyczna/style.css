@@ -45,9 +45,9 @@ li {
     display: inline-block;
 }
 
-article img {
+img {
     width: 10%;
-    float: left; /* Obraz po lewej stronie, tekst opływa po prawej */
+    float: left;
 }
 
 a {

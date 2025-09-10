@@ -42,7 +42,7 @@ function dodajDoKoszyka() {
     // }
 
     let cenaProduktu = 0;
-    if (papierBlyszczacy) {
+    if (papierBlyszczacy) { 
         cenaProduktu = 1.5 * parseInt(liczbaKopii.value);
     } else if (papierMatowy) {
         cenaProduktu = 2 * parseInt(liczbaKopii.value);
