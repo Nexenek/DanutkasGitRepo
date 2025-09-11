@@ -1,0 +1,63 @@
+* {
+    font-family: Verdana;;
+}
+
+aside {
+    height: 610px;
+    width: 20%;
+    float: left;
+}
+
+img {
+    width: 100%;
+    height: 610px;
+}
+
+header, footer, nav {
+    float: left;
+    background-color: mediumpurple;
+    color: white;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    text-shadow: 4px 4px dimgray;
+}
+
+nav {
+    padding-top: 10px;
+}
+
+main {
+    background-color: thistle;
+    width: 80%;
+    height: 450px;
+    overflow: auto;
+}
+
+li>button {
+    float: right;
+    background-color: mediumpurple;
+    color: white;
+    height: 30px;
+    border: none;
+}
+
+ul {
+    margin: 40px auto;
+    width: 70%;
+    font-size: 25px;
+    border: solid 2px mediumpurple;
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+}
+
+li:nth-child(even) {
+    background-color: #ddcadd;
+}
+
+li:hover {
+    background-color: lavender;
+}
