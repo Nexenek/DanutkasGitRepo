@@ -10,15 +10,15 @@
         <img src="obraz.jpg" alt="notatki">
     </aside>
     <header>
-        <h1>Moje zadania</h1>
+        <h2>Moje zadania</h2>
     </header>
     <nav>
-        <input type="text" placeholder="Dodaj zadanie...">
+        <input type="text" placeholder="Dodaj zadanie..." id="zadanieInput">
         <button onclick="dodajZadanie()">Dodaj</button>
         <script src="script.js"></script>
     </nav>
     <main>
-        <ul>
+        <ul id="listaZadan">
             <li>Wyprowadzić psa <button onclick="wykonane(this)">Wykonane</button></li>
             <li>Gimnastyka <button onclick="wykonane(this)">Wykonane</button></li>
             <li>Zakupy <button onclick="wykonane(this)">Wykonane</button></li>
