@@ -11,6 +11,7 @@ header, footer {
 }
 
 section {
+    float: left;
     width: 50%;
     height: 470px;
 }
@@ -39,4 +40,8 @@ button:hover {
 
 input[type="range"] {
     width: 80%;
+}
+
+footer {
+    clear: both;
 }

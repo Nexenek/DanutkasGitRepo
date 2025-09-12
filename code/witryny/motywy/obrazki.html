@@ -10,34 +10,35 @@
         <h2>Efekty na obrazach</h2>
     </header>
     <section id="pierwszy">
-        <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku">
-        <input type="radio" name="efektObraz1" id="efekt1" checked><label for="efekt1">Blur</label>
-        <input type="radio" name="efektObraz1" id="efekt2"><label for="efekt2">Sepia</label>
-        <input type="radio" name="efektObraz1" id="efekt3"><label for="efekt3">Negatyw</label>
-        <button onclick="zastosujEfekt1()">Zastosuj</button>
+        <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku"><br>
+        <input type="radio" name="opcja" id="efekt1" value="blur(6px)"><label for="efekt1">Blur</label><br>
+        <input type="radio" name="opcja" id="efekt2" value="sepia(100%)"><label for="efekt2">Sepia</label><br>
+        <input type="radio" name="opcja" id="efekt3" value="invert(100%)"><label for="efekt3">Negatyw</label><br>
+        <button onclick="zastosujEfekt()">Zastosuj</button>
     </section>
     <section id="drugi">
         <img src="pomarancza.jpg" alt="drzewo pomarańczy">
-        <button onclick="ustawKolor(true)">Kolorowy</button>
-        <button onclick="ustawKolor(false)">Czarno-biały</button>
+        <button onclick="kolor()">Kolorowy</button>
+        <button onclick="czarnoBialy()">Czarno-biały</button>
     </section>
     <section id="trzeci">
         <img src="owoce.jpg" alt="Kosz pełen owoców" id="obraz3">
         <br>
         <input type="range" min="0" max="100" value="100" id="suwak3">
         <br>
-        <button onclick="zastosujEfekt3()">Zastosuj</button>
+        <button onclick="zastosujPrzezroczystosc()">Zastosuj</button>
     </section>
     <section id="czwarty">
         <img src="zolw.jpg" alt="Żółw w wodzie" id="obraz4">
         <br>
         <input type="range" min="0" max="250" value="0" id="suwak4">
         <br>
-        <button onclick="zastosujEfekt4()">Zastosuj</button>
+        <button onclick="zastosujJasnosc()">Zastosuj</button>
     </section>
     <footer>
         <p><a href="http://www.css.com/" target="_blank">Zobacz inne efekty</a></p>
         <p>Stronę wykonał: 2392136821</p>
     </footer>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
