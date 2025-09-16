@@ -70,5 +70,311 @@
 		<tr><th>&gt;</th><th>Wynik true kiedy argumenty a jest wiekszy od b</th><th>a&gt;b</th></tr>
 		<tr><th>&gt;=</th><th>Wynik true kiedy argument a jest wiekszy lub rowny argumentowi b</th><th>a&gt;=b</th></tr>
 	</table>
-</body>
-</HTML>
+	<h3>Operatory bitowe</h3>
+	<table border="2">
+		<tr>
+			<th>Operator</th>
+			<th>Działanie</th>
+			<th>wyrażenie</th>
+		</tr>
+		<tr>
+			<td>" & "</td>
+			<td>iloczyn bitowy (AND)</td>
+			<td>a & b</td>
+		</tr>
+		<tr>
+			<td>" | "</td>
+			<td>suma bitowa(OR)</td>
+			<td>a | b</td>
+		</tr>
+		<tr>
+			<td>" ~ "</td>
+			<td>negacja bitowa (NOT)</td>
+			<td> ~ a </td>
+		</tr>
+		<tr>
+			<td>" ^ "</td>
+			<td>bitowa różnica symetryczna</td>
+			<td>a ^ b</td>
+		</tr>
+		<tr>
+			<td>" >> "</td>
+			<td>przesunięcie bitowe w prawo</td>
+			<td>a >> b</td>
+		</tr>
+		<tr>
+			<td>" << "</td><td>przesunięcie bitowe w lewo</td><td>" a << b"</td>
+		</tr>
+		<tr>
+			<td>" >>>"</td>
+			<td>przesunięcie bitowe w prawo z wypełnieniem zerami</td>
+			<td>a >>> b</td>
+		</tr>
+	</table>
+	<hr>
+	<h3>Operatory logiczne</h3>
+	<table border="2">
+		<tr>
+			<th>Operator</th>
+			<th>Działanie</th>
+			<th>Przykład</th>
+		</tr>
+		<tr>
+			<td>" && "</td>
+			<td>iloczyn logiczny (AND)</td>
+			<td>a && b</td>
+		</tr>
+		<tr>
+			<td>" || "</td>
+			<td>suma logiczna (OR)</td>
+			<td>a || b</td>
+		</tr>
+		<tr>
+			<td>" ! "</td>
+			<td>negacja logiczna (NOT)</td>
+			<td> !a</td>
+		</tr>
+	</table>
+	<hr>
+	<h3>Operatory przypisania</h3>
+	<table border="2">
+		<tr>
+			<th>Operator</th>
+			<th>Przykład</th>
+			<th>Znaczenie</th>
+		</tr>
+			<tr>
+				<td>" = "</td>
+				<td>x = y</td>
+				<td>x = y</td>
+			</tr>
+			<tr>
+				<td>" += "</td>
+				<td>x += y</td>
+				<td>x = x + y</td>
+			</tr>
+			<tr>
+				<td>" -= "</td>
+				<td>x -= y</td>
+				<td>x = x - y </td>
+			</tr>
+			<tr>
+				<td>" *="</td>
+				<td>x *= y</td>
+				<td>x = x * y</td>
+			</tr>
+			<tr>
+				<td>" /="</td>
+				<td>x /= y</td>
+				<td>x = x / y</td>
+			</tr>
+			<tr>
+				<td>" %= "</td>
+				<td>x %= y</td>
+				<td>x = x % y</td>
+			</tr>
+		</table>
+		<hr>
+		<h1>Instrukcja switch</h1>
+		<h4>Instrukcja switch jest instrukcją wyboru. Pozwala sprawdzić zestaw warunków i wykonać różne działania w zależności
+			od wyniku porównania<br>
+			switch (wyrażenie sprawdzane) {<br>
+			case wartość1:<br>
+			blok instrukcji 1;<br>
+			break;<br>
+			case wartość2:<br>
+			blok instrukcji 2;<br>
+			break;<br>
+			case wartość3:<br>
+			blok instrukcji 3;<br>
+			break;<br>
+			default:<br>
+			blok instrukcji 4;
+			}
+		</h4>
+		<hr>
+		<script type="text/javascript">
+			let a = 20;
+			let b = 7;
+			switch (a * b) {
+				case 10:
+					document.write("Wynik mnożenia wynosi 10");
+					break;
+				case 40:
+					document.write("Wynik mnożenia wynosi 40");
+					break;
+				case 140:
+					document.write("Wynik mnożenia wynosi 140");
+					break;
+				default:
+					document.write("Nieznany wynik mnożenia");
+			}
+		</script>
+		<hr>
+		<h1>Pętla for</h1>
+		<h4>Pętlę typu for wykorzystuje się, gdy znana jest liczba wykonań pętli oraz znany jest warunek, który musi być
+			spełniony aby kolejny raz wykonać pętlę<br>
+			for (wyrażenie poczatkowe; wyrażenie warunkowe;wyrażenie modyfikujące) {<br>
+			blok instrukcji;<br>
+			}<br>
+		</h4>
+		<hr>
+		<script type="text/javascript">
+			for (let i = 0; i < 5; i++) {
+				document.write("Pętla wykonana " + i + " raz/y<br>")
+			}
+		</script>
+		<hr>
+		<h1>Pętla while</h1>
+		<p>Pętla <i>while</i> jest zwykle wykorzystywana wtedy, gdy liczba wykonanych powtórzeń nie jest znana. Składnia
+			instrukcji jest natępująca: </p>
+		<i> while (wyrażenie warunkowe){<br>
+			blok instrukcji<br>
+			}</i><br>
+		<script type="text/javascript">
+			let ilosc = 0;
+			while (ilosc++ < 5) {
+				document.write("Pętla wykonana " + ilosc + " raz/y<br>");
+			
+			}
+		</script>
+		<h3>Zadanie napisz skrypt, który wyświetli powtórzone bloki dowolnego tekstu. Wyświetlenie bloku zakończ dla
+			zmiennej=10. </h3>
+		<hr>
+		<br>
+		<script type="text/javascript">
+			let petla = 0;
+			while (petla++ <= 10) {
+				document.write("Uczymy sie pętli while " + petla + " raz/y<br>");
+			
+			}
+		</script>
+		<hr>
+		<h1>Pętla do...while</h1>
+		Pętla <i> do... while</i> jest odmianą pętli while. Jej składnia jest następująca <br>
+		<b><i>do {<br>
+				blok instrukcji;<br>
+				}<br>
+				while (wyrażenie warunkowe);
+			</i></b><br>
+		Konstrukcja ta oznacza: Wykonuj instrukcje, dopóki wyrażenie warunkowe jest prawdziwe.<br>
+		W pętli <i>do... while</i> blok instrukcji jest wykonywany conajmniej raz, nawet jeżeli warunek jest fałszywy - pnieważ
+		najpierw wykonywany jest ciąg instrukcji, a dopiero potem sprawdzany jest warunek.<br>
+		<script type="text/javascript">
+			let ile = 1;
+			do {
+				document.write("Pętla wykonana " + ile + " raz/y<br>");
+			} while (ile++ <= 0);
+		</script>
+		<hr>
+		<h1>Instrukcja warunkowa if</h1>
+		<h3>
+			W JavaScript są 2 instrukcje warunkowe, instrukcja warunkowa if, oraz instrukcja warunkowa switch. Instrukcje warunkowe w programowaniu są używane bardzo często.<br>
+			Instrukcje warunkowe wykonują jakąś instrukcję na podstawie zwracanej wartości warunku, czyli true (prawda) lub false (fałsz). Jeżeli wyrażenie w warunku zwraca true wtedy wykonuje się podana instrukcja kodu. Podstawowa struktura instrukcji if:<br>
+			<pre>
+if (warunek) {
+	instrukcjaDoWykonania
+}
+			</pre>
+			Instrukcję, można jeszcze rozwinąć o blok else if:<br>
+			<pre>
+if (warunek) {
+	instrukcjaDoWykonania
+}
+else if (innyWarunek) {
+	innaInstrukcjaDoWykonania
+}
+			</pre>
+			Jeżeli "warunek" jest spełniony, wykona się podana poniżej instrukcja, jeżeli warunek nie zostanie spełniony, lecz "innyWarunek" zostanie spełniony, wtedy wykona się "innaInstrukcjaDoWykonania". Warunków else if, oczywiście może być więcej niż 1, może ich być nieskończenie wiele. Można jeszcze dodać to tego zapisu else:<br>
+			<pre>
+if (warunek) {
+	instrukcjaDoWykonania
+}
+else if (innyWarunek) {
+	innaInstrukcjaDoWykonania
+}
+else {
+	kolejnaInstrukcja
+}
+			</pre>
+			Który mówi o tym, że jeżeli "warunek" oraz "innyWarunek" nie zostaną spełnione to zawsze wykona się instrukcja zawarta w bloku else". Oczywiście instrukcja warunkowa może równie dobrze zawierać tylko if oraz else.<br>
+			Najlepiej będzie przedstawić to na konkretnym zadaniu. Załóżmy, że mamy napisać program który na podstawie podanego miesiąca (tylko miesiąca, tak żeby nie wdawać się w szczegóły), wypisuje porę roku.
+		</h3>
+		<script type="text/javascript">
+			let month = 3;
+			if (month > 0 && month <= 3) {
+				console.log("Zima");
+			} else if (month > 3 && month <= 6) {
+				console.log("Wiosna");
+			} else if (month > 6 && month <= 8) {
+				console.log("Lato");
+			} else if (month > 8 && month <= 12) {
+				console.log("Jesień");
+			} else {
+				console.log("Zły miesiąc.");
+			}
+		</script>
+		<h3>W powyższym przykładzie jeżeli zmienna month będzie równa 1, w konsoli zostanie zapisana "Zima". Dla 6 będzie to
+			"Wiosna", dla 7 "Lato" itd.<br>
+		
+			Jeżeli w bloku instrukcji jest tylko 1 instrukcja do wykonania, można wtedy pominąć nawiasy klamrowe.</h3>
+		<h1>Obiekty</h1>
+		<p>JavaScript to język zorientowany obiektowo, udostępnia wiele wbudowanych obiektów. Daje również możliwość
+			odczytywania ich właściwości oraz korzystania z ich metod. Właściwości obiektu reprezentują jego cechy</p>
+		<script type="text/javascript">
+			let napisz = "Witaj w szkole";
+			document.write(napisz.toUpperCase() + "<br>");
+			document.write("Długość tekstu: " + napisz.length);
+		</script>
+		<h2>Tworzymy obiekt</h2>
+		
+		<script type="text/javascript">
+			let osoba = {
+				nazwisko: "Nowacki", imie: "Marek", zawod: "informatyk",
+			
+				pokaz: function () {
+					document.write(this.nazwisko + ' ' + this.imie + ' zawód: ' + this.zawod);
+				}
+			};
+			osoba.pokaz();
+		</script>
+		<h3>Utwórz w języku JavaScript obiekt opisujący pojazd. Zdefiniuj dla niego nastepujące właściwości: <em>marka, model,
+				rok_produkcji, przebieg</em> oraz metodę <em>wyswietlDane</em></h3>
+		<h3> Tworzymy obiekt pojazd</h3>
+		<script type="text/javascript">
+			let auto = {
+				marka: "Opel", model: "Corsa", rok_produkcji: "2018", przebieg: "128 tys km",
+			
+				wyswietlDane: function () {
+					document.write(this.marka + ' ' + this.model + ' rocznik: ' + this.rok_produkcji + ' przebieg: ' + this.przebieg + '<br>');
+				}
+			};
+			auto.wyswietlDane();
+		
+			auto.numer_rej = "PZN56432";
+			auto.wyswietlDetal = function () {
+				document.write(this.marka + ' ' + this.numer_rej);
+			}
+			auto.wyswietlDetal();
+		</script>
+		<h3>Utwórz w języku JavaScript obiekt opisujący dowolny kraj Europy Zdefiniuj dla niego nastepujące właściwości:
+			<em>nazwa, stolica, powierzchnia, ludność</em> oraz metodę <em>wyswietlKraj</em></h3>
+		<h3>Tworzenie obiektu za pomocą konstruktora</h3>
+		<script type="text/javascript">
+			function Klient(nazwisko_k, imie_k, zawod_k) {
+				this.nazwisko = nazwisko_k;
+				this.imie = imie_k;
+				this.zawod = zawod_k;
+				this.wypisz = function () {
+					alert(this.nazwisko + ' ' + this.imie + ' ' + this.zawod);
+				}
+			}
+			let osoba1 = new Klient('Kowalski', 'Jan', 'kierowca');
+			let osoba2 = new Klient('Nowak', 'Anna', 'sekretarka');
+			osoba1.wypisz();
+			osoba2.wypisz();
+		</script>
+		<h1>DOM (Document Object Model) to model obiektowy dokumentu HTML, pozwala przeglądarce przekonwertować stronę na strukturę obiektów</h1>
+		<p>Model DOM składa się z węzłów, które reprezentują różne części dokumentu HTML </p>
+	</body>
+</html>
