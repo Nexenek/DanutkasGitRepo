@@ -18,15 +18,15 @@
     <main>
         <aside id="lewy">
             Numer kształtu:<br>
-            <input type="number"><br>
+            <input type="number" id="ksztalt"><br>
             skomponuj swój kolor, podaj RGB:<br>
-            R: <input type="number" min="0" max="255"><br>
-            G: <input type="number" min="0" max="255"><br>
-            B: <input type="number" min="0" max="255"><br>
+            R: <input type="number" min="0" max="255" id="R"><br>
+            G: <input type="number" min="0" max="255" id="G"><br>
+            B: <input type="number" min="0" max="255" id="B"><br>
             <button onclick="zamowienie()">Zamówienie</button><br>
-            <p>Twoje zamówienie</p><br>
-            <button>Kolor</button>
-
+            <p id="twojeZamowienie">Twoje zamówienie</p>
+            <button id="buttonKolor">Kolor</button>
+            <script type="text/javascript" src="script.js"></script>
         </aside>
         <aside id="prawy">
             <h2>Nasza oferta</h2>

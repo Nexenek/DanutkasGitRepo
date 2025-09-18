@@ -28,7 +28,7 @@ aside {
 
 nav#jeden>a {
     background-image: url(cukierki1.jpg);
-    padding: 0px 30px 120px;
+    padding: 0px 30px 120px 0px;
     font-size: 150%;
     text-decoration: none;
 }
