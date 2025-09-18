@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styl10.css">
+    <title>Fabryka cukierków</title>
+</head>
+<body>
+    <nav id="jeden">
+        <a href="zamowienie.html">Zamów cukierki</a>
+    </nav>
+    <nav id="dwa">
+        <a href="index.html"><img src="logotyp.png" alt="Nasze logo"></a>
+    </nav>
+    <header>
+        <h1>Strefa zamówień</h1>
+    </header>
+    <main>
+        <aside id="lewy">
+            Numer kształtu:<br>
+            <input type="number"><br>
+            skomponuj swój kolor, podaj RGB:<br>
+            R: <input type="number" min="0" max="255"><br>
+            G: <input type="number" min="0" max="255"><br>
+            B: <input type="number" min="0" max="255"><br>
+            <button onclick="zamowienie()">Zamówienie</button><br>
+            <p>Twoje zamówienie</p><br>
+            <button>Kolor</button>
+
+        </aside>
+        <aside id="prawy">
+            <h2>Nasza oferta</h2>
+            <table>
+                <tr>
+                    <td>Kształty</td>
+                    <td rowspan="2">Możesz zamówić<br>dowolny kolor cukierka</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>cytryna</li>
+                            <li>liść</li>
+                            <li>banan</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </aside>
+    </main>
+    <footer>
+        Autor strony: <b>34276386321</b>
+    </footer>
+</body>
+</html>

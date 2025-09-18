@@ -1,0 +1,45 @@
+body {
+    font-family: Helvetica;
+}
+
+nav {
+    background-color: rgb(146, 184, 112);
+    text-align: center;
+    width: 50%;
+    height: 170px;
+    float: left;
+}
+
+header, footer {
+    background-color: rgb(100, 61, 49);
+    color: white;
+    text-align: center;
+    height: 80px;
+    padding: 5px;
+    clear: both;
+}
+
+aside {
+    background-color: rgb(146, 184, 112);
+    width: 50%;
+    height: 450px;
+    float: left;
+}
+
+nav#jeden>a {
+    background-image: url(cukierki1.jpg);
+    padding: 0px 30px 120px;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+table, td {
+    border: 2px dashed green;
+    margin: 30px;
+    padding: 20px;
+}
+
+h1 {
+    letter-spacing: 20px;
+    font-size: 250%;
+}
