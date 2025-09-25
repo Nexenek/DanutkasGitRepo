@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria obrazów</h1>
+    </header>
+    <aside id="lewy">
+        <img src="zdjecie.jpg" alt="zdjęcie dnia">
+        <h3>Zdjęcia opublikowali:</h3>
+        <table>
+            <tr>
+                <td>Anna Porada</td><td>10 zdjęć</td>
+            </tr>
+            <tr>
+                <td>Krzysztof Wasilewski</td><td>12 zdjęć</td>
+            </tr>
+            <tr>
+                <td>Monika Kowalska</td><td>4 zdjęcia</td>
+            </tr>
+        </table>
+    </aside>
+    <aside id="prawy">
+        <button onclick="poprzednie()">prev</button>
+        <img src="1.jpg" alt="galeria" id="duze">
+        <button onclick="nastepne()">next</button>
+        <hr>
+        <img src="1.jpg" alt="miniatura" onclick="pokaz('1.jpg')">
+        <img src="2.jpg" alt="miniatura" onclick="pokaz('2.jpg')">
+        <img src="3.jpg" alt="miniatura" onclick="pokaz('3.jpg')">
+        <img src="4.jpg" alt="miniatura" onclick="pokaz('4.jpg')">
+        <img src="5.jpg" alt="miniatura" onclick="pokaz('5.jpg')">
+    <footer>
+        <a href="https://pixabay.com/" target="_blank">Więcej obrazów</a>
+        <p>Galerię wykonał: 78989322367</p>
+    </footer>
+</body>
+</html>
