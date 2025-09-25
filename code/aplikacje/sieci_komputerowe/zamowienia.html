@@ -19,18 +19,19 @@
             <table>
                 <tr><th>Produkt</th><th>Jednostka</th><th>Dostępna ilość</th><th>Aktualizacja</th><th>Zamówienie</th></tr>
                 <tr>
-                    <td>Skrętka U/UTP drut</td><td>metr</td><td>20</td><td><button onclick="aktualizuj()">Aktualizuj</button></td><td><button onclick="zamow()">Zamów</button></td>
+                    <td>Skrętka U/UTP drut</td><td>metr</td><td id="p1">20</td><td><button onclick="aktualizuj('p1')">Aktualizuj</button></td><td><button onclick="zamow('Skrętka U/UTP drut')">Zamów</button></td>
                 </tr>
                 <tr>
-                    <td>Skrętka U/UTP linka</td><td>metr</td><td>2</td><td><button onclick="aktualizuj()">Aktualizuj</button></td><td><button onclick="zamow()">Zamów</button></td>
+                    <td>Skrętka U/UTP linka</td><td>metr</td><td id="p2">2</td><td><button onclick="aktualizuj('p2')">Aktualizuj</button></td><td><button onclick="zamow('Skrętka U/UTP linka')">Zamów</button></td>
                 </tr>
                 <tr>
-                    <td>Wtyki 8P8C</td><td>sztuki</td><td>10</td><td><button onclick="aktualizuj()">Aktualizuj</button></td><td><button onclick="zamow()">Zamów</button></td>
+                    <td>Wtyki 8P8C</td><td>sztuki</td><td id="p3">10</td><td><button onclick="aktualizuj('p3')">Aktualizuj</button></td><td><button onclick="zamow('Wtyki 8P8C')">Zamów</button></td>
                 </tr>
                 <tr>
-                    <td>Moduły Keystone</td><td>sztuki</td><td>30</td><td><button onclick="aktualizuj()">Aktualizuj</button></td><td><button onclick="zamow()">Zamów</button></td>
+                    <td>Moduły Keystone</td><td>sztuki</td><td id="p4">30</td><td><button onclick="aktualizuj('p4')">Aktualizuj</button></td><td><button onclick="zamow('Moduły Keystone')">Zamów</button></td>
                 </tr>
             </table>
+            <script src="script.js"></script>
         </aside>
         <footer>
             <a href="http://sieci.pl/" target="_blank">Nasza strona internetowa</a>
