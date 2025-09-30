@@ -35,19 +35,19 @@ function pokaz(nazwa_pliku) {
 function poprzednie() {
     switch (numer_zdj) {
         case 2:
-            numer_zdj--;
+            numer_zdj = 1;
             document.getElementById("duze").src = "1.jpg";
             break;
         case 3:
-            numer_zdj--;
+            numer_zdj = 2;
             document.getElementById("duze").src = "2.jpg";
             break;
         case 4:
-            numer_zdj--;
+            numer_zdj = 3;
             document.getElementById("duze").src = "3.jpg";
             break;
         case 5:
-            numer_zdj--;
+            numer_zdj = 4;
             document.getElementById("duze").src = "4.jpg";
             break;
         default:
@@ -58,19 +58,19 @@ function poprzednie() {
 function nastepne() {
     switch (numer_zdj) {
         case 1:
-            numer_zdj++;
+            numer_zdj = 2;
             document.getElementById("duze").src = "2.jpg";
             break;
         case 2:
-            numer_zdj++;
+            numer_zdj = 3;
             document.getElementById("duze").src = "3.jpg";
             break;
         case 3:
-            numer_zdj++;
+            numer_zdj = 4;
             document.getElementById("duze").src = "4.jpg";
             break;
         case 4:
-            numer_zdj++;
+            numer_zdj = 5;
             document.getElementById("duze").src = "5.jpg";
             break;
         default:
