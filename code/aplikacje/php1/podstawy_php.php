@@ -73,8 +73,19 @@
                 <li>Callable (funkcje wywoływalne)</li>
                 <li>Iterable (iterowalne)</li>
             </ul>
-        
-</body>
+        <h1> Funkcje języka PHP do obsługi bazy MySQLi</h1>
+        <table>
+            <th>Funkcje biblioteki MySQLi</th><th>Zwracana wartość</th>
+            <tr><td>mysqli_connect(serwer, uzytkownik, haslo, baza_danych)</td><td>obiekt mysqli lub FALSE w przypadku błędu</td></tr>
+            <tr><td>mysqli_select_db(id_polaczenia, nazwa_bazy)</td><td>TRUE w przypadku powodzenia lub FALSE w przypadku błędu</td></tr>
+            <tr><td>mysqli_error(id_polaczenia)</td><td>string zawierający opis ostatniego błędu lub pusty string, jeśli nie wystąpił żaden błąd</td></tr>
+            <tr><td>mysqli_close(id_polaczenia)</td><td>TRUE w przypadku powodzenia lub FALSE w przypadku błędu</td></tr>
+            <tr><td>mysqli_query(id_polaczenia, zapytanie)</td><td>obiekt mysqli_result dla zapytań SELECT, TRUE dla zapytań INSERT, UPDATE, DELETE lub FALSE w przypadku błędu</td></tr>
+            <tr><td>mysqli_fetch_row(wynik_zapytania)</td><td>tablica indeksowana numerycznie reprezentująca wiersz wyniku lub NULL, jeśli nie ma więcej wierszy</td></tr>
+            <tr><td>mysqli_fetch_fields(wynik_zapytania)</td><td>tablica obiektów reprezentujących pola wyniku lub FALSE w przypadku błędu</td></tr>
+            <tr><td>isset($zmienna)</td><td>TRUE, jeśli $zmienna jest ustawiona i nie jest NULL, w przeciwnym razie FALSE</td></tr>
+        </table>
+    </body>
 </html>
 
 <?php
