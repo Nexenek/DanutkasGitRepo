@@ -39,6 +39,41 @@
         <li><strong>$GLOBALS[]</strong> - przechowuje wszystkie zmienne globalne w tablicy asocjacyjnej</li>
         <li><strong>$_SESSION[]</strong> - przechowuje dane sesji użytkownika</li>
     </ul>
+    <h1>Typy danych</h1>
+    <h3>W PHP występuje 3 rodzaje typów danych:</h3>
+    <ol>
+        <li>Typy proste (skalarne):
+            <ul>
+                <li>Integer (liczby całkowite)</li>
+                <li>Przykłady zapisu liczb całkowitych w różnych formatach
+                    <ol>
+                        <li>537 - dodatnia liczba całkowita</li>
+                        <li>-537 - ujemna liczba całkowita</li>
+                        <li>023 - dodatnia liczba całkowita zapisana w systemie ósemkowym</li>
+                        <li>-023 - ujemna liczba całkowita zapisana w systemie ósemkowym</li>
+                        <li>0x2A - dodatnia liczba całkowita zapisana w systemie szesnastkowym</li>
+                        <li>-0x2A - ujemna liczba całkowita zapisana w systemie szesnastkowym</li>
+                    </ol>
+                </li>
+                <li>Float lub double (liczby zmiennoprzecinkowe)</li>
+                <li>String (łańcuchy znaków) Można go utworzyć za pomocą 
+                    <ul>
+                        <li>pojedynczych cudzysłowów (') - interpretowane dosłownie, bez analizy zmiennych i sekwencji specjalnych</li>
+                        <li>podwójnych cudzysłowów (") - interpretowane z analizą zmiennych i sekwencji specjalnych</li>
+                        <li>Używając składni <i>heredoc</i>
+                    </ul>
+                </li>
+                <li>Boolean (wartości logiczne: true/false)</li>
+            </ul>
+        </li>
+        <li>Typy złożone:
+            <ul>
+                <li>Array (tablice)</li>
+                <li>Object (obiekty)</li>
+                <li>Callable (funkcje wywoływalne)</li>
+                <li>Iterable (iterowalne)</li>
+            </ul>
+        
 </body>
 </html>
 
