@@ -29,9 +29,15 @@
     <h3>Przy odwołaniu się do zmiennej zawsze należy użyć znaku $</h3>
     <h1>Zmienne predefiniowane</h1>
     <ul>
-        <li><strong>$_GET</strong> – przechowuje dane przesłane metodą GET (np. z adresu URL)</li>
-        <li><strong>$_POST</strong> – przechowuje dane przesłane metodą POST (np. z formularza)</li>
-        <li><strong>$_COOKIE</strong> – przechowuje dane zapisane w ciasteczkach</li>
+        <li><strong>$_GET[]</strong> - przechowuje dane przesłane metodą GET (np. z adresu URL)</li>
+        <li><strong>$_POST[]</strong> - przechowuje dane przesłane metodą POST (np. z formularza)</li>
+        <li><strong>$_COOKIE[]</strong> - przechowuje dane zapisane w ciasteczkach</li>
+        <li><strong>$_FILES[]</strong> - przechowuje informacje o plikach przesłanych na serwer</li>
+        <li><strong>$_SERVER[]</strong> - przechowuje informacje o serwerze i środowisku wykonawczym</li>
+        <li><strong>$_REQUEST[]</strong> - przechowuje dane z $_GET, $_POST i $_COOKIE</li>
+        <li><strong>$_ENV[]</strong> - przechowuje zmienne środowiskowe</li>
+        <li><strong>$GLOBALS[]</strong> - przechowuje wszystkie zmienne globalne w tablicy asocjacyjnej</li>
+        <li><strong>$_SESSION[]</strong> - przechowuje dane sesji użytkownika</li>
     </ul>
 </body>
 </html>
