@@ -1,0 +1,65 @@
+* {
+    font-family: Garamond;
+    color: white;
+}
+
+header {
+    background-color: Indigo;
+    text-align: center;
+    padding: 2px;
+}
+
+aside, section {
+    background-color: Indigo;
+    height: 600px;
+}
+
+main {
+    background-color: black;
+    height: 600px;
+    overflow: scroll;
+}
+
+@media (min-width: 801px) {
+    aside {
+        width: 20%;
+        float: left;
+    }
+    
+    main {
+        width: 60%;
+        float: left;
+    }
+    
+    section {
+        width: 20%;
+        float: left;
+    }
+}
+
+footer {
+    background-color: Indigo;
+    height: 150px;
+    clear: both;
+}
+
+.punkty {
+    background-color: Tomato;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+li {
+    padding: 5px;
+}
+
+main > div {
+    display: inline-block;
+    text-align: center;
+    padding: 3px;
+}
+
+input[type="text"] {
+    margin: 10px;
+    color: Indigo;
+}
