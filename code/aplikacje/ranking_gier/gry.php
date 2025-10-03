@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="PL-pl">
 <head>
     <meta charset="UTF-8">
     <title>Gry komputerowe</title>
@@ -14,7 +14,12 @@
         <h3>Top 5 gier w tym miesiącu</h3>
         <ul>
             <?php
-            
+            $link = mysqli_connect('localhost', 'root', '', 'gry4tigr1');
+            $zap3 = "SELECT `nazwa`, `punkty` FROM `gry`;";
+            $wynik3 = mysqli_query($link, $zap3);
+            while ($element = mysqli_fetch_assoc($wynik3)) {
+                echo "<li>" . $element['nazwa'] . " <span id='punkty'>" . $element['punkty'] . "</span></li>";
+            }
             ?>
         </ul>
         
@@ -27,7 +32,14 @@
     
     <main>
         <?php
-        
+        $zap1 = "SELECT `id`, `nazwa`, `zdjecie` FROM `gry`;";
+        $wynik1 = mysqli_query($link, $zap1);
+        while ($blok = mysqli_fetch_assoc($wynik1)) {
+            echo "<div class='gry'>";        
+            echo "<img src='" . $blok['zdjecie'] . "' alt='" . $blok['nazwa'] . "' title='" . $blok['id'] . "'>";
+            echo "<p>" . $blok['nazwa'] . "</p>";
+            echo "</div>";
+        }
         ?>
     </main>
     
@@ -56,7 +68,13 @@
             <button type="submit">Pokaż opis</button>
         </form>
         <?php
-        
+        $id=$_POST['id_gry']??NULL;
+        if($id){
+            $zap2='SELECT `nazwa`, substring(opis, 1, 100) AS "opisNowy", `punkty`, `cena` FROM `gry` WHERE id = ' . $id . ';';
+            $wynik2=mysqli_query($link,$zap2);
+            $opis=mysqli_fetch_assoc($wynik2);
+            echo $opis['opisNowy'] . "...<br>";
+        }
         ?>
     </footer>
 </body>

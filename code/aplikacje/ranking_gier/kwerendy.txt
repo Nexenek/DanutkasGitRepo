@@ -1,0 +1,14 @@
+Zapytanie 1: 
+SELECT `id`, `nazwa`, `zdjecie` FROM `gry`;
+
+Zapytanie 2: 
+SELECT `nazwa`, substring(opis, 1, 100) AS "opisNowy", `punkty`, `cena` FROM `gry` WHERE id =1;
+
+Zapytanie 3: 
+SELECT `nazwa`, `punkty` FROM `gry` ORDER BY punkty DESC LIMIT 5;
+
+Zapytanie 4: 
+INSERT INTO `gry`(`nazwa`, `opis`, `punkty`, `cena`, `zdjecie`) 
+VALUES ('Zamczysko','Na odludziu stoi opuszczone zamczysko, 
+w którym znajduje się skarb strzeżony przez złowrogie demony 
+i duchy',200,50,'zamczysko.jpg');

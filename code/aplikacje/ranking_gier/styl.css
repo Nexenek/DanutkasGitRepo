@@ -43,7 +43,7 @@ footer {
     clear: both;
 }
 
-.punkty {
+#punkty {
     background-color: Tomato;
     border-radius: 50%;
     padding: 5px;
