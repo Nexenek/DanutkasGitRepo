@@ -85,6 +85,22 @@
             <tr><td>mysqli_fetch_fields(wynik_zapytania)</td><td>tablica obiektów reprezentujących pola wyniku lub FALSE w przypadku błędu</td></tr>
             <tr><td>isset($zmienna)</td><td>TRUE, jeśli $zmienna jest ustawiona i nie jest NULL, w przeciwnym razie FALSE</td></tr>
         </table>
+        <h1>Główne różnice pomiędzy $_POST[] i $_GET[]</h1>
+        <h3>W PHP to sposób przesyłania danych (URL vs. ciało żądania), ich widoczność (jaswne oraz ukryte) oraz przeznaczenie (GET do pobierania, POST do wysyłania lub operacji modyfikujących dane).</h3>
+        <h2>$_GET[]</h2>
+        Sposób przesyłania danych:<br>
+        <ul><li>Dane są dołaczone jako parametry w URL (adresie strony np. ?id=1&name=test).</li>
+        <li>Widoczność: dane są widoczne w adresie URL, co zawiązuje ryzyko ich wykradzenia.</li>
+        <li>Ograniczenie długości: Ma ograniczenie długości przesyłanych danych, (zazwyczaj około 255 znaków)</li>
+        <li>Zastosowania: Używana do wysyłania danych które są pobierane np. w wyszukiwaniach, przy zmianie strony w paginacji czy do odnośników.</li>
+        </ul>
+        <h2>$_POST[]</h2>
+        Sposób przesyłania danych:<br>
+        <ul><li>Dane są przesyłane w treści żądania HTTP, co zapewnia większą poufność.</li>
+        <li>Widoczność: dane nie są widoczne w adresie URL, ani w historii przeglądarki, co czyni je bardziej dyskretnymi.</li>
+        <li>Brak ograniczeń długości: Może przesyłać większe ilości danych, w tym pliki.</li>
+        <li>Bezpieczeństwo: Lpeiej nadaje się do przesyłanai poufnych danych i operacji modyfikujących dane, takich jak logowanie, wysyłanie plików do bazy czy przesyłanie plików.</li>
+        <li>Zastosowania: Używana do przesyłania danych w formularzach (np. podczas logowania), dłuższych tekstów, danych do bazy czy uploadu plików.</li></ul>
     </body>
 </html>
 
