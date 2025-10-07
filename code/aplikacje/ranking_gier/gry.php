@@ -69,13 +69,25 @@
         </form>
         <?php
         $id=$_POST['id_gry']??NULL;
-        if($id){
+        if(isset($id)){
             $zap2='SELECT `nazwa`, substring(opis, 1, 100) AS "opisNowy", `punkty`, `cena` FROM `gry` WHERE id = ' . $id . ';';
             $wynik2=mysqli_query($link,$zap2);
-            $opis=mysqli_fetch_assoc($wynik2);
-            echo $opis['opisNowy'] . "...<br>";
+            $opis=mysqli_fetch_array($wynik2);
+            echo  "<h2>" . $opis['nazwa'] . " " . $opis['punkty'] . " punktów " . $opis['cena'] . " zł" . "</h2>";
+            echo  "<p>" . $opis['opisNowy'] . "...</p>";
         }
         ?>
     </footer>
+    <?php
+    $nazwa = $_POST['nazwa'] ?? NULL;
+    $opis = $_POST['opis'] ?? NULL;
+    $cena = $_POST['cena'] ?? NULL;
+    $zdjecie = $_POST['zdjecie'] ?? NULL;
+    if (isset($nazwa) && isset($opis) && isset($cena) && isset($zdjecie)) {
+        $zap4 = "INSERT INTO `gry` (`nazwa`, `opis`, `punkty`, `cena`, `zdjecie`) VALUES ('" . $nazwa . "', '" . $opis . "', '0', '" . $cena . "', '" . $zdjecie . "');";
+        mysqli_query($link, $zap4);
+        echo "Dodano nową grę do bazy danych";
+    }
+    ?>
 </body>
 </html>
