@@ -1,33 +1,86 @@
-/* Global font and centering */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-* { box-sizing: border-box; }
-body { font-family: Roboto, Arial, sans-serif; text-align: center; background-color: LightCyan; margin:0; }
+* {
+  box-sizing: border-box;
+}
 
-header, footer { background-color: SteelBlue; color: white; padding: 10px; }
+body {
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
+  background-color: LightCyan;
+  margin: 0;
+}
 
-header h2 { margin: 0; }
+header,
+footer {
+  background-color: SteelBlue;
+  color: white;
+  padding: 10px;
+}
 
-section { padding: 10px; }
+header h2 {
+  margin: 0;
+}
 
-table { margin: 0 auto; width: 70%; border-collapse: collapse; border: 1px solid SteelBlue; }
-table th, table td { padding: 6px 10px; border: 1px solid SteelBlue; }
-table tr:hover { background-color: SteelBlue; color: white; }
+section {
+  padding: 10px;
+}
 
-main { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 10px; }
-article { padding-top: 40px; margin: 1%; width: 30%; background-clip: padding-box; }
-article img { width: 70%; display: block; margin: 0 auto; }
-article p { padding: 20px; }
+table {
+  margin: 0 auto;
+  width: 70%;
+  border-collapse: collapse;
+  border: 1px solid SteelBlue;
+}
 
-/* Background colors for each article */
-article:nth-of-type(1) { background-color: DodgerBlue; }
-article:nth-of-type(2) { background-color: LimeGreen; }
-article:nth-of-type(3) { background-color: DarkOrchid; }
+table th,
+table td {
+  padding: 6px 10px;
+  border: 1px solid SteelBlue;
+}
 
-/* Typography for the framed title boxes inside images are done in image files.
-   Page-level serif font requirement for the image texts is noted in instructions;
-   we use serif within figure captions where applicable. */
+table tr:hover {
+  background-color: SteelBlue;
+  color: white;
+}
 
-/* Responsive behavior: stack articles under 800px */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+article {
+  padding-top: 40px;
+  margin: 1%;
+  width: 30%;
+  background-clip: padding-box;
+}
+
+article img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+article p {
+  padding: 20px;
+}
+
+#niebieski {
+  background-color: DodgerBlue;
+}
+
+#zielony {
+  background-color: LimeGreen;
+}
+
+#fioletowy {
+  background-color: DarkOrchid;
+}
+
+
 @media (max-width: 799px) {
-  article { width: 98%; }
+  article {
+    width: 98%;
+  }
 }
