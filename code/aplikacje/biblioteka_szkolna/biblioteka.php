@@ -22,7 +22,7 @@
       $polaczenie = mysqli_connect('localhost','root','','biblioteka');
       $zapytanie = "SELECT autor, tytul, kod FROM ksiazki ORDER BY RAND() LIMIT 5";
       $wynik = mysqli_query($polaczenie, $zapytanie);
-      while ($wiersz = mysqli_fetch_row($wynik)) {
+      while ($wiersz = mysqli_fetch_array($wynik)) {
         echo '<tr>';
         echo '<td>'.htmlspecialchars($wiersz[0]).'</td>';
         echo '<td>'.htmlspecialchars($wiersz[1]).'</td>';
@@ -50,8 +50,7 @@
   </main>
 
   <footer>
-    <?php $numer = '00000000000'; ?>
-    Stronę wykonał: <?php echo $numer; ?>
+    Stronę wykonał: 00000000000
   </footer>
 </body>
 </html>
