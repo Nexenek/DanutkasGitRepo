@@ -1,13 +1,7 @@
-<?php
-// biblioteka.php - strona główna biblioteki szkolnej
-// Zgodnie z wymaganiami: HTML5, lang=pl, UTF-8
-header('Content-Type: text/html; charset=utf-8');
-?>
-<!doctype html>
-<html lang="pl">
+<!DOCTYPE html>
+<html lang="PL-pl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BIBLIOTEKA SZKOLNA</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,29 +19,18 @@ header('Content-Type: text/html; charset=utf-8');
         <th>Katalog</th>
       </tr>
       <?php
-      // Połączenie z bazą i pobranie kilku wierszy
       $polaczenie = mysqli_connect('localhost','root','','biblioteka');
-      if (!$polaczenie) {
-        echo "<tr><td colspan=3>Brak połączenia z bazą: " . htmlspecialchars(mysqli_connect_error()) . "</td></tr>";
-      } else {
-        // zapytanie 4 (przykładowe): pobierz 5 pierwszych rekordów
-        $zapytanie = "SELECT autor, tytul, kod FROM ksiazki LIMIT 5";
-        file_put_contents('kwerendy.txt', $zapytanie.PHP_EOL);
-        $wynik = mysqli_query($polaczenie, $zapytanie);
-        if ($wynik) {
-          while ($wiersz = mysqli_fetch_row($wynik)) {
-            echo '<tr>';
-            echo '<td>'.htmlspecialchars($wiersz[0]).'</td>';
-            echo '<td>'.htmlspecialchars($wiersz[1]).'</td>';
-            echo '<td>'.htmlspecialchars($wiersz[2]).'</td>';
-            echo '</tr>';
-          }
-          mysqli_free_result($wynik);
-        } else {
-          echo "<tr><td colspan=3>Błąd w zapytaniu: " . htmlspecialchars(mysqli_error($polaczenie)) . "</td></tr>";
-        }
-        mysqli_close($polaczenie);
+      $zapytanie = "SELECT autor, tytul, kod FROM ksiazki ORDER BY RAND() LIMIT 5";
+      $wynik = mysqli_query($polaczenie, $zapytanie);
+      while ($wiersz = mysqli_fetch_row($wynik)) {
+        echo '<tr>';
+        echo '<td>'.htmlspecialchars($wiersz[0]).'</td>';
+        echo '<td>'.htmlspecialchars($wiersz[1]).'</td>';
+        echo '<td>'.htmlspecialchars($wiersz[2]).'</td>';
+        echo '</tr>';
       }
+      mysqli_free_result($wynik);
+      mysqli_close($polaczenie);
       ?>
     </table>
   </section>
@@ -59,7 +42,7 @@ header('Content-Type: text/html; charset=utf-8');
     $paragrafy = preg_split('/\R{2,}/', trim($teksty));
     // Zakładamy, że zawiera tytuły i streszczenia w znanym porządku.
     $summaries = array_slice($paragrafy, 2, 3);
-    $images = ['ksiazka1.png','ksiazka2.png','ksiazka3.png'];
+    $images = ['ksiazka1.jpg','ksiazka2.jpg','ksiazka3.jpg'];
     $captions = [
       "HANS CHRISTIAN ANDERSEN<br><strong>Ropucha</strong>",
       "MARIA KONOPNICKA<br><strong>Przygoda z lalką</strong>",
