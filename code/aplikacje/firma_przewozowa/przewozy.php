@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Firma  Przewozowa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -20,6 +21,21 @@
             <table>
                 <tr><th>Zadanie do wykonania</th><th>Data realizacji</th><th>Akcja</th></tr>
                 <?php
+                $link = mysqli_connect('localhost', 'root', '', 'przewozygr1');
+                $zap1 = "SELECT `id_zadania`, `zadanie`, `data` FROM zadania;";
+                $result = mysqli_query($link, $zap1);
+                while ($row = mysqli_fetch_array($result)) {
+                    echo "<tr>";
+                    echo "<td>" . htmlspecialchars($row['zadanie']) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['data']) . "</td>";
+                    echo "<td><a href='przewozy.php?id=" . $row['id_zadania'] . "'>Usuń</a></td>";
+                    echo "</tr>";
+                }
+                if (isset($_GET['id'])) {
+                    $zap3 = "DELETE FROM zadania WHERE id_zadania=" . $_GET['id'] . ";";
+                    mysqli_query($link, $zap3);
+                    header("Location: przewozy.php");
+                }
                 ?>
             </table>
             <form action="przewozy.php" method="post">

@@ -1,0 +1,60 @@
+body {
+    background-color: #FFCC99;
+    font-family: Garamond;
+    text-align: center;
+}
+
+header, footer {
+    background-color: darkgreen;
+    color: white;
+    padding: 30px;
+    font-size: 140%;
+}
+
+footer {
+    clear: both;
+}
+
+nav {
+    background-color: mediumseagreen;
+    word-spacing: 90px;
+    padding: 20px;
+}
+
+#lewa {
+    float: left;
+    width: 70%;
+    height: 500px;
+}
+
+#prawa {
+    background-color: mediumseagreen;
+    float: right;
+    width: 30%;
+    height: 500px;
+    text-align: left;
+}
+
+table {
+    border: dashed 1px darkgreen;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+table, th {
+    padding: 5px;
+}
+
+a {
+    color: white;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+tr:hover {
+    background-color: darkgreen;
+    color: white;
+}
