@@ -1,0 +1,8 @@
+Zapytanie 1:
+SELECT `id_zadania`, `zadanie`, `data` FROM zadania;
+
+Zapytanie 2:
+INSERT INTO 'zadania' ('zadanie', 'data', 'osoba_id') VALUES ('spotkanie firmowe', '2024-05-10', 1);
+
+Zapytanie 3:
+DELETE FROM 'zadania' WHERE 'id_zadania'=2;
