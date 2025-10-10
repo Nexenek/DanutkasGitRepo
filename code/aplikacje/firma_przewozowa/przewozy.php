@@ -63,3 +63,12 @@
     </footer>
 </body>
 </html>
+<?php
+    $zadanie = $_POST['zadanie'];
+    $data = $_POST['data'];
+    if (isset($zadanie) && isset($data)) {
+        $zap2 = "INSERT INTO zadania (zadanie, data, osoba_id) VALUES ('" . $zadanie . "', '" . $data . "', 1);";
+        mysqli_query($link, $zap2);
+        header("Location: przewozy.php");
+    } mysqli_close($link);
+?>
