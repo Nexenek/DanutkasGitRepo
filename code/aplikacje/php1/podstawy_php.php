@@ -99,8 +99,24 @@
         <ul><li>Dane są przesyłane w treści żądania HTTP, co zapewnia większą poufność.</li>
         <li>Widoczność: dane nie są widoczne w adresie URL, ani w historii przeglądarki, co czyni je bardziej dyskretnymi.</li>
         <li>Brak ograniczeń długości: Może przesyłać większe ilości danych, w tym pliki.</li>
-        <li>Bezpieczeństwo: Lpeiej nadaje się do przesyłanai poufnych danych i operacji modyfikujących dane, takich jak logowanie, wysyłanie plików do bazy czy przesyłanie plików.</li>
+        <li>Bezpieczeństwo: Lepiej nadaje się do przesyłania poufnych danych i operacji modyfikujących dane, takich jak logowanie, wysyłanie plików do bazy czy przesyłanie plików.</li>
         <li>Zastosowania: Używana do przesyłania danych w formularzach (np. podczas logowania), dłuższych tekstów, danych do bazy czy uploadu plików.</li></ul>
+        </table>
+    </ol>
+    <h1>Funkcja header()</h1>
+    <p>W PHP służy do wysyłania surowych nagłówków HTTP do przeglądarki klienta, co pozwala na kontrolę nad komunikacją między serwerem, a przeglądarką, np. do przekierowania użytkownika pod inny adres URL, ustawienia typu zawartości strony czy zarządzania sesjami, kluczowe jest, aby wywoływać tę funkcję przed wysłaniem jakiejkolwiek innej treści (HTML, znaki białej przestrzeni), ponieważ nagłówki muszą być wysłane przed ciałem odpowiedzi HTTP.</p>
+    <h2>Jak działa funkcja header()?</h2>
+    <ul>
+        <li>Wysyłanie nagłówków: Funkcja header() umożliwia wysyłąnie dowolnego poprawnego nagłówka HTTP, który przeglądarka lub inny klient HTTP przetworzy.</li>
+        <li>Przekierowania: Jest najczęściej używazna do przekierowania użytkownika na inny adres URL na przykład po udanym zalogowaniu lub zmianie struktury strony.</li>
+        <li>Ustawienia typu zawartości: Pozwala na określenie typu zawartości przesyłanych danych (np. Conent-type: application/json), co jest kluczowe w komunikacji z innymi systemami lub aplikacjami.</li>
+        <li>Zarządzanei sesjami i pamięcią podręczną: Służy do zarządzania plikami cookie i ustawieniami pamięci podręcznej co wpływa na działanie strony w przeglądarce.</li>
+    </ul>
+    <h2>Przekierowanie na inny adres URL:</h2>
+    <?php
+    header("location: http://www.example.com/nowa_strona.php");
+    exit(); // ważne, aby przerwać dalsze działanie skryptu po przekierowaniu
+    ?>
     </body>
 </html>
 
