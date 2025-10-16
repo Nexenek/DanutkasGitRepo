@@ -8,47 +8,100 @@
 <body>
     <header>
         <?php
-        // skrypt 1
+        for ($i=0; $i<20; $i++) {
+            echo "<img src='obraz.png'>";
+        }
         ?>
     </header>
 
     <section>
         <h2>Liryka</h2>
         <form method="post" action="biblioteka.php">
-            <select name="ksiazka">
+            <select name="liryka">
                 <?php
-                // skrypt 2 - gatunek: liryka
+                $link = mysqli_connect("localhost", "root", "", "rodzaje_literatury");
+                $zap1 = "SELECT `id`, `tytul` FROM `ksiazka` WHERE gatunek='liryka';";
+                $wynik = mysqli_query($link, $zap1);
+                while ($row = mysqli_fetch_array($wynik)) {
+                    echo "<option value='$row[0]'>$row[1]</option>";
+                }
                 ?>
             </select>
-            <input type="submit" value="Rezerwuj">
+            <input type="submit" name="rezerwuj_liryka" value="Rezerwuj">
         </form>
         <?php
-        // skrypt 3
+        if (isset($_POST['rezerwuj_liryka'])) {
+            $link = mysqli_connect("localhost", "root", "", "rodzaje_literatury");
+            $id = $_POST['liryka'];
+            $zap5 = "SELECT tytul FROM ksiazka WHERE id=" . $id . ";";
+            $wynik2 = mysqli_query($link, $zap5);
+            while ($row = mysqli_fetch_array($wynik2)) {
+                echo "<p>Książka " . $row['tytul'] . " została zarezerwowana</p>";
+            }
+            $zap4 = "UPDATE ksiazka SET rezerwacja=1 WHERE id=" . $id . ";";
+            mysqli_query($link, $zap4);
+        }
         ?>
     </section>
 
     <section>
         <h2>Epika</h2>
         <form method="post" action="biblioteka.php">
-            <select name="ksiazka">
+            <select name="epika">
                 <?php
-                // skrypt 2 - gatunek: epika
+                $link = mysqli_connect("localhost", "root", "", "rodzaje_literatury");
+                $zap1 = "SELECT `id`, `tytul` FROM `ksiazka` WHERE gatunek='epika';";
+                $wynik = mysqli_query($link, $zap1);
+                while ($row = mysqli_fetch_array($wynik)) {
+                    echo "<option value='$row[0]'>$row[1]</option>";
+                }
                 ?>
             </select>
-            <input type="submit" value="Rezerwuj">
+            <input type="submit" name="rezerwuj_epika" value="Rezerwuj">
         </form>
+        <?php
+        if (isset($_POST['rezerwuj_epika'])) {
+            $link = mysqli_connect("localhost", "root", "", "rodzaje_literatury");
+            $id = $_POST['epika'];
+            $zap5 = "SELECT tytul FROM ksiazka WHERE id=" . $id . ";";
+            $wynik2 = mysqli_query($link, $zap5);
+            while ($row = mysqli_fetch_array($wynik2)) {
+                echo "<p>Książka " . $row['tytul'] . " została zarezerwowana</p>";
+            }
+            $zap4 = "UPDATE ksiazka SET rezerwacja=1 WHERE id=" . $id . ";";
+            mysqli_query($link, $zap4);
+        }
+        ?>
     </section>
 
     <section>
         <h2>Dramat</h2>
         <form method="post" action="biblioteka.php">
-            <select name="ksiazka">
+            <select name="dramat">
                 <?php
-                // skrypt 2 - gatunek: dramat
+                $link = mysqli_connect("localhost", "root", "", "rodzaje_literatury");
+                $zap1 = "SELECT `id`, `tytul` FROM `ksiazka` WHERE gatunek='dramat';";
+                $wynik = mysqli_query($link, $zap1);
+                while ($row = mysqli_fetch_array($wynik)) {
+                    echo "<option value='$row[0]'>$row[1]</option>";
+                }
                 ?>
             </select>
-            <input type="submit" value="Rezerwuj">
+            <input type="submit" name="rezerwuj_dramat" value="Rezerwuj">
         </form>
+        <?php
+        if (isset($_POST['rezerwuj_dramat'])) {
+            $link = mysqli_connect("localhost", "root", "", "rodzaje_literatury");
+            $id = $_POST['dramat'];
+            $zap5 = "SELECT tytul FROM ksiazka WHERE id=" . $id . ";";
+            $wynik2 = mysqli_query($link, $zap5);
+            while ($row = mysqli_fetch_array($wynik2)) {
+                echo "<p>Książka " . $row['tytul'] . " została zarezerwowana</p>";
+            }
+            $zap4 = "UPDATE ksiazka SET rezerwacja=1 WHERE id=" . $id . ";";
+            mysqli_query($link, $zap4);
+        }
+        ?>
     </section>
 
     <section>
