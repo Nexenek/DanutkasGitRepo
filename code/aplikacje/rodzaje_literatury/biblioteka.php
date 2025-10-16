@@ -108,7 +108,12 @@
         <h2>Zaległe książki</h2>
         <ul>
             <?php
-            // skrypt 4
+            $link = mysqli_connect("localhost", "root", "", "rodzaje_literatury");
+            $zap = "SELECT k.tytul, w.id_cz, w.data_odd FROM ksiazka k, wypozyczenia w WHERE w.id_ks=k.id ORDER BY w.data_odd ASC LIMIT 15;";
+            $wynik = mysqli_query($link, $zap);
+            while ($row = mysqli_fetch_array($wynik)) {
+                echo "<li>{$row['tytul']} {$row['id_cz']} {$row['data_odd']}</li>";
+            }
             ?>
         </ul>
     </section>
