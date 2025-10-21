@@ -117,6 +117,24 @@
     header("location: http://www.example.com/nowa_strona.php");
     exit(); // ważne, aby przerwać dalsze działanie skryptu po przekierowaniu
     ?>
+    <h1>Stałe w PHP</h1>
+    <p>W języku PHP wysepują stałe, czyli identyfikatory, których wartość nie ulegają zmianie.
+        Do definiowania stałych służy funkcja <em>define()</em>, która ma dwa argumenty: nazwę
+        stałej oraz przypisaną do niej wartości.<br> Definicja stałej ma wartość: <br>
+        <b>define(NAZWA_STALEJ, wartość);</b>
+        <h4>Przykład dla stałej</h4>
+        <?php
+        define("wiek", 21);
+        echo "<br>Nasz wiek to: ".wiek;
+        ?>
+    </p>
+    <h2>Stałe predefiniowane</h2>
+    <ol>
+        <li>PHP_VERSION - stała reprezentująca aktualnie używaną werjsje PHP</li>
+        <li>PHP_OS - stała zawierająca nazwę systemu operacyjnego, na którym uruchamiany jest
+            PHP</li>
+        <li>_FILE_ - stała zawierająca nazwe pliku ze skryptem, który jest aktualnie przetwarzany</li>
+    </ol>
     </body>
 </html>
 
