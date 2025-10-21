@@ -135,6 +135,28 @@
             PHP</li>
         <li>_FILE_ - stała zawierająca nazwe pliku ze skryptem, który jest aktualnie przetwarzany</li>
     </ol>
+    <h1>Operatorzy i wydarzenia</h1>
+    <p>W PHP operatorzy możem podzielić na</p>
+    <ol>
+        <li>Arytmetyczne<ul>
+            <li>Dodawanie +</li>
+            <li>Odejmowanie -</li>
+            <li>Mnożenie *</li>
+            <li>Dzielenie /</li>
+            <li>Reszta z dzielenia %</li>
+            <li>Potęgowanie **</li>
+        </ul></li>
+        <li>Porównania<ul>
+            <li>Równe ==</li>
+            <li>Identyczne ===</li>
+            <li>Nie równe != lub <> </li>
+            <li>Nie identyczne !==</li>
+            <li>Większe ></li>
+            <li>Większe lub równe >=</li>
+            <li>Mniejsze <</li>
+            <li>Mniejsze lub równe <=</li>
+        </ul></li>
+    </ol>
     </body>
 </html>
 
