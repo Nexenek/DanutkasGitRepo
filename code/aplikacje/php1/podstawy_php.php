@@ -113,10 +113,10 @@
         <li>Zarządzanei sesjami i pamięcią podręczną: Służy do zarządzania plikami cookie i ustawieniami pamięci podręcznej co wpływa na działanie strony w przeglądarce.</li>
     </ul>
     <h2>Przekierowanie na inny adres URL:</h2>
-    <?php
+    <code>
     header("location: http://www.example.com/nowa_strona.php");
     exit(); // ważne, aby przerwać dalsze działanie skryptu po przekierowaniu
-    ?>
+    </code>
     <h1>Stałe w PHP</h1>
     <p>W języku PHP wysepują stałe, czyli identyfikatory, których wartość nie ulegają zmianie.
         Do definiowania stałych służy funkcja <em>define()</em>, która ma dwa argumenty: nazwę
