@@ -1,0 +1,19 @@
+Zapytanie 1:
+SELECT nazwa FROM miejsca ORDER BY nazwa ASC;
+
+Zapytanie 2
+SELECT cena FROM miejsca WHERE nazwa = 'Malbork';
+
+Zapytanie 3
+SELECT nazwa, cena, link_obraz FROM miejsca WHERE link_obraz LIKE '0%';
+
+Zapytanie 4
+SELECT m.nazwa, ROUND(AVG(w.liczba_doroslych)) AS srednia_doroslych FROM miejsca m JOIN wycieczki w ON m.id_miejsca = w.id_miejsca GROUP BY m.nazwa;
+
+Zapytanie 5:
+CREATE TABLE klienci (
+    id_klienta INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    imie VARCHAR(20),
+    nazwisko VARCHAR(40),
+    data_ur DATE
+);
