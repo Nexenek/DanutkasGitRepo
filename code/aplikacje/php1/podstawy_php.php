@@ -155,8 +155,37 @@
             <li>Większe lub równe >=</li>
             <li>Mniejsze <</li>
             <li>Mniejsze lub równe <=</li>
+        </ul>
+        </li>
+        <li>bitowe (umożliwiają wykonanie operacji na poszczególnych bitach liczb)
+        <ul>
+        <li>& iloczyn bitowy (AND)</li>
+        <li>| suma bitowa (OR)</li>
+        <li>~ negacja bitowa (NOT)</li>
+        <li>^ bitowa różnica symetryczna</li>
+        <li>>> przesunięcie bitowe w prawo</li>
+        <li>&lt;&lt; przesunięcie bitowe w lewo</li>
+        </ul>
+        </li>
+        <li>logiczne
+        <ul>
+        <li>iloczyn logiczny - and, &&</li>
+        <li>suma logiczna - or, ||</li>
+        <li>negacja logiczna - !</li>
+        <li>różnica symetryczna - xor</li>
+        </ul>
+        </li>
+        <li>przypisania
+        <ul>
+        <li>= , $x=23;</li>
+        <li>+= , $x+=5;</li>
+        <li>-= , $x-=5;</li>
+        <li>*= , $x*=5;</li>
+        <li>/= , $x/=5;</li>
+        <li>%= , $x%=5;</li>
         </ul></li>
     </ol>
+
     </body>
 </html>
 
