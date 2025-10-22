@@ -184,8 +184,26 @@
         <li>/= , $x/=5;</li>
         <li>%= , $x%=5;</li>
         </ul></li>
+        <li>łańcuchowe (znak konkatenacji)
+        <ul>
+        <li>łączenie łańcuchów znakowych <b>.</b> $x="moje "." miasto";</li>
+        <li>dołączanie łańcucha znakowego <b>.=</b> $x="moje "; $x.=" miasto "</li>
+        </ul>
+        </li>
+        <?php
+        $osoba["nazwisko"]="Kowalski";
+        $osoba["imie"]="Jan";
+        $osoba["wiek"]=27;
+        echo $osoba["nazwisko"]. " ".$osoba["imie"]." ma ".$osoba["wiek"]." lat. ";
+        ?>
+        </li>
+        <li>inkrementacji i dekrementacji
+        <ul>
+        <li>zwiększania licznika o 1 $x++;</li>
+        <li>zmniejszania licznika o 1 $x--;</li>
+        </ul>
+        </li>
     </ol>
-
     </body>
 </html>
 
