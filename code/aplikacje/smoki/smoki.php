@@ -13,9 +13,9 @@
     </header>
     <div id="container">
         <nav>
-            <div id="blokBaza" onclick="changeSection('baza')">Baza</div>
-            <div id="blokOpisy" onclick="changeSection('opisy')">Opisy</div>
-            <div id="blokGaleria" onclick="changeSection('galeria')">Galeria</div>
+            <div id="blokBaza" onclick="zmienSekcje('baza')">Baza</div>
+            <div id="blokOpisy" onclick="zmienSekcje('opisy')">Opisy</div>
+            <div id="blokGaleria" onclick="zmienSekcje('galeria')">Galeria</div>
         </nav>
         <main>
             <section id="baza">
@@ -60,11 +60,11 @@
                 <h3>Opisy smoków</h3>
                 <dl>
                     <dt>Smok czerwony</dt>
-                    <dd>Opis</dd>
+                    <dd>Pochodzi z Chin. Ma 1000 lat. Żywi się mniejszymi zwierzętami. Posiada łuski cenne na rynkach wschodnich do wyrabiania lekarstw. Jest dziki i groźny.</dd>
                     <dt>Smok czerwielkiwony</dt>
-                    <dd>Opis</dd>
+                    <dd>Pochodzi z Europy. Ma 800 lat. Żywi się rybami. Posiada łuski o unikalnych właściwościach magicznych. Jest rzadko spotykany.</dd>
                     <dt>Skrzydlaty łaciaty</dt>
-                    <dd>Opis</dd>
+                    <dd>Pochodzi z Afryki. Ma 600 lat. Żywi się owocami. Posiada kolorowe łuski, które zmieniają barwę w zależności od nastroju. Jest przyjazny dla ludzi.</dd>
                 </dl>
             </section>
             <section id="galeria">
