@@ -1,0 +1,8 @@
+Zapytanie 1:
+SELECT `nazwa_firmy`, `liczba_pracownikow` FROM `wykonawcy` WHERE liczba_pracownikow>=40;
+Zapytanie 2:
+SELECT miasto FROM klienci ORDER BY miasto ASC;
+Zapytanie 3:
+SELECT k.imie, z.cena FROM klienci k, zlecenia z WHERE z.id_klienta = k.id_klienta and k.miasto="Poznań" and z.rodzaj="malowanie";
+Zapytanie 4:
+SELECT k.imie, z.cena FROM klienci k, zlecenia z WHERE z.id_klienta=k.id_klienta AND k.miasto="Poznań" AND z.rodzaj="malowanie";
