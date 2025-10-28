@@ -22,9 +22,9 @@
         <section id="lewa">
             <h2>Dla klientów</h2>
             <form action="zlecenia.php" name="klienci" method="post">
-                <label for="pracownicy">Ilu co najmniej pracowników potrzebujesz?</label>
+                <label for="pracownicy">Ilu co najmniej pracowników potrzebujesz?</label><br>
                 <input type="number" id="pracownicy" name="pracownicy">
-                <input type="submit" value="Szukaj firm">
+                <input type="submit" name="szukaj" value="Szukaj firm">
                 <?php
                     //skrypt 1
                 ?>
@@ -33,13 +33,16 @@
         <section id="srodek">
             <h2>Dla wykonawców</h2>
             <form action="zlecenia.php" name="wykonawcy" method="post">
-                <select name="">
+                <select>
                     <?php
                         //skrypt 2
                     ?>
+                </select>
             </form>
         </section>
-
     </main>
+    <footer>
+        <p><strong>Stronę wykonał: 000000000000</strong></p>
+    </footer>
 </body>
 </html>
