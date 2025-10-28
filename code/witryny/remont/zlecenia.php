@@ -26,7 +26,15 @@
                 <input type="number" id="pracownicy" name="pracownicy">
                 <input type="submit" name="szukaj" value="Szukaj firm">
                 <?php
-                    //skrypt 1
+                    $link = mysqli_connect('localhost', 'root', '', 'remonty');
+                    $licz_pracownik = $_POST['pracownicy']??null;
+                    if (isset($licz_pracownik)) {
+                        $zap2 = "SELECT `nazwa_firmy`, `liczba_pracownikow` FROM `wykonawcy` WHERE liczba_pracownikow>=$licz_pracownik;";
+                        $wynik2 = mysqli_query($link, $zap2);
+                        while ($wiersz = mysqli_fetch_array($wynik2)) {
+                            echo"<p>$wiersz[0], $wiersz[1]</p>";
+                        }
+                    }
                 ?>
             </form>
         </section>
