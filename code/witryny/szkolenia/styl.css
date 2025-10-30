@@ -1,0 +1,70 @@
+/* Styl ogólny */
+body {
+	font-family: "Century Gothic", sans-serif;
+	text-align: center;
+	background-color: #FCE4EC;
+	margin: 0;
+}
+
+header,
+footer {
+	background-color: #880E4F;
+	color: #ffffff;
+	padding: 10px;
+	letter-spacing: 20px;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px 0;
+}
+
+/* Sekcja lewa */
+#lewa {
+	width: 50%;
+	height: 600px;
+	overflow: auto;
+}
+
+/* Sekcja prawa */
+#prawa {
+	background-color: #880E4F;
+	color: #ffffff;
+	width: 40%;
+	height: 500px;
+	margin: 35px;
+	box-shadow: 10px 10px 15px DimGray;
+	padding: 15px;
+}
+
+/* Tabela */
+table {
+	margin: 0 auto;
+	width: 70%;
+	border-collapse: collapse;
+}
+
+th, td {
+	border-bottom: 1px solid #ccc;
+	padding: 8px 6px;
+}
+
+tbody tr:hover {
+	background-color: #F8BBD0;
+}
+
+/* Formularz */
+input[type="text"],
+input[type="number"],
+select,
+button {
+	margin: 5px;
+	width: 70%;
+	padding: 8px;
+}
+
+button {
+	cursor: pointer;
+}

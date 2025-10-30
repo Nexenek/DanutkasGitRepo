@@ -49,6 +49,7 @@
                 while ($wiersz = mysqli_fetch_array($wynik3)) {
                     echo "<option value='$wiersz[0]'>$wiersz[0]</option>";
                 }
+                mysqli_close($link);
                 ?>
             </select><br>
             <input type="radio" id="malowanie" name="usluga" value="malowanie" checked>

@@ -1,0 +1,11 @@
+Zapytanie 1 (tabela kursów):
+SELECT kod, nazwa, cena FROM kursy ORDER BY kod;
+
+Zapytanie 2 (lista rozwijana kursów):
+SELECT kod, nazwa FROM kursy ORDER BY nazwa;
+
+Zapytanie 3 (dodanie uczestnika; wartości podstawia skrypt 3):
+INSERT INTO uczestnicy(imie, nazwisko, wiek) VALUES ('IMIE', 'NAZWISKO', 25);
+
+Zapytanie 3a (opcjonalny zapis uczestnika na kurs z dzisiejszą datą):
+INSERT INTO kursy_uczestnicy(kod_kursu, id_uczestnika, data) VALUES (KOD_KURSU, ID_UCZESTNIKA, 'YYYY-MM-DD');
