@@ -1,0 +1,70 @@
+* {
+    font-family: Georgia, serif;
+}
+
+header, footer {
+    background-color: #1B5E20;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+article {
+    background: url('obraz1.jpg') no-repeat center center;
+    background-size: cover;
+    color: DimGray;
+    font-size: 150%;
+    height: 350px;
+    overflow: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 20px;
+}
+section {
+    background-color: #00E676;
+    color: #1B5E20;
+    width: 28%;
+    height: 560px;
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 6px DimGray;
+    transition: background 0.3s;
+}
+section:hover {
+    background-color: #10EF84;
+}
+
+p:hover {
+    color: #000;
+}
+
+h2, h3 {
+    color: #1B5E20;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 30px;
+}
+ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    background: url('obraz3.png') no-repeat center center;
+    background-size: contain;
+}
