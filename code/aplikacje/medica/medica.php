@@ -27,7 +27,11 @@
             <h2>Standardowy</h2>
             <ul>
                 <?php
-                // Skrypt 2 zmodyfikowany: Usługi dla abonamentu 1
+                $zap3 = "SELECT a.nazwa, c.cecha FROM abonamenty a JOIN szczegolyabonamentu sa ON a.id = sa.Abonamenty_id JOIN cechy c ON sa.Cechy_id = c.id WHERE a.id = 1;";
+                $wynik3 = mysqli_query($link, $zap3);
+                while ($usluga = mysqli_fetch_array($wynik3)) {
+                    echo "<li>$usluga[1]</li>";
+                }
                 ?>
             </ul>
         </section>
@@ -35,7 +39,11 @@
             <h2>Premium</h2>
             <ul>
                 <?php
-                // Skrypt 2 zmodyfikowany: Usługi dla abonamentu 2
+                $zap3 = "SELECT a.nazwa, c.cecha FROM abonamenty a JOIN szczegolyabonamentu sa ON a.id = sa.Abonamenty_id JOIN cechy c ON sa.Cechy_id = c.id WHERE a.id = 2;";
+                $wynik3 = mysqli_query($link, $zap3);
+                while ($usluga = mysqli_fetch_array($wynik3)) {
+                    echo "<li>$usluga[1]</li>";
+                }
                 ?>
             </ul>
         </section>
@@ -43,7 +51,11 @@
             <h2>Dziecko</h2>
             <ul>
                 <?php
-                // Skrypt 2 zmodyfikowany: Usługi dla abonamentu 3
+                $zap3 = "SELECT a.nazwa, c.cecha FROM abonamenty a JOIN szczegolyabonamentu sa ON a.id = sa.Abonamenty_id JOIN cechy c ON sa.Cechy_id = c.id WHERE a.id = 3;";
+                $wynik3 = mysqli_query($link, $zap3);
+                while ($usluga = mysqli_fetch_array($wynik3)) {
+                    echo "<li>$usluga[1]</li>";
+                }
                 ?>
             </ul>
         </section>

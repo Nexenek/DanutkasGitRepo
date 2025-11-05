@@ -24,6 +24,7 @@ main {
     gap: 2%;
     margin-top: 20px;
 }
+
 section {
     background-color: #00E676;
     color: #1B5E20;
@@ -32,7 +33,7 @@ section {
     margin: 2%;
     border-radius: 10px;
     box-shadow: 8px 8px 6px DimGray;
-    transition: background 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 section:hover {
     background-color: #10EF84;
