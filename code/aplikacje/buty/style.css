@@ -10,7 +10,7 @@ header, footer {
 }
 
 main {
-    background-color: antiquewhite;
+    background-color: AntiqueWhite;
     height: 700px;
     font-size: 120%;
     overflow: auto;
@@ -27,11 +27,11 @@ main {
     padding: 7px;
     border: 1px solid sienna;
     border-radius: 30px;
-    transition: background-color 0.3s;
+    transition: background 0.2s;
 }
 
 .buty:hover {
-    background-color: linen;
+    background-color: Linen;
 }
 
 img {
