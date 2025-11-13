@@ -204,6 +204,78 @@
         </ul>
         </li>
     </ol>
+    <h1>PHP operacje na plikach</h1>
+    <h2>funckja fopen()</h2>
+    <p>Funkcja otwierania pliku, ogólna składnia: fopen('nazwa pliku', 'tryb_otwarcia') </p>
+        <h3>Zestawienie trybów otwarcia</h3>
+        <table border="1">
+            <tr>
+                <td>'r'</td>
+                <td>Otwiera tylko do odczytu; umieszcza wskaźnik pliku na jego początku.</td>
+            </tr>
+            <tr>
+                <td>'r+'</td>
+                <td>Otwiera do odczytu i zapisu; umieszcza wskaźnik pliku na jego początku.</td>
+            </tr>
+            <tr>
+                <td>'w'</td>
+                <td>Otwiera tylko do zapisu; umieszcza wskaźnik pliku na jego początku i obcina plik do zerowej długości. Jeśli plik nie istnieje to próbuje go utworzyć.</td>
+            </tr>
+            <tr>
+                <td>'w+'</td>
+                <td>Otwiera do odczytu i zapisu; umieszcza wskaźnik pliku na jego początku i obcina plik do zerowej długości. Jeśli plik nie istnieje to próbuje go utworzyć.</td>
+            </tr>
+            <tr>
+                <td>'a'</td>
+                <td>Otwiera tylko do zapisu; umieszcza wskaźnik pliku na jego końcu. Jeśli plik nie istnieje to próbuje go utworzyć.</td>
+            </tr>
+            <tr>
+                <td>'a+'</td>
+                <td>Otwiera do odczytu i zapisu; umieszcza wskaźnik pliku na jego końcu. Jeśli plik nie istnieje to próbuje go utworzyć.</td>
+            </tr>
+            <tr>
+                <td>'x'</td>
+                <td>Tworzy i otwiera plik tylko do zapisu; umieszcza wskaźnik pliku na jego początku. Jeśli plik już istnieje, wywołanie fopen() nie powiedzie się, zwróci FALSE i wygeneruje błąd na poziomie E_WARNING. Jeśli plik nie istnieje, spróbuje go utworzyć. To jest równoważne z określeniem flag O_EXCL|O_CREAT stosowanym w wywołaniu systemowym open(2).</td>
+            </tr>
+            <tr>
+                <td>'x+'</td>
+                <td>Tworzy i otwiera plik odczytu i zapisu; umieszcza wskaźnik pliku na jego początku. Jeśli plik już istnieje, wywołanie fopen() nie powiedzie się, zwróci FALSE i wygeneruje błąd na poziomie E_WARNING. Jeśli plik nie istnieje, spróbuje go utworzyć. To jest równoważne z określeniem flag O_EXCL|O_CREAT stosowanym w wywołaniu systemowym open(2).</td>
+            </tr>
+        </table>
+        <h1>fputs() zapisuje do otwartego pliku. (lub funkcja fwrite())</h1>
+        <h3>Funkcja zatrzyma się na końcu pliku lub po osiągnięciu określonej długości, w zależności od tego co nastąpi wcześniej.<br>
+        Ta funkcja zwraca liczbę bajtów zapisanych w przypadku powodzenia, FALSE w przypadku porażki.<br>
+        fputs() funkcji jest alias fwrite() funkcji.<br>
+        </h3>
+        <h3>Składnia:<br>
+        fputs(file,string,length)</h3>
+        <table border="1">
+            <tr>
+                <td>Parametr</td>
+                <td>Opis</td>
+            </tr>
+            <tr>
+                <td>file</td>
+                <td>Wymagany. Określa otworzenie pliku do zapisu</td>
+            </tr>
+            <tr>
+                <td>string</td>
+                <td>Wymagany. Określa ciąg zapisu otwartego pliku</td>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Opcjonalny. Określa maksymalną liczbę bajtów do zapisania</td>
+            </tr>
+        </table>
+        <h3>Do zamykania pliku służy funkcja <strong>fclose()</strong> zapisywana w postaci:<br>
+        fclose(deskryptor)<br>
+        Deskryptor to wartość zwrócona przez funkcje <em>fopen()</em>
+        </h3>
+        <h2>Odczyt danych to funkcja fgets()<br>
+        fgets(deskryptor, ile_znaków)
+        </h2>
+        <h1>Dołączanie plików</h1>
+        <h3>Duży plik można podzielić i dołączać poszczególne pliki służy do tego polecenie <em>include lub require</em></h3>
     </body>
 </html>
 
