@@ -1,5 +1,5 @@
 <?php
-    $conn = new mysqli(hostname: "localhost",username: "root",password: "",database: "firma");
+    $conn = mysqli_connect(hostname: "localhost",username: "root",password: "",database: "firma");
 ?>
 
 <!DOCTYPE html>
@@ -25,8 +25,8 @@
         <main>
             <?php
                 $sql = "SELECT Data, Temat FROM szkolenia ORDER BY Data;";
-                $result = $conn->query($sql);
-                while($row = $result->fetch_assoc()) {
+                $result = mysqli_query($conn, $sql);
+                while($row = mysqli_fetch_array($result)) {
                     echo "<p>".$row["Data"]." ".$row['Temat']."</p>";
                     file_put_contents("harmonogram.txt", $row["Data"] . " " . $row["Temat"] . PHP_EOL, FILE_APPEND);
                 }
