@@ -1,0 +1,52 @@
+* {
+    font-family: 'Helvetica';
+}
+
+body {
+    background-color: lightsalmon;
+    text-align: center;
+}
+
+#lewy1 {
+    width: 30%;
+    height: 400px;
+    float: left;
+}
+
+#lewy2 {
+    background-color: darksalmon;
+    width: 30%;
+    height: 100px;
+    float: left;
+}
+
+#prawy {
+    background-color: darksalmon;
+    width: 70%;
+    height: 500px;
+    overflow-y: auto;
+    float: right;
+}
+
+img {
+    width: 100%;
+}
+
+#prawy p {
+    font-style: italic;
+    font-size: 200%;
+    padding: 10px;
+}
+
+#prawy p:hover {
+    color: ghostwhite;
+}
+
+table, td {
+    border: 1px dotted maroon;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+}
