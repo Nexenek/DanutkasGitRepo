@@ -30,16 +30,14 @@
                     <th>Data odbioru</th>
                 </tr>
                 <?php
-                    // Skrypt
-
-                    $conn = new mysqli(hostname: "localhost",username: "root",password: "",database: "mieszalnia");
+                   $conn = mysqli_connect("localhost", "root", "", "mieszalnia");
 
                     if(isset($_POST['wyszukaj'])) {
                         $dataod = $_POST['dataod'];
                         $datado = $_POST['datado'];
                         $sql = "SELECT nazwisko, imie, zamowienia.id, kod_koloru, pojemnosc, data_odbioru FROM klienci JOIN zamowienia ON klienci.id = id_klienta WHERE data_odbioru >= '$dataod' AND data_odbioru <= '$datado' ORDER BY data_odbioru;";
-                        $result = $conn->query($sql);
-                        while ($row = $result->fetch_assoc()) {
+                        $result = mysqli_query($conn, $sql);
+                        while ($row = mysqli_fetch_assoc($result)) {
                             echo "<tr>";
                             echo "<td>" . $row["id"] . "</td>";
                             echo "<td>" . $row["nazwisko"] . "</td>";
@@ -52,8 +50,8 @@
                     }
                     else {
                         $sql = "SELECT nazwisko, imie, zamowienia.id, kod_koloru, pojemnosc, data_odbioru FROM klienci JOIN zamowienia ON klienci.id = id_klienta ORDER BY data_odbioru;";
-                        $result = $conn->query($sql);
-                        while ($row = $result->fetch_assoc()) {
+                        $result = mysqli_query($conn, $sql);
+                        while ($row = mysqli_fetch_assoc($result)) {
                             echo "<tr>";
                             echo "<td>" . $row["id"] . "</td>";
                             echo "<td>" . $row["nazwisko"] . "</td>";
@@ -65,7 +63,7 @@
                         }
                     }
 
-                    $conn -> close();
+                    mysqli_close($conn);
                     ?>
             </table>
         </main>
