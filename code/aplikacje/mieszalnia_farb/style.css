@@ -1,0 +1,35 @@
+body {
+    font-family: 'Georgia';
+    text-align: center;
+    background-color: LightSteelBlue;
+}
+
+form {
+    padding-top: 20px;
+}
+
+main {
+    overflow-y: auto;
+    padding: 30px;
+    height: 400px;
+}
+
+footer {
+    background-color: orange;
+    padding: 10px;   
+}
+
+img {
+    width: 80%;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    border: 1px dotted Maroon;
+}
+
+table tr:hover {
+    background-color: steelblue;
+    color: white;
+}
