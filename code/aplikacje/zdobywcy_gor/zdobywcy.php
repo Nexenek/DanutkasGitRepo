@@ -66,7 +66,7 @@
                 </thead>
                 <tbody>
                     <?php
-                        $conn = new mysqli(hostname: "localhost",username: "root",password: "",database: "zdobywcy");
+                        $link = mysqli_connect(hostname: "localhost",username: "root",password: "",database: "zdobywcy");
 
                         if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $nazwisko = $_POST['nazwisko'];
@@ -74,15 +74,13 @@
                             $funkcja = $_POST['funkcja'];
                             $email = $_POST['email'];
 
-                            // Skrypt - dodawanie
                             $sql = "INSERT INTO osoby VALUES (NULL, '$nazwisko', '$imie', '$funkcja', '$email');";
-                            $result = $conn->query(query: $sql);
+                            $result = mysqli_query($link, $sql);
                         }
 
-                        // Skrypt - lista
                         $sql = "SELECT nazwisko, imie, funkcja, email FROM osoby;";
-                        $result = $conn -> query($sql);
-                        while ($row = $result -> fetch_assoc()) {
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
                             $nazwisko = $row["nazwisko"];
                             $imie = $row["imie"];
                             $funkcja = $row["funkcja"];
@@ -95,7 +93,7 @@
                                 echo "<th>$email</th>";
                             echo "</tr>";
                         }
-                        $conn -> close();
+                        mysqli_close($link);
                     ?>
                 </tbody>
             </table>
@@ -103,7 +101,7 @@
         </main>
 
         <footer>
-            <p>Stronę wykonał: <a href="https://ee-informatyk.pl" target="_blank" style="text-decoration: none;color: unset;">EE-Informatyk.pl</a></p>
+            <p>Stronę wykonał: 0000000000000</p>
         </footer>
     </body>
 </html>
