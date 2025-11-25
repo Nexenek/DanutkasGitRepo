@@ -1,0 +1,65 @@
+body {
+    font-family: 'Verdana';
+    text-align: center;
+    padding: 0 3%;
+}
+
+header {
+    background-color: #FDFAAA;
+    color: #5BBB77;
+    padding: 10px;
+    text-shadow: 5px 5px 10px #000;
+}
+
+#lewy {
+    background-color: #FFA6A6;
+    width: 79%;
+    height: 600px;
+    margin: 15px 0;
+    box-shadow: 5px 6px 10px #000;
+    float: left;
+}
+
+#prawy {
+    background: linear-gradient(#FDFAAA, #5BBB77);
+    width: 20%;
+    height: 630px;
+    float: right;
+}
+
+footer {
+    background-color: #5BBB77;
+    color: #FFF555;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 15px;
+    clear: both;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+}
+
+th {
+    background-color: #5BBB77;
+    font-size: 16px;
+    height: 40px;
+}
+
+tr:nth-child(odd) {
+    background-color: #FDFAAA;
+}
+
+ul {
+    list-style-type: square;
+    line-height: 1.5;
+}
+
+a {
+    color: #680808;
+}
+
+h4 {
+    color: green;
+}

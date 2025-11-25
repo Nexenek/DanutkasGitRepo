@@ -1,5 +1,5 @@
 <?php
-    $link = mysqli_query("localhost","root","","szachy");
+    $link = mysqli_connect("localhost","root", "","szachy");
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@
     <head>
         <meta charset="UTF-8">
         <title>KOŁO SZACHOWE</title>
-        <link rel="stylesheet" href="sdtyles.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
