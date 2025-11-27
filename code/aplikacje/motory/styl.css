@@ -1,0 +1,63 @@
+* {
+    font-family: 'Verdana';
+}
+
+img {
+    display: block;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    z-index: -1;
+}
+
+header {
+    background: rgba(60,120,160,0.9);
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+}
+
+main {
+    background: rgba(0,100,0,0.6);
+    margin: 2%;
+    width: 75%;
+    height: 600px;
+    font-size: 120%;
+    overflow-y: scroll;
+    box-shadow: 10px 10px 7px dimgray;
+    float: left;
+}
+
+#prawy1,
+#prawy2 {
+    float: right;
+    background: rgba(0,100,0,0.6);
+    margin: 1%;
+    width: 15%;
+    height: 300px;
+    box-shadow: 10px 10px 7px dimgray;
+}
+
+footer {
+    clear: both;
+    background: rgba(60,120,160,0.9);
+    color: white;
+    padding: 10px;
+}
+
+h1,h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+a,.terminy {
+color: white;
+}
+
+.opis {
+    padding: 1%;
+}
+
+.opis:hover {
+    background: LightGreen;
+}
