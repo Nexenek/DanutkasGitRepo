@@ -1,5 +1,5 @@
 <?php
-    $conn = new mysqli(hostname: "localhost",username: "root",password: "",database: "piekarnia");
+    $conn = mysqli_connect("localhost", "root", "", "piekarnia");
 ?>
 
 <!DOCTYPE html>
@@ -32,8 +32,8 @@
                     <?php
                         // Skrypt #1
                         $sql = "SELECT DISTINCT Rodzaj FROM wyroby ORDER BY Rodzaj DESC;";
-                        $result = $conn->query($sql);
-                        while($row = $result->fetch_assoc()) {
+                        $result = mysqli_query($conn, $sql);
+                        while($row = mysqli_fetch_array($result)) {
                             echo "<option value='" . $row["Rodzaj"] . "'>" . $row["Rodzaj"] . "</option>";
                         }
                     ?>
@@ -52,8 +52,8 @@
                     if(isset($_POST["rodzaj"])) {
                         $rodzaj = $_POST['rodzaj'];
                         $sql = "SELECT Rodzaj, Nazwa, Gramatura, Cena FROM wyroby WHERE Rodzaj = '$rodzaj';";
-                        $result = $conn->query($sql);
-                        while($row = $result->fetch_assoc()) {
+                        $result = mysqli_query($conn, $sql);
+                        while($row = mysqli_fetch_array($result)) {
                             echo "<tr>";
                                 echo "<td>" . $row["Rodzaj"] . "</td>";
                                 echo "<td>" . $row["Nazwa"] . "</td>";
