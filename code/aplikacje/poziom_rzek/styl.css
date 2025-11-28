@@ -1,0 +1,64 @@
+* {
+    font-family: 'Georgia';
+}
+
+#header1,
+#header2 {
+    float: left;
+    background-color: Navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+}
+
+nav {
+    clear: both;
+    background-color: Navy;
+    padding: 20px;
+}
+
+label {
+    color: Silver;
+    margin: 20px;
+}
+
+label:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#lewy,
+#prawy {
+    background-color: Azure;
+    height: 550px;
+    float: left;
+}
+
+#lewy {
+    width: 70%;
+}
+
+#prawy {
+    width: 30%;
+}
+
+footer {
+    clear: both;
+    background-color: Navy;
+    color: white;
+}
+
+table {
+    border: 1px solid Navy;
+    margin: auto;
+    width: 70%;
+}
+
+tr:hover {
+    background-color: SkyBlue;
+}
+
+#prawy > img {
+    width: 90%;
+}
