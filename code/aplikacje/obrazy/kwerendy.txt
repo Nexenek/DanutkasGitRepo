@@ -1,0 +1,11 @@
+Zapytanie 1: 
+SELECT tytul, plik FROM zdjecia WHERE polubienia >= 100;
+
+Zapytanie 2: 
+SELECT plik, tytul, polubienia, imie, nazwisko FROM zdjecia JOIN autorzy ON autorzy_id = autorzy.id ORDER BY nazwisko;
+
+Zapytanie 3: 
+SELECT imie, COUNT(*) FROM zdjecia JOIN autorzy ON autorzy_id = autorzy.id GROUP BY imie;
+
+Zapytanie 4: 
+ALTER TABLE zdjecia ADD COLUMN rozmiarPliku INT;
