@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("localhost", "root", "", "galeria");
+    $conn = mysqli_connect("localhost", "root", "", "galeriaa");
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Galeria</title>
+        <title>galeriaa</title>
         <link rel="stylesheet" href="styl.css">
     </head>
     <body>
@@ -30,8 +30,8 @@
             <?php
                 // Skrypt #1
                 $sql = "SELECT plik, tytul, polubienia, imie, nazwisko FROM zdjecia JOIN autorzy ON autorzy_id = autorzy.id ORDER BY nazwisko;";
-                $result = $conn->query($sql);
-                while($row = $result -> fetch_array()) {
+                $result = mysqli_query($conn, $sql);
+                while($row = mysqli_fetch_array($result)) {
                     echo "<div>";
                         echo "<img src='$row[0]' alt='zdjęcie'>";
                         echo "<h3>$row[1]</h3>";
@@ -55,8 +55,8 @@
             <?php
                 // Skrypt #2
                 $sql = "SELECT tytul, plik FROM zdjecia WHERE polubienia >= 100;";
-                $result = $conn->query($sql);
-                while($row = $result -> fetch_array()) {
+                $result = mysqli_query($conn, $sql);
+                while($row = mysqli_fetch_array($result)) {
                     echo "<img src='$row[1]' alt='$row[0]'>";
                 }
             ?>
