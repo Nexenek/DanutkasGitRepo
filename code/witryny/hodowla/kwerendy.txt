@@ -1,0 +1,8 @@
+zap. 2
+SELECT DISTINCT s.data_ur, s.miot, r.rasa FROM swinki s, rasy r WHERE r.id=s.rasy_id AND s.rasy_id=1
+
+zap. 3
+SELECT imie, cena, opis FROM swinki WHERE rasy_id=1
+
+zap. 4
+SELECT rasa FROM rasy

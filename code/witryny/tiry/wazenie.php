@@ -20,8 +20,8 @@
                 <?php
                 $conn = mysqli_connect( "localhost", "root", "", "wazenietirow");
                     $sql = "SELECT ulica FROM lokalizacje;";
-                    $result = $conn->query(query: $sql);
-                    while($row = $result -> fetch_array()) {
+                    $result = mysqli_query($conn, $sql);
+                    while($row = mysqli_fetch_array($result)) {
                         echo "<li>ulica $row[0]</li>";
                     }
                 ?>
@@ -42,8 +42,8 @@
                 </tr>
                 <?php
                     $sql = "SELECT rejestracja, ulica, waga, dzien, czas FROM wagi JOIN lokalizacje ON wagi.lokalizacje_id = lokalizacje.id WHERE waga > 5;";
-                    $result = $conn->query(query: $sql);
-                    while($row = $result -> fetch_array()) {
+                    $result = mysqli_query($conn, $sql);
+                    while($row = mysqli_fetch_array($result)) {
                         echo "<tr>";
                             echo "<td>$row[0]</td>";
                             echo "<td>$row[1]</td>";
@@ -57,8 +57,8 @@
 
             <?php
                 $sql = "INSERT INTO wagi (lokalizacje_id, waga, rejestracja, dzien, czas) VALUES ('5', FLOOR(1+RAND()*10), 'DW12345', CURRENT_DATE, CURRENT_TIME)";
-                $result = $conn->query(query: $sql);
-                header(header: "refresh: 10");
+                $result = mysqli_query($conn, $sql);
+                header("refresh: 10");
 
                 mysqli_close($conn);
             ?>

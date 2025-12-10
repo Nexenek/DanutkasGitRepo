@@ -1,0 +1,11 @@
+Zapytanie 1: 
+SELECT nazwaPliku, podpis FROM zdjecia ORDER BY podpis;
+
+Zapytanie 2: 
+SELECT cel, dataWyjazdu FROM wycieczki WHERE dostepna = FALSE;
+
+Zapytanie 3: 
+SELECT cel, cena, podpis FROM zdjecia JOIN wycieczki ON zdjecia.id = wycieczki.zdjecia_id WHERE cena > 1300;
+
+Zapytanie 4: 
+DROP TABLE uzytkownik;
