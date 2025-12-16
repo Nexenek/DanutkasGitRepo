@@ -1,0 +1,51 @@
+* {
+    font-family: Garamond, serif;
+}
+
+header {
+    background: linear-gradient(#97b498, #c8e6c9);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+#lewy {
+    background-color: #c8e6c9;
+    color: #005005;
+    width: 40%;
+    height: 600px;
+    float: left;
+}
+
+#prawy {
+    color: #005005;
+    width: 60%;
+    height: 600px;
+    overflow-y: scroll;
+    float: left;
+}
+
+footer {
+    clear: both;
+    background: linear-gradient(#c8e6c9, #97b498);
+    color: #fff;
+    padding: 12px;
+}
+
+video {
+    width: 100%;
+}
+
+form {
+    padding: 10px 50px;
+}
+
+button {
+    background-color: #97b498;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #97b498;
+}
