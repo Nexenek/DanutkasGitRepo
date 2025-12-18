@@ -276,7 +276,20 @@
         </h2>
         <h1>Dołączanie plików</h1>
         <h3>Duży plik można podzielić i dołączać poszczególne pliki służy do tego polecenie <em>include lub require</em></h3>
-    </body>
+    <h2>Funkcje haszowania w PHP</h2>
+    <ol>
+ W PHP istnieje wiele funkcji hashowych, ważne z nich to:
+
+ <li>Bcrypt: password_hash() - Najbardziej bezpieczne haszowanie haseł, wolne obliczeniowo, używa wewnętrznej soli i haszuje iteracyjnie.</li>
+ <li>md5() - Bardzo szybka funkcja nadająca się do haszowania plików. Wyjście ma zawsze 32 znaki.</li>
+ <li>sha1() - Szybka funkcja haszująca do haszowania plików, używana wewnętrznie przez Git do haszowania commitów. Dane wyjściowe mają zawsze 40 znaków.</li>
+ <li>Funkcja hash() służy do haszowania ciągów znaków. Przyjmuje ona trzy parametry - dwa obowiązkowe i trzecie opcjonalny:
+
+ $algo - string - oznacza algorytm, którym chcemy użyć do zahashowania ciągu. Aby poznać listę obsługiwanych algorytmów, możemy skorzystać z bezparametrowej funkcji hash_algos;
+ $data - string - jest to ciąg znaków, które chcemy zhashować;
+ $raw_output - bool, domyślnie false - określa czy chcemy otrzymać wynik w postaci czystego stringu, czy w postaci binarnej.</li>
+</ol>
+</body>
 </html>
 
 <?php

@@ -1,0 +1,44 @@
+body {
+    font-family: 'Garamond';
+}
+
+header {
+    background: saddlebrown;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+#lewy {
+    background: tan;
+    height: 500px;
+    width: 40%;
+    float: left;
+}
+
+#prawy1,#prawy2 {
+    background: Tan;
+    height: 250px;
+    width: 60%;
+    float: right;
+}
+
+footer {
+    background: saddlebrown;
+    color: white;
+}
+
+form {
+    background: saddlebrown;
+    color: white;
+    padding: 10px 30px;
+    width: 300px;
+}
+
+form input {
+    margin: 5px;
+}
+
+p {
+    content: "STATUS: ";
+}
