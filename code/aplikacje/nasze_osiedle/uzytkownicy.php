@@ -1,5 +1,5 @@
 <?php
-    $conn = new mysqli("localhost","root","","portal");
+    $conn = mysqli_connect("localhost","root","","portal");
 ?>
 
 <!DOCTYPE html>
@@ -20,9 +20,9 @@
             <?php
                 // Skrypt #1
                 $sql = "SELECT COUNT(*) FROM dane;";
-                $result = $conn->query($sql);
+                $result = mysqli_query($conn, $sql);
 
-                while($row = $result -> fetch_array()) {
+                while($row = mysqli_fetch_array($result)) {
                     echo "<h5>Liczba użytkowników portalu: $row[0]</h5>";
                 }
             ?>
@@ -54,15 +54,15 @@
                         $result = $conn->query($sql);
 
                         if($result->num_rows == 1) {
-                            while($row = $result -> fetch_array()) {
+                            while($row = mysqli_fetch_array($result)) {
                                 $haslobaza = $row[0];
                             }
 
                             if($hash == $haslobaza) {
                                 $sql = "SELECT u.login, d.rok_urodz, d.przyjaciol, d.hobby, d.zdjecie FROM uzytkownicy u INNER JOIN dane d ON u.id = d.id WHERE u.login = '$login';";
-                                $result = $conn->query($sql);
+                                $result = mysqli_query($conn, $sql);
 
-                                while($row = $result -> fetch_array()) {
+                                while($row = mysqli_fetch_array($result)) {
                                     $wiek = date("Y") - $row[1];
                                     echo "<img src='$row[4]' alt='osoba'>";
                                     echo "<h4>$row[0] ($wiek)</h4>";
@@ -95,5 +95,5 @@
 </html>
 
 <?php
-    $conn -> close();
+    mysqli_close($conn);
 ?>
