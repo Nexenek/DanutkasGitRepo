@@ -52,7 +52,7 @@
 
                                 echo "<p>Konto zostało dodane</p>";
                             }
-                            else {
+                            else { 
                                 echo "<p>hasła nie są takie same, konto nie zostało dodane</p>";
                             }
                         }

@@ -1,0 +1,11 @@
+Zapytanie 1: 
+SELECT id,imie,nazwisko,adres,miasto,czyRODO,czyBadania FROM pracownicy WHERE id=2;
+
+Zapytanie 2: 
+SELECT COUNT(*) FROM pracownicy;
+
+Zapytanie 3:
+SELECT id,imie,nazwisko FROM pracownicy WHERE id=2;
+
+Zapytanie 4:
+SELECT pracownicy.id, stanowiska.nazwa, stanowiska.opis FROM pracownicy, stanowiska WHERE pracownicy.stanowiska_id = stanowiska.id AND pracownicy.id = 2;

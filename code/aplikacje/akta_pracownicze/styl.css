@@ -1,0 +1,50 @@
+body {
+    font-family: Helvetica;
+    background: #DDD;
+    color: #546E7A;
+}
+
+.lewy,
+.prawy {
+    background: #fff;
+    height: 600px;
+    margin: 20px;
+    box-shadow: 0 0 20px grey;
+}
+
+.lewy {
+    width: 50%;
+    float: left;
+}
+
+.prawy {
+    width: 30%;
+    float: left;
+}
+
+footer {
+    clear: both;
+    background: #5C6BC0;
+    color: #fff;
+    padding: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    background: #5C6BC0;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-weight: 300;
+}
+
+h3,p {
+    padding-left: 30px;
+}
+
+h2,h4 {
+    text-align: center;
+}
