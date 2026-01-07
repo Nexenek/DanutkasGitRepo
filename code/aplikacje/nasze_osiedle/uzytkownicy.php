@@ -89,7 +89,7 @@
         </div>
 
         <footer>
-            Stronę wykonał: <a href="https://ee-informatyk.pl/" target="_blank" style="color: unset;text-decoration: none;">EE-Informatyk.pl</a>
+            Stronę wykonał: 8322163183621
         </footer>
     </body>
 </html>
