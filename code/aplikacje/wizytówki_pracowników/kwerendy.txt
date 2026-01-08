@@ -1,0 +1,11 @@
+Zapytanie 1:
+SELECT id, imie, nazwisko, adres, miasto FROM pracownicy WHERE id = 1;
+
+Zapytanie 2: 
+SELECT imie, nazwisko FROM pracownicy WHERE czyRODO = 0;
+
+Zapytanie 3:
+SELECT id, nazwisko FROM pracownicy WHERE czyBadania = 0 AND YEAR(dataUr) BETWEEN 1970 AND 1979;
+
+Zapytanie 4:
+ALTER TABLE pracownicy ADD COLUMN umiejetnosci TEXT;
