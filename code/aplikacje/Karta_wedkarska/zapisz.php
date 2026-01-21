@@ -11,5 +11,4 @@
         $conn -> close();
 
         echo "Pomyślnie dodano zgłoszenie na kartę wędkarską";
-    }
 ?>
