@@ -1,0 +1,60 @@
+* {
+    font-family: 'Tahoma','sans-serif';
+}
+
+header {
+    background: tomato;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    background: seashell;
+    height: 500px;
+    overflow: scroll;
+}
+
+#stopka1,#stopka2,#stopka3,#stopka4 {
+    background: tomato;
+    color: white;
+    width: 25%;
+    height: 160px;
+    float: left;
+}
+
+.opinia {
+    background: white;
+    color: dimgray;
+    width: 60%;
+    height: 220px;
+    margin: 40px auto;
+    box-shadow: 0px 0px 10px 5px dimgrey;
+}
+
+img {
+    margin: 10px;
+    border-radius: 10px;
+    float: left;
+}
+
+.cytat {
+    padding: 10px;
+    font-size: 150%;
+    font-style: italic;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: right;
+    margin-right: 40px;
+    font-size: 150%;
+    font-style: italic;
+    float: right;
+}
+
+a {
+    color: white;
+}
