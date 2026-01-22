@@ -1,0 +1,49 @@
+* {
+    font-family: Georgia;
+    text-align: center;
+}
+
+header,footer {
+    background: #4BA3C7;
+    color: white;
+    height: 80px;
+    font-size: 120%;
+}
+
+footer {
+    clear: both;
+}
+
+#lewy,#prawy {
+    background: #EFEFEF;
+    height: 400px;
+    width: 25%;
+    float: left;
+}
+
+#srodkowy {
+    background: #90CAF9;
+    height: 400px;
+    width: 50%;
+    float: left;
+}
+
+table {
+    margin-left: 10px;
+    width: 90%;
+    border: 1px solid #90CAF9;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid #90CAF9;
+}
+
+tr:hover {
+    color: #90CAF9;
+}
+
+input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
