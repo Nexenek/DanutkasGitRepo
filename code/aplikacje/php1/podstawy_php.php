@@ -311,6 +311,24 @@
 <li>bezpieczeństwo - przyjmuje wartości true lub false. Ustawienie na true spowoduje, że plik będzie mógł być przesłany tylko przez bezpieczne połączenie HTTPS</li>
 <li>tylko_http - nie będzie dostępne z poziomu skryptów.</li>
 </ol>
+344     <h2>Usuwanie plików cookie</h3>
+345     <h3>Aby samodzielnie usunąć plik cookie, można ustawić dla niego czas ważności, który już upłynął.</h3>
+346     <h4>setcookie("pismo", "Na skróty", time()-100, "/", "localhost", 0)</h4>
+347     <h2>Data ostatnich odwiedzin na stronie</h2>
+348     ----------------------------------------------------------
+349     $mies=2592000+time();
+350     setcookie("wizyta", date("F jS - g:ia"), $mies);
+351
+352     if(isset($_COOKIE['wizyta'])){
+353         $ostatnia=$_COOKIE['wizyta'];
+354         echo "Witamy ponownie!<br> Ostatni raz odwiedziłeś nas: ".$ostatnia;
+355     }else{
+356         echo "Witamy na naszej stronie";
+357     }
+358     ----------------------------------------------------------
+359
+360     </body>
+361     </html>
 </body>
 </html>
 
