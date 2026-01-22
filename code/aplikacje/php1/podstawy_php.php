@@ -289,6 +289,14 @@
  $data - string - jest to ciąg znaków, które chcemy zhashować;
  $raw_output - bool, domyślnie false - określa czy chcemy otrzymać wynik w postaci czystego stringu, czy w postaci binarnej.</li>
 </ol>
+<h1>Pliki cookies w PHP</h1>=<h3>Pliki cookies</h3>
+<h4>To niewielkie pliki tekstowe wysyłane przez serwer lub skrypt do przeglądarki i umieszczane przez nią na dysku użytkownika. Pliki te są częścią specyfikacji protokołu HTTP i są wysyłane do przeglądarki w postaci nagłówka o nazwie <em>Set-Cookie</em>. Służą do identyfikacji użytkownika, zawierają między innymi nazwę serwera, datę wygaśnięcia pliku oraz informację na temat domeny i ścieżki dostępu do pliku.</h4>
+<h3>Zasady działania plików cookies:</h3>
+<ul>
+<li>Po nawiązaniu połączenia serwer wysyła do przeglądarki nagłówek <em>Set-Cookie</em> , który zawiera plik cookie.</li>
+<li>Przeglądarka zapisuje plik na dysku użytkownika</li>
+<li>przy kolejnym połączeniu z serwerem przeglądarka wysyła na serwer przechowywany na dysku plik cookie</li>
+</ul>
 </body>
 </html>
 
