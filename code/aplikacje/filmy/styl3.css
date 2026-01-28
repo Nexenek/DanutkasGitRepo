@@ -1,0 +1,50 @@
+body {
+    font-family: 'Verdana';
+}
+
+#baner1 {
+    background: #29434E;
+    color: white;
+    text-align: center;
+    width: 70%;
+    height: 70px;
+    float: left;
+}
+
+#baner2 {
+    background: #29434E;
+    color: white;
+    width: 30%;
+    height: 70px;
+    float: left;
+}
+
+#polecamy,#filmy {
+    background: #B0BEC5;
+    height: 320px;
+    overflow: scroll;
+    clear: both;
+}
+
+footer {
+    background: #29434E;
+    color: white;
+}
+
+.film {
+    padding: 5px;
+    width: 226px;
+    height: 280px;
+    float: left;
+}
+
+h3 {
+    background: #546E7A;
+    color: white;
+    margin: 0px;
+}
+
+h4 {
+    text-align: center;
+    margin: 0px;
+}
