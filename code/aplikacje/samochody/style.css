@@ -1,0 +1,54 @@
+* {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+header, nav, footer {
+    color: white;
+    padding: 2px;
+}
+
+header, footer {
+    background-color: DarkGreen;
+}
+
+footer {
+    clear: both;
+}
+
+nav {
+    background-color: ForestGreen;
+}
+
+#lewy, #srodek, #prawy {
+    background-color: LightGreen;
+    width: 33.3%;
+    height: 550px;
+    padding-top: 10px;
+    overflow: auto;
+    float: left;
+}
+
+h2 {
+    width: 33%;
+    display: inline-block;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid DarkGreen;
+}
+
+td, th {
+    border: 1px solid DarkGreen;
+}
+
+#srodek img {
+    width: 95%;
+    border-radius: 8px;
+}
+
+#lewy tr:hover {
+    background-color: ForestGreen;
+}

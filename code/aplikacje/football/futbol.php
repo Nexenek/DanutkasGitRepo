@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("localhost","root","","egzamin");
+    $conn = mysqli_connect("localhost","root","","football");
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +43,6 @@
             </form>
             <?php
                 // Skrypt #2
-
                 if (!empty($_POST["zawodnik"])) {
                     $zawodnik = $_POST["zawodnik"];
 

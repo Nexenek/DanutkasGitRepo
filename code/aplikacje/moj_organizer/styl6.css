@@ -1,0 +1,45 @@
+body {
+    font-family: 'Georgia';
+}
+
+#baner1,#baner2 {
+    background: #3CB371;
+    color: white;
+    height: 100px;
+    width: 40%;
+    float: left;
+}
+
+#baner3 {
+    background: #3CB371;
+    height: 100px;
+    width: 20%;
+    float: left;
+}
+
+main {
+    clear: both;
+}
+
+.dzien {
+    background: #FFDA89;
+    width: 170px;
+    height: 90px;
+    margin: 5px;
+    border: 1px solid #3CB371;
+    float: left;
+}
+
+footer {
+    clear: both;
+    background: #3CB371;
+    color: white;
+}
+
+h6 {
+    text-align: right;
+}
+
+form {
+    padding: 30px;
+}
