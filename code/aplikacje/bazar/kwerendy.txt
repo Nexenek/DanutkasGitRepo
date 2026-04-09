@@ -1,0 +1,11 @@
+Zapytanie 1:
+SELECT nazwa.plik FROM towar LIMIT 10;
+
+Zapytanie 2:
+SELECT id, nazwa FROM towar;
+
+Zapytanie 3:
+SELECT rodzaj, nazwa, cena WHERE id=1;
+
+Zapytanie 4:
+INSERT INTO zamowienie VALUES (NULL, 8, 2, 20);

@@ -1,0 +1,39 @@
+* {
+    font-family: Georgia, serif;
+}
+
+header, footer {
+    background-color: forestgreen;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+nav {
+    background-color: darkkhaki;
+    height: 150px;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+}
+
+section#boczny,
+section#sekcji {
+    background-color: khaki;
+    width: 50%;
+    height: 400px;
+}
+
+section#boczny img {
+    padding: 2px;
+    margin: 10px;
+    border: 2px dotted forestgreen;
+    border-radius: 40px;
+}
+
+p {
+    font-size: 120%;
+    font-style: italic;
+}
