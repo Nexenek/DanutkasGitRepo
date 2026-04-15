@@ -74,7 +74,7 @@
         </div>
     </div>
     <footer>
-        <p>Stronę wykonał: Chr1skyy</p>
+        <p>Stronę wykonał: 000000000000</p>
     </footer>
 </body>
 
