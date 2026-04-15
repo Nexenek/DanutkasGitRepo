@@ -1,0 +1,11 @@
+Zapytanie 1: 
+SELECT nazwa FROM choroby WHERE zakazna = 'T' ORDER BY nazwa ASC;
+
+Zapytanie 2: 
+SELECT id, nazwa FROM choroby;
+
+Zapytanie 3: 
+SELECT o.nazwa FROM objawy o JOIN choroby_objawy co ON o.id = co.id_objawy WHERE co.id_choroby = 5;
+
+Zapytanie 4: 
+SELECT c.nazwa, COUNT(co.id_objawy) AS liczba_objawow FROM choroby c JOIN choroby_objawy co ON c.id = co.id_choroby WHERE c.zakazna = 'T' GROUP BY c.id, c.nazwa;
