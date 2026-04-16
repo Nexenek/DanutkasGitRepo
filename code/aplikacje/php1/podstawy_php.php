@@ -311,24 +311,48 @@
 <li>bezpieczeństwo - przyjmuje wartości true lub false. Ustawienie na true spowoduje, że plik będzie mógł być przesłany tylko przez bezpieczne połączenie HTTPS</li>
 <li>tylko_http - nie będzie dostępne z poziomu skryptów.</li>
 </ol>
-344     <h2>Usuwanie plików cookie</h3>
-345     <h3>Aby samodzielnie usunąć plik cookie, można ustawić dla niego czas ważności, który już upłynął.</h3>
-346     <h4>setcookie("pismo", "Na skróty", time()-100, "/", "localhost", 0)</h4>
-347     <h2>Data ostatnich odwiedzin na stronie</h2>
-348     ----------------------------------------------------------
-349     $mies=2592000+time();
-350     setcookie("wizyta", date("F jS - g:ia"), $mies);
-351
-352     if(isset($_COOKIE['wizyta'])){
-353         $ostatnia=$_COOKIE['wizyta'];
-354         echo "Witamy ponownie!<br> Ostatni raz odwiedziłeś nas: ".$ostatnia;
-355     }else{
-356         echo "Witamy na naszej stronie";
-357     }
-358     ----------------------------------------------------------
-359
-360     </body>
-361     </html>
+     <h2>Usuwanie plików cookie</h3>
+     <h3>Aby samodzielnie usunąć plik cookie, można ustawić dla niego czas ważności, który już upłynął.</h3>
+     <h4>setcookie("pismo", "Na skróty", time()-100, "/", "localhost", 0)</h4>
+     <h2>Data ostatnich odwiedzin na stronie</h2>
+     <?php
+     $mies=2592000+time();
+     setcookie("wizyta", date("F jS - g:ia"), $mies);
+
+     if(isset($_COOKIE['wizyta'])){
+         $ostatnia=$_COOKIE['wizyta'];
+         echo "Witamy ponownie!<br> Ostatni raz odwiedziłeś nas: ".$ostatnia;
+     }else{
+         echo "Witamy na naszej stronie";
+     }
+     ?>
+<h1>Funkcje w PHP</h1>
+<p>Funkcja jest ciągiem instrukcji stanowiących blok kodu, który może być wielokrotnie wykorzystywany w różnych programach lub w różnych miejscach programu. Funkcja jest wywoływana przez podanie jej nazwy i listy argumentów. Definicja funkcji ma postać:</p>
+<h3>function nazwa($argument1, $argument2,...){<br>
+instrukcje;<br>
+}<br>
+Nazwa funkcji nie może zaczynać się od znaku $.
+</h3>
+<h1>Wyznaczanie zakresu losowanych liczb</h1>
+<h3>W większości przypadków chcemy wyznaczyć przedział, z którego ma zostać wylosowana liczba. PHP udostępnia nam taką możliwość. Wystarczy podać dwa argumenty w wywołaniu funkcji rand(), minimalną i maksymalną wartość.
+Zobaczmy jak wygląda to w praktyce:</h3>
+<br>
+<?php
+echo rand()."<br>";/*od 0 Dla systemów z rodziny Windows wynosi ono 32768, natomiast w systemach Unixowych 2147483647.*/
+$i = rand(15,30);
+echo "Wylosowana liczba z zakresu (15 - 30) to $i";
+?>
+<br>
+<h1>Szukanie podciągu</h1>
+<h3>Bardzo ważny element, przydatny podczas tworzenia różnego rodzaju ksiąg gości oraz for internetowych. Niezbędny szczególnie wtedy, gdy wpisy nie są moderowane i od razu wyświetlają się na stronie. Najczęściej chcemy sprawdzić, czy dany wyraz występuje wewnątrz ciągu znaków. Przykładowo, gdy chcemy wprowadzić zakaz wpisywania wulgaryzmów.
+Najczęściej stosowana funkcja, spełniająca powyższe zadanie, to <i>strpos(ciąg w którym szukamy, czego szukamy)</i>. Przyjmuje ona dwa argumenty, ciąg szukany oraz ciąg, w którym szukamy. W przypadku znalezienia wyrazu wewnątrz szukanego stringa, funkcja zwróci pozycję występowania wyrazu. Jeżeli natomiast podciąg nie zostanie znaleziony, funkcja zwróci wartość logiczną FALSE.
+Zobaczmy jej zastosowanie w praktyce:</h3>
+<?php
+$wpisany_tekst = "Rozwijam swoją wiedzę w dziedzinie PHP.";
+$czy = strpos($wpisany_tekst, "cholera");
+if ($czy === FALSE) // nie znaleziono słowa cholera
+    echo "Można wyświetlić: $wpisany_tekst.";
+else // znaleziono szukany wyraz
 </body>
 </html>
 
