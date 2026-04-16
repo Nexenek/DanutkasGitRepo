@@ -338,9 +338,9 @@ Nazwa funkcji nie może zaczynać się od znaku $.
 Zobaczmy jak wygląda to w praktyce:</h3>
 <br>
 <?php
-echo rand()."<br>";/*od 0 Dla systemów z rodziny Windows wynosi ono 32768, natomiast w systemach Unixowych 2147483647.*/
-$i = rand(15,30);
-echo "Wylosowana liczba z zakresu (15 - 30) to $i";
+    echo rand()."<br>";/*od 0 Dla systemów z rodziny Windows wynosi ono 32768, natomiast w systemach Unixowych 2147483647.*/
+    $i = rand(15,30);
+    echo "Wylosowana liczba z zakresu (15 - 30) to $i";
 ?>
 <br>
 <h1>Szukanie podciągu</h1>
@@ -348,11 +348,13 @@ echo "Wylosowana liczba z zakresu (15 - 30) to $i";
 Najczęściej stosowana funkcja, spełniająca powyższe zadanie, to <i>strpos(ciąg w którym szukamy, czego szukamy)</i>. Przyjmuje ona dwa argumenty, ciąg szukany oraz ciąg, w którym szukamy. W przypadku znalezienia wyrazu wewnątrz szukanego stringa, funkcja zwróci pozycję występowania wyrazu. Jeżeli natomiast podciąg nie zostanie znaleziony, funkcja zwróci wartość logiczną FALSE.
 Zobaczmy jej zastosowanie w praktyce:</h3>
 <?php
-$wpisany_tekst = "Rozwijam swoją wiedzę w dziedzinie PHP.";
-$czy = strpos($wpisany_tekst, "cholera");
-if ($czy === FALSE) // nie znaleziono słowa cholera
-    echo "Można wyświetlić: $wpisany_tekst.";
-else // znaleziono szukany wyraz
+    $wpisany_tekst = "Rozwijam swoją wiedzę w dziedzinie PHP.";
+    $czy = strpos($wpisany_tekst, "cholera");
+    if ($czy === FALSE) // nie znaleziono słowa cholera
+        echo "Można wyświetlić: $wpisany_tekst.";
+    else // znaleziono szukany wyraz
+        echo "Tekst zawiera wulgarne słownictwo";
+?>
 </body>
 </html>
 
