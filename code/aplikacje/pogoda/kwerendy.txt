@@ -1,0 +1,4 @@
+zap1
+SELECT ROUND(AVG(`temperatura`),2) FROM `pomiary` WHERE `id_miesiac`=7;
+zap3
+SELECT m.nazwa,m.kraj, p.temperatura FROM miejscowosc m,pomiary p WHERE m.id=p.id_miejscowosc and p.id_miesiac=7;
