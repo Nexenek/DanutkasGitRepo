@@ -355,6 +355,41 @@ Zobaczmy jej zastosowanie w praktyce:</h3>
     else // znaleziono szukany wyraz
         echo "Tekst zawiera wulgarne słownictwo";
 ?>
+<br>
+<h1>Funkcja zamiany na wielkie litery</h1>
+<h3>Bardzo często, podczas obsługi formularzy, zachodzi potrzeba zamiany na wielkie litery. Przykładowo, chcemy przechowywać w bazie danych loginy użytkowników. Wyczulone algorytmy sprawdzające rozróżniają małe i wielkie litery. Admin, ADMIN, admin i AdMIn to cztery różne stringi. Żeby zabezpieczyć się przed przypadkami dodania dwóch tych samych nazw, różniących się tylko wielkością liter, musimy nauczyć się zamieniać je w jedną oraz drugą stronę.
+Do zamiany wszystkich liter w ciągu na wielkie, używamy funkcji <i>strtoupper()</i>. Poniżej przykład zastosowania:</h3>
+<?php
+// przykładowy ciąg znaków zawierający małe oraz wielkie litery
+$wyswietl = "Bardzo dobre placki";
+
+// użycie funkcji strtoupper()
+$duze_litery = strtoupper($wyswietl);
+
+// wyświetli się napis:
+// BARDZO DOBRE PLACKI
+echo $duze_litery;
+?>
+<br>
+<h1>Zamiana na małe litery</h1>
+<h3>W analogiczny sposób możemy zamienić wszystkie znaki na małe litery. Służy do tego funkcja <i>strtolower()</i>. Poniżej przykład:</h3>
+<?php
+// przykładowy ciąg znaków zawierający małe oraz wielkie litery
+$wyswietl = "BaRdzo doBre PlaCki";
+
+// użycie funkcji strtolower()
+$male_litery = strtolower($wyswietl);
+
+// wyświetli napis:
+// bardzo dobre placki
+echo $male_litery;
+?>
+<br>
+<h2>Funkcje usuwania ciągów znaków</h2>
+<p>Do usunięcia białych znaków z początku lub końca ciągu można użyć jednej z trzech funkcji: <em>trim(), ltrim(), rtrim()</em></p>
+<ol>
+<li>trim() – usuwa podane znaki z początku i końca ciągu,</li>
+<li>ltrim() – usuwa podane znaki z początku ciągu,</li>
 </body>
 </html>
 
