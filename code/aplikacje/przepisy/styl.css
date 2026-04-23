@@ -1,0 +1,49 @@
+* {
+    font-family: Garamond;
+    text-align: center;
+}
+
+aside {
+    background-color: #3A3C3E;
+    color: white;
+    width: 10%;
+    height: 600px;
+    float: left;
+}
+
+main {
+    width: 45%;
+    height: 600px;
+    overflow: auto;
+    float: left;
+}
+
+section {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 45%;
+    height: 600px;
+    float: left;
+}
+
+h1 {
+    background: rgba(211,211,211,0.3);
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2em;
+}
+
+li {
+    text-align: left;
+}
+
+a {
+    color: Gainsboro;
+    font-size: 120%;
+    font-style: italic;
+}
+
+a:hover {
+    color: white;
+}
