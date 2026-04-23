@@ -28,7 +28,7 @@
                         // Skrypt #1
                         $query = "SELECT nazwa FROM choroby WHERE zakazna = 'T' ORDER BY nazwa ASC;";
                         $result = mysqli_query($conn, $query);
-                        while($row = mysqli_fetch_assoc($result)) {
+                        while($row = mysqli_fetch_array($result)) {
                             echo "<li>".$row['nazwa']."</li>";
                         }
                     ?>
@@ -43,7 +43,7 @@
                             // Skrypt #2
                             $query = "SELECT id, nazwa FROM choroby;";
                             $result = mysqli_query($conn, $query);
-                            while($row = mysqli_fetch_assoc($result)) {
+                            while($row = mysqli_fetch_array($result)) {
                                 echo "<option value='".$row['id']."'>".$row['nazwa']."</option>";
                             }
                         ?>
@@ -57,7 +57,7 @@
                             $choroba_id = $_POST['choroba'];
                             $query = "SELECT o.nazwa FROM objawy o JOIN choroby_objawy co ON o.id = co.id_objawy WHERE co.id_choroby = '$choroba_id';";
                             $result = mysqli_query($conn, $query);
-                            while($row = mysqli_fetch_assoc($result)) {
+                            while($row = mysqli_fetch_array($result)) {
                                 echo "<span>".$row['nazwa']."</span> ";
                             }
                         }
