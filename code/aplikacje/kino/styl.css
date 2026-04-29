@@ -1,0 +1,56 @@
+* {
+    font-family: 'Gill Sans MT', 'calibri';
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header1 {
+    width: 40%;
+    float: left;
+}
+
+#header2 {
+    width: 60%;
+    text-align: right;
+    float: left;
+}
+
+main {
+    clear: both;
+}
+
+#aktorzy {
+    margin: 0 auto;
+}
+
+#wynik div {
+    width: 15em;
+    text-align: center;
+    display: inline-block;
+}
+
+#aktorzy div {
+    width: 25em;
+    text-align: center;
+}
+
+img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+#aktorzy p {
+    font-size: 125%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E30613;
+}

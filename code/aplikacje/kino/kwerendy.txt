@@ -1,0 +1,14 @@
+Zapytanie 1: 
+SELECT id_filmu, tytul, rok_produkcji, czas_trwania FROM filmy WHERE czas_trwania >= 100;
+
+Zapytanie 2: 
+SELECT imie, nazwisko, plik_awatara FROM aktorzy WHERE id_aktora = 3;
+
+Zapytanie 3: 
+SELECT * FROM aktorzy ORDER BY nazwisko ASC, imie ASC;
+
+Zapytanie 4: 
+SELECT f.id_filmu, f.tytul, f.rok_produkcji FROM filmy f JOIN filmy_aktorzy fa ON f.id_filmu = fa.id_filmu WHERE fa.id_aktora = 3;
+
+Zapytanie 5: 
+SELECT id_aktora, COUNT(id_filmu) AS liczba_filmow FROM filmy_aktorzy GROUP BY id_aktora;
