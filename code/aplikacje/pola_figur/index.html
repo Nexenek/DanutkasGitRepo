@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pola figur</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <header>
+            <h2>Pola figur płaskich</h2>
+        </header>
+
+        <main>
+            <nav>
+                <h3>MENU</h3>
+                <ul>
+                    
+                    <li><a href="index.html">Prostokąt i trójkąt</a></li>
+                    <li><a href="kolo.html">Okrąg i koło</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <img src="1d.bmp" alt="Figura" id="duzyObraz">
+                <br>
+                <img src="1m.bmp" alt="Wybierz trójkąt" class="wybierz" onclick="wybierzTrojkat()">
+                <img src="2m.bmp" alt="Wybierz prostokąt" class="wybierz" onclick="wybierzProstokat()">
+            </div>
+
+            <aside>
+                <h3>Pole prostokąta / pole trójkąta</h3>
+                <label for="a">Bok prostokąta / podstawa trójkąta:</label><br>
+                <input type="number" id="a" min="0"><br>
+                <label for="b">Drugi bok prostokąta / wysokość trójkąta:</label><br>
+                <input type="number" id="b" min="0">
+                <button type="button" onclick="obliczPole()">Oblicz</button>
+                <p id="wynik"></p>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Autor: 000000000000</p>
+        </footer>
+
+        <script src="skrypt.js"></script>
+    </body>
+</html>
