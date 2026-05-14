@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Działania matematyczne</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <div id="baner1">
+            <img src="logo.jpg" alt="matematyka">
+        </div>
+
+        <div id="baner2">
+            <h1>Pomocnik Matematyczny</h1>
+        </div>
+
+        <div id="baner3">
+            <a href="dzialania.html"><h4>Działania</h4></a>
+        </div>
+
+        <div id="baner4">
+            <a href="mnozenie.html"><h4>Tabliczka mnożenia</h4></a>
+        </div>
+
+        <div id="lewy">
+            <h3>Proste działania</h3>
+            <label for="a">liczba A:</label> <input type="text" name="a" id="a"><br>
+            <label for="b">liczba B:</label> <input type="text" name="b" id="b"><br>
+            <button onclick="dzialanie('dodawanie')">+</button>
+            <button onclick="dzialanie('odejmowanie')">-</button>
+            <button onclick="dzialanie('mnozenie')">*</button>
+            <button onclick="dzialanie('dzielenie')">/</button>
+            <button onclick="dzialanie('potegowanie')">A^B</button>
+            <p id="wynik"></p>
+
+            <script src="skrypt.js"></script>
+        </div>
+
+        <div id="prawy">
+            <ul>
+                <li>dodawanie</li>
+                <li>odejmowanie</li>
+                <li>mnożenie</li>
+                <li>dzielenie</li>
+                <li>potęgowanie</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Autor: 00000000000</p>
+        </footer>
+    </body>
+</html>
