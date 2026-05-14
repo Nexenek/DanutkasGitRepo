@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('DancingScript-Regular.woff2') format('woff2'),
+        url('DancingScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Dancing Script', serif;
+    font-size: 120%;
+    text-align: center;
+}
+
+#pierwszy, aside {
+    background-color: rosybrown;
+    width: 30%;
+    float: left;
+}
+
+aside {
+    text-align: left;
+    height: 350px;
+}
+
+#drugi {
+    background-color: rosybrown;
+    width: 70%;
+    height: 100px;
+    float: right;
+}
+
+section {
+    width: 70%;
+    height: 550px;
+    overflow: scroll;
+    float: right;
+}
+label {
+    line-height: 50px;
+}
+
+.miniatury {
+    width: 150px;
+    transition: width 1s;
+}
+
+.miniatury:hover {
+    background-color: Bisque;
+    width: 200px;
+}
+
+footer {
+    clear: both;
+}

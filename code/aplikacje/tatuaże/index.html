@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css" type="text/css">    
+</head>
+<body>
+    <header id="pierwszy">
+        <img src="logo.png" alt="salon">
+    </header>
+    <header id="drugi">
+        <h1>Studio Tatuażu</h1>
+    </header>
+    <section>
+        <h2>Galeria</h2>
+        <img src="smok.png" alt="smok.png" class="miniatury">
+        <img src="koliber.png" alt="koliber.png" class="miniatury">
+    </section>
+    <aside>
+        <h3>Dodaj wzór</h3>
+        <label>Wzór: <input type="text"></label><br>
+        <label>Plik: <input type="file" accept=".png"></label><br>
+        <label>Kolor: <select>
+                <option value="Czarny">Czarny</option>
+                <option value="Czerwony">Czerwony</option>
+                <option value="Zielony">Zielony</option>
+                <option value="Niebieski">Niebieski</option>
+            </select></label><br>
+        <label>Cena: <input type="number"></label><br>
+        <button type="submit" onclick="dodajWzor()">Dodaj wzór</button>
+    </aside>
+    <footer>
+        <p>Autor strony: 0000000000</p>
+    </footer>
+</body>
+</html>
