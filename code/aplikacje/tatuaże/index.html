@@ -19,19 +19,41 @@
     </section>
     <aside>
         <h3>Dodaj wzór</h3>
-        <label>Wzór: <input type="text"></label><br>
-        <label>Plik: <input type="file" accept=".png"></label><br>
-        <label>Kolor: <select>
+        <label>Wzór: <input type="text" id="wzor"></label><br>
+        <label>Plik: <input type="file" accept=".png" id="plik"></label><br>
+        <label>Kolor: <select id="kolor">
                 <option value="Czarny">Czarny</option>
                 <option value="Czerwony">Czerwony</option>
                 <option value="Zielony">Zielony</option>
                 <option value="Niebieski">Niebieski</option>
             </select></label><br>
-        <label>Cena: <input type="number"></label><br>
+        <label>Cena: <input type="number" id="cena"></label><br>
         <button type="submit" onclick="dodajWzor()">Dodaj wzór</button>
     </aside>
     <footer>
         <p>Autor strony: 0000000000</p>
     </footer>
+
+    <script>
+        function dodajWzor() {
+            const plik = document.getElementById('plik').value;
+            const kolor = document.getElementById('kolor').value;
+            const cena = document.getElementById('cena').value;
+
+            // Ustala nazwę pliku (bez ścieżki dostępu)
+            const nazwaPliku = plik.split('\\').pop().split('/').pop();
+
+            // Wyświetla komunikat
+            console.log(`Wzór: ${nazwaPliku}, kolor ${kolor} w cenie ${cena} zł`);
+
+            // Tworzy element obrazu i dodaje go do bloku sekcji
+            const img = document.createElement('img');
+            img.src = nazwaPliku;
+            img.alt = nazwaPliku;
+            img.className = 'miniatury';
+
+            document.querySelector('section').appendChild(img);
+        }
+    </script>
 </body>
 </html>
