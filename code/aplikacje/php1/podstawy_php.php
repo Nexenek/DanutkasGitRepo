@@ -390,8 +390,7 @@ echo $male_litery;
 <ol>
 <li>trim() – usuwa podane znaki z początku i końca ciągu,</li>
 <li>ltrim() – usuwa podane znaki z początku ciągu,</li>
-</body>
-</html>
+
 
 <?php
 echo "<h2>Mój pierwszy skrypt PHP</h2>";
@@ -412,3 +411,22 @@ $iloraz = $a/$b;
 $reszta = $a%$b;
 echo "<h3>Suma wynosi: $suma<br> różnica wynosi: $roznica<br> iloczyn wynosi: $iloczyn<br> iloraz wynosi: $iloraz<br> reszta z dzielenia wynosi: $reszta</h3>";
 ?>
+
+
+<hr>
+<br>
+<h1>Teoria do analizy pobierania pliku w JavaScript</h1>
+<h3>Wyrażenie <strong>nazwapliku.value.split('\\').pop()</strong> w JavaScript służy do wyciągnięcia samej nazwy pliku z pełnej ścieżki dostępu (np. z pola "input type="file"">).</h3>
+<p>To dokładne wyjaśnienie krok po kroku:</p>
+<ol>
+  <li>nazwapliku.value: Pobiera zawartość pola (string), która zazwyczaj wygląda tak: C:\fakepath\dokument.pdf lub C:\Users\Nazwa\Dokumenty\zdjecie.png.</li>
+  <li>.split('\\'): Dzieli ten ciąg znaków na tablicę w miejscach, gdzie wystąpuje odwrotny ukośnik (\).</li>
+  <li>Przykład: "C:\relse\plikitxt" zamieniasięwtablicę["C:", "Folder", "plik.txt"]</li>
+  <li>.pop(): Usuwa i zwraca ostatni element z tej tablicy.</li>
+  <li>Z tablicy ["C:", "Folder", "plik.txt"] metoda .pop() wyciąga "plik.txt".</li>
+</ol>
+Podsumowując: Kod ten zwraca nazwę pliku wraz z rozszerzeniem, ignorując ścieżkę folderów, która znajdowała się przed nim.
+Uwaga: W nowoczesnych przeglądarkach, ze względów bezpieczeństwa, pole pliku często zwraca C:\fakepath\nazwa pliku.ext, dlatego ta metoda jest popularnym sposobem na pobranie czystej nazwy.
+
+</body>
+</html>
