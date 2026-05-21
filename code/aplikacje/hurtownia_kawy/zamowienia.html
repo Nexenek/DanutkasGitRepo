@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hurtownia</title>
+        <link rel="stylesheet" href="styl4.css">
+    </head>
+    <body>
+        <div id="logo">
+            <img src="logo.png" alt="hurtownia">
+        </div>
+
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="zamowienia.html">Zamówienia</a>
+            <a href="blog.html">Blog o kawie</a>
+            <a href="http://gatunki-kawy.pl/" target="_blank">Odwiedź także</a>
+        </nav>
+
+        <header>
+            <h1>Hurtownia kawy</h1>
+        </header>
+
+        <div id="lewy">
+            <h2>Oferta</h2>
+            <ol>
+                <li>Kawa palona Arabica</li>
+                <li>Kawa palona Robusta</li>
+                <li>Kawa bezkofeinowa</li>
+                <li>Kawa zielona</li>
+            </ol>
+        </div>
+
+        <div id="prawy">
+            <label for="kawa">Podaj numer kawy:</label><br>
+            <input type="number" name="kawa" id="kawa"><br>
+            <label for="waga">Podaj wagę w dekagramach:</label><br>
+            <input type="number" name="waga" id="waga"><br>
+            <button type="submit" onclick="policz()">Zamów</button>
+            <p id="wynik"></p>
+
+            <script src="skrypt.js"></script>
+        </div>
+
+        <footer>
+            Stronę przygotował: <a href="https://ee-informatyk.pl" target="_blank" style="color: unset;text-decoration: none;font-size: unset;line-height: unset;margin: unset;padding: unset;border: none !important;"><b>EE-Informatyk.pl</b></a>
+        </footer>
+    </body>
+</html>
