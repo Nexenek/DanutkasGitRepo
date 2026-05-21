@@ -1,7 +1,7 @@
 function policz() {
-    var numer = document.getElementById("kawa").value;
-    var waga = document.getElementById("waga").value;
-    var cena = 0;
+    let numer = document.getElementById("kawa").value;
+    let waga = document.getElementById("waga").value;
+    let cena = 0;
 
     if (numer == 1) {
         cena = 5 * waga;
