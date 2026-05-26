@@ -21,12 +21,39 @@
     </aside>
     <aside id="lewy2">
         <h2>PROMOCJA</h2>
-        <input type="radio" name="promocja" value="krotkie"> Krótkie<br>
-        <input type="radio" name="promocja" value="Średnie"> Średnie<br>
-        <input type="radio" name="promocja" value="Półdługie"> Półdługie<br>
-        <input type="radio" name="promocja" value="Długie"> Długie<br>
+        <input type="radio" id="krotkie" name="promocja" value="krotkie"> Krótkie<br>
+        <input type="radio" id="srednie" name="promocja" value="srednie"> Średnie<br>
+        <input type="radio" id="poldlugie" name="promocja" value="poldlugie"> Półdługie<br>
+        <input type="radio" id="dlugie" name="promocja" value="dlugie"> Długie<br>
         <button onclick="odkryj()">Odkryj promocję</button>
+        <p id="wynik"></p>
     </aside>
+    <script>
+        function odkryj() {
+            let wynik = document.getElementById("wynik");
+            let cena = 0;
+
+            const krotkie = document.getElementById('krotkie');
+            const srednie = document.getElementById('srednie');
+            const poldlugie = document.getElementById('poldlugie');
+            const dlugie = document.getElementById('dlugie');
+
+            if (krotkie.checked) {
+                cena = 25 - 10;
+            }
+            else if (srednie.checked) {
+                cena = 30 - 10;
+            }
+            else if (poldlugie.checked) {
+                cena = 40 - 10;
+            }
+            else if (dlugie.checked) {
+                cena = 50 - 10;
+            }
+        
+            wynik.innerHTML = "<p>cena promocyjna: " + cena + "</p>";
+        }
+    </script>
     <aside id="prawy2">
         <img src="obraz1.jpg" alt="Fryzjerka">
     </aside>
