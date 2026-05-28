@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT podzespoly.nazwa, podzespoly.opis, podzespoly.cena FROM podzespoly, typy WHERE podzespoly.typy_id = typy.id AND typy.kategoria = 'procesor';
+Zapytanie 2: SELECT id, nazwa FROM podzespoly WHERE dostepnosc = 1 AND cena < 400;
+Zapytanie 3: SELECT podzespoly.nazwa, typy.kategoria FROM podzespoly, typy WHERE podzespoly.typy_id = typy.id;
+Zapytanie 4: ALTER TABLE typy ADD COLUMN (opis TEXT);
