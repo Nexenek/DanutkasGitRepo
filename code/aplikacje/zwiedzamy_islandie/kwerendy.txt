@@ -1,0 +1,8 @@
+Kwerenda 1:
+SEELCT idObiekt, plik, nazwa FROM obiekty WHERE panstwo="Islandia";
+
+Kwerenda 2:
+SELECT plik, nazwa, nazwaCechy, wartoscCechy, opis, rodzaj FROM obiekty o, rodzaje r WHERE r.idRodzaj=o.idRodzaj AND idObiekt=46;
+
+Kwerenda 3:
+SELECT nazwa FROM obiekty WHERE panstwo="Islandia" AND idRodzaj=10;
