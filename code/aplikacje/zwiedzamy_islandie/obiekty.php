@@ -9,6 +9,12 @@
     <header>
         <a href="islandia.php"><h1>Zwiedzaj Islandię</h1></a>
     </header>
+    <main>
+        <h2>Opis miejsca</h2>
+        <section id="sekcja-opis">
+
+        </section>
+    </main>
     <aside>
         <h3>Do Zwiedzania</h3>
         <ul><li>Wodospady:<ol id="wodospady">
@@ -24,25 +30,15 @@
             <li>Siedliska zwierząt:<ol id="siedliska">
                 <?php
                     $link = mysqli_connect('localhost', 'root', '', 'islandia');
-                    $zap1 = "SEELCT idObiekt, plik, nazwa FROM obiekty WHERE panstwo="Islandia";"
-                ?>
-                <?php
                     $zap32 = 'SELECT nazwa FROM obiekty WHERE panstwo="Islandia" AND idRodzaj=14';
                     $query = mysqli_query($link, $zap32);
                     while ($row = mysqli_fetch_array($query)) {
                         echo "<li>" . $row[0] . "</li>";
                     }
                 ?>
-            </ol></a></li>
+            </ol></li>
         </ul>
     </aside>
-    <main>
-        <h2>Galeria</h2>
-        <section id="sekcja-galeria">
-
-        </section>
-    </main>
-
     <footer>
         <hl>
         <p>Autor: 00000000000</p>
