@@ -23,10 +23,6 @@
             </ol></li>
             <li>Siedliska zwierząt:<ol id="siedliska">
                 <?php
-                    $link = mysqli_connect('localhost', 'root', '', 'islandia');
-                    $zap1 = "SEELCT idObiekt, plik, nazwa FROM obiekty WHERE panstwo="Islandia";"
-                ?>
-                <?php
                     $zap32 = 'SELECT nazwa FROM obiekty WHERE panstwo="Islandia" AND idRodzaj=14';
                     $query = mysqli_query($link, $zap32);
                     while ($row = mysqli_fetch_array($query)) {
@@ -39,12 +35,18 @@
     <main>
         <h2>Galeria</h2>
         <section id="sekcja-galeria">
-
+        <?php
+            $zap1 = "SELECT idObiekt, plik, nazwa FROM obiekty WHERE panstwo='Islandia';";
+            $query = mysqli_query($link, $zap1);
+            while($obraz = mysqli_fetch_array($query)) {
+                echo "<a href='obiekty.php?idObiekt=$obraz[0]'><img src=$obraz[1] alt=$obraz[2] title=$obraz[2] class='miniatury'></a>";
+            }
+        ?>
         </section>
     </main>
 
     <footer>
-        <hl>
+        <hr>
         <p>Autor: 00000000000</p>
     </footer>
 </body>
