@@ -1,0 +1,14 @@
+Kwerenda 1:
+SELECT idKontynent, nazwa FROM kontynenty;
+
+Kwerenda 2:
+SELECT nazwa, wartoscCechy, plik FROM obiekty WHERE idRodzaj = 10 AND panstwo = 'Polska';
+
+Kwerenda 3:
+SELECT idObiekt, panstwo, nazwa, wartoscCechy FROM obiekty WHERE idRodzaj = 10 AND idKontynent = 6;
+
+Kwereneda 4:
+INSERT INTO osiagniecia VALUES (NULL, 34, 2);
+
+Kwerenda 5:
+SELECT idTurysta, nick FROM turysci;
