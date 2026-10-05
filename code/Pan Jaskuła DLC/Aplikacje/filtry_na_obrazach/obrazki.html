@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    <head>
+        <title>Efekty Obrazu</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styl.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h2>Efekty na obrazach</h2>
+            </header>
+            <section>
+                <img id="pszczola" src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku"><br>
+                <label><input type="radio" name="pszczolaOpcja" id="efekt1" value="blur">Blur</label><br>
+                <label><input type="radio" name="pszczolaOpcja" id="efekt2" value="sepia">Sepia</label><br>
+                <label><input type="radio" name="pszczolaOpcja" id="efekt3" value="otfrut">Negatyw</label><br>
+                <button onclick="zastosuj()">Zastosuj</button>
+            </section>
+            <section>
+                <img id="pomarancza" src="pomarancza.jpg" alt="drzewo pomarańczy">
+                <button onclick="kolor()">Kolorowy</button>
+                <button onclick="blackandwhite()">Czarno-biały</button>
+            </section>
+            <section>
+                <img id="owoce" src="owoce.jpg" alt="Kosz pełen owoców">
+                <br>
+                <input type="range" min="0" max="100" value="100" id="suwakOwocowy">
+                <br>
+                <button onclick="przezroczystosc()">Zastosuj</button>
+            </section>
+            <section>
+                <img id="zolw" src="zolw.jpg" alt="Żółw w wodzie">
+                <br>
+                <input type="range" min="0" max="250" id="suwakZulwiowy">
+                <br>
+                <button onclick="jasnosc()">Zastosuj</button>
+            </section>
+            <script type="text/javascript" src="gigaskrypt.js"></script>
+        </main>
+        <footer>
+            <p><a href="http://www.css.com/" target="_blank">Zobacz inne efekty</a></p>
+            <p>Stronę wykonał: skibidi toilet</p>
+        </footer>
+    </body>
+</html>
