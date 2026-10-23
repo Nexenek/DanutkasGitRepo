@@ -5,13 +5,15 @@ function oblicz() {
     const typB = document.getElementById("typB").checked;
     const typD = document.getElementById("typD").checked;
     const typL = document.getElementById("typL").checked;
+    const typK = document.getElementById("typK").checked;
 
     let paliwo = ((dystans / 100) * spalanie).toFixed(2);
-    let platnosc = 0
+    let platnosc = 0;
 
     const pb = 7.99;
     const disel = 9.23;
-    const lpg = 3.33
+    const lpg = 3.33;
+    const enegria = 0.96;
 
     if (typB == true) {
         platnosc = (paliwo * pb).toFixed(2);
@@ -19,6 +21,9 @@ function oblicz() {
         platnosc = (paliwo * disel).toFixed(2);
     } else if (typL == true) {
         platnosc = (paliwo * lpg).toFixed(2);
+    } else if (typK == true) {
+        paliwo = dystans / 40;
+        platnosc = (paliwo * enegria).toFixed(2);
     }
     else {
         console.log("error")
