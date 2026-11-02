@@ -427,6 +427,32 @@ echo "<h3>Suma wynosi: $suma<br> różnica wynosi: $roznica<br> iloczyn wynosi: 
 </ol>
 Podsumowując: Kod ten zwraca nazwę pliku wraz z rozszerzeniem, ignorując ścieżkę folderów, która znajdowała się przed nim.
 Uwaga: W nowoczesnych przeglądarkach, ze względów bezpieczeństwa, pole pliku często zwraca C:\fakepath\nazwa pliku.ext, dlatego ta metoda jest popularnym sposobem na pobranie czystej nazwy.
+<h1>Metoda GET i odnośniki</h1>
+<h3>Najpopularniejszy dla metody GET sposób przekazywania parametrów dla żądania to przesyłanie ich w adresie url:
+ogólna składnia: <strong><em><em><em>index.php</em>?</em></em><em>lang=pl</em><em><em><em>&param1=2</em></em></em></strong></h3>
+Przesyłane parametry znajdują się w tablicy globalnej $_GET</h3>
+<h4>Funkcja header() </h4>w języku PHP służy do wysyłania surowych nagłówków HTTP do przeglądarki. Najczęściej wykorzystuje się ją do
+przekierowywania użytkowników na inną stronę (np. header('Location: strona.php')), zmiany typu zawartości pliku czy ustawiania kodów odpowiedzi
+serwera.
+Najważniejsze zastosowania
+<ul>
+<li><strong>Przekierowanie użytkownika:</strong> Przeniesienie na inny adres za pomocą header('Location: ...').</li>
+<li> Typ pliku (Content-Type): Określenie, jak przeglądarka ma traktować dane (np. text/html, application/json czy plik PDF).</li>
+<li> Kody stanu HTTP: Ustawianie statusów, takich jak 404 Not Found czy stałe przekierowanie 301 Moved Permanently.</li>
+</ul>
+Kluczowa zasada: "Headers already sent"
+<ul>
+<li><li> Kolejność wywołania: Funkcję header() musisz wywołać zanim skrypt wyśle jakikolwiek tekst, kod HTML, a nawet zwykłą spację czy pustą linię przed
+znacznikiem</li></li>
+<li> Zatrzymanie skryptu: Po wykonaniu przekierowania (header('Location: ...')) niemal zawsze należy użyć funkcji exit; lub die;, aby kod poniżej nie
+wykonał się dalej.</li></ul>
+Przykład użycia
 
+
+<?php
+// Przekierowanie do panelu logowania
+header('Location: https://przyklad.pl');
+exit; // Kończymy dalsze wykonywanie skryptu
+?>
 </body>
 </html>
