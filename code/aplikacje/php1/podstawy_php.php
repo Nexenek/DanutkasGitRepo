@@ -448,11 +448,19 @@ znacznikiem</li></li>
 wykonał się dalej.</li></ul>
 Przykład użycia
 
-
 <?php
 // Przekierowanie do panelu logowania
 header('Location: https://przyklad.pl');
 exit; // Kończymy dalsze wykonywanie skryptu
 ?>
+
+<h2>Wybrane funkcje do obsługi sesji w PHP</h2>
+<table border="1">
+<tr><th>Funkcja</th><th> Opis</th></tr>
+<tr><td>session_start()</td><td> Rozpoczyna sesję i umożliwia dostęp do zmiennych sesyjnych</td></tr>
+<tr><td>$_SESSION['nazwa'] </td><td>Ustawia lub zmienia wartość zmiennej sesyjnej o podanej nazwie</td></tr>
+<tr><td>unset($_SESSION['nazwa']) </td><td>Usuwa zmienną sesyjną o podanej nazwie</td></tr>
+<tr><td>session_destroy() </td><td>Usuwa wszystkie zmienne sesyjne i kończy sesję</td></tr>
+</table>
 </body>
 </html>

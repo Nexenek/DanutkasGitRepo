@@ -43,7 +43,7 @@ if (!isset($_SESSION['username'])) {
                     $result = mysqli_query($connect, $query4);
                     while ($row = mysqli_fetch_array($result)) {
                         $wynik = '';
-                        if (!empty($row['plik'])) {
+                        if (($row['plik'])) {
                             $wynik = "<a href='{$row['plik']}' target='_blank'>wynik</a>";
                         }
                         echo "<tr>
