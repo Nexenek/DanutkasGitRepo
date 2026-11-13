@@ -38,23 +38,23 @@ if (!isset($_SESSION['username'])) {
                     <th>Wynik</th>
                 </tr>
                 <?php
-                $connect = mysqli_connect('localhost', 'root', '', 'laboratorium');
-                $query4 = "SELECT imie, nazwisko, pesel, Zlecenie.data, Wynik.data, plik FROM Pacjent JOIN Zlecenie ON Zlecenie.idPacjenta = Pacjent.id LEFT JOIN Wynik ON Zlecenie.id = Wynik.idZlecenia;";
-                $result = mysqli_query($connect, $query4);
-                while ($row = mysqli_fetch_array($result)) {
-                    $wynik = '';
-                    if (!empty($row['plik'])) {
-                        $wynik = "<a href='files/{$row['plik']}' target='_blank'>wynik</a>";
+                    $connect = mysqli_connect('localhost', 'root', '', 'laboratorium');
+                    $query4 = "SELECT imie, nazwisko, pesel, Zlecenie.data, Wynik.data, plik FROM Pacjent JOIN Zlecenie ON Zlecenie.idPacjenta = Pacjent.id LEFT JOIN Wynik ON Zlecenie.id = Wynik.idZlecenia;";
+                    $result = mysqli_query($connect, $query4);
+                    while ($row = mysqli_fetch_array($result)) {
+                        $wynik = '';
+                        if (!empty($row['plik'])) {
+                            $wynik = "<a href='{$row['plik']}' target='_blank'>wynik</a>";
+                        }
+                        echo "<tr>
+                                <td>{$row['imie']}</td>
+                                <td>{$row['nazwisko']}</td>
+                                <td>{$row['pesel']}</td>
+                                <td>{$row[3]}</td>
+                                <td>{$row[4]}</td>
+                                <td>$wynik</td>
+                            </tr>";
                     }
-                    echo "<tr>
-                            <td>{$row['imie']}</td>
-                            <td>{$row['nazwisko']}</td>
-                            <td>{$row['pesel']}</td>
-                            <td>{$row[3]}</td>
-                            <td>{$row[4]}</td>
-                            <td>$wynik</td>
-                        </tr>";
-                }
                 ?>
             </table>
         </div>
